@@ -1,0 +1,16 @@
+C:\Users\User\source\repos\LibraryWebApp-Back\Library\Library.Application\bin\Debug\net8.0\Library.Application.deps.json
+C:\Users\User\source\repos\LibraryWebApp-Back\Library\Library.Application\bin\Debug\net8.0\Library.Application.dll
+C:\Users\User\source\repos\LibraryWebApp-Back\Library\Library.Application\bin\Debug\net8.0\Library.Application.pdb
+C:\Users\User\source\repos\LibraryWebApp-Back\Library\Library.Application\bin\Debug\net8.0\Library.Domain.dll
+C:\Users\User\source\repos\LibraryWebApp-Back\Library\Library.Application\bin\Debug\net8.0\Library.Domain.pdb
+C:\Users\User\source\repos\LibraryWebApp-Back\Library\Library.Application\obj\Debug\net8.0\Library.Application.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\LibraryWebApp-Back\Library\Library.Application\obj\Debug\net8.0\Library.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\repos\LibraryWebApp-Back\Library\Library.Application\obj\Debug\net8.0\Library.Application.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\LibraryWebApp-Back\Library\Library.Application\obj\Debug\net8.0\Library.Application.AssemblyInfo.cs
+C:\Users\User\source\repos\LibraryWebApp-Back\Library\Library.Application\obj\Debug\net8.0\Library.Application.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\LibraryWebApp-Back\Library\Library.Application\obj\Debug\net8.0\Library.Application.sourcelink.json
+C:\Users\User\source\repos\LibraryWebApp-Back\Library\Library.Application\obj\Debug\net8.0\Library..D137A66B.Up2Date
+C:\Users\User\source\repos\LibraryWebApp-Back\Library\Library.Application\obj\Debug\net8.0\Library.Application.dll
+C:\Users\User\source\repos\LibraryWebApp-Back\Library\Library.Application\obj\Debug\net8.0\refint\Library.Application.dll
+C:\Users\User\source\repos\LibraryWebApp-Back\Library\Library.Application\obj\Debug\net8.0\Library.Application.pdb
+C:\Users\User\source\repos\LibraryWebApp-Back\Library\Library.Application\obj\Debug\net8.0\ref\Library.Application.dll
