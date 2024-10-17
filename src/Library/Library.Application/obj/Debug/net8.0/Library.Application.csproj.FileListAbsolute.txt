@@ -14,3 +14,12 @@ C:\Users\User\source\repos\LibraryWebApp-Back\Library\Library.Application\obj\De
 C:\Users\User\source\repos\LibraryWebApp-Back\Library\Library.Application\obj\Debug\net8.0\refint\Library.Application.dll
 C:\Users\User\source\repos\LibraryWebApp-Back\Library\Library.Application\obj\Debug\net8.0\Library.Application.pdb
 C:\Users\User\source\repos\LibraryWebApp-Back\Library\Library.Application\obj\Debug\net8.0\ref\Library.Application.dll
+C:\Users\User\source\repos\LibraryWebApp-back\src\Library\Library.Application\obj\Debug\net8.0\Library.Application.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\LibraryWebApp-back\src\Library\Library.Application\obj\Debug\net8.0\Library.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\repos\LibraryWebApp-back\src\Library\Library.Application\obj\Debug\net8.0\Library.Application.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\LibraryWebApp-back\src\Library\Library.Application\obj\Debug\net8.0\Library.Application.AssemblyInfo.cs
+C:\Users\User\source\repos\LibraryWebApp-back\src\Library\Library.Application\obj\Debug\net8.0\Library.Application.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\LibraryWebApp-back\src\Library\Library.Application\obj\Debug\net8.0\Library.Application.sourcelink.json
+C:\Users\User\source\repos\LibraryWebApp-back\src\Library\Library.Application\obj\Debug\net8.0\Library.Application.dll
+C:\Users\User\source\repos\LibraryWebApp-back\src\Library\Library.Application\obj\Debug\net8.0\refint\Library.Application.dll
+C:\Users\User\source\repos\LibraryWebApp-back\src\Library\Library.Application\obj\Debug\net8.0\Library.Application.pdb
