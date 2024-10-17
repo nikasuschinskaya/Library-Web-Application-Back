@@ -7,7 +7,7 @@ public class Book : NamedEntity
     public string IBSN { get; set; }
     public string Genre { get; set; }
     public string Description { get; set; }
-    public string? ImagePath { get; set; }
+    public string? ImageURL { get; set; }
     public virtual List<Author> Authors { get; set; }
     public virtual List<UserBook> UserBooks { get; set; } = [];
 
@@ -21,7 +21,7 @@ public class Book : NamedEntity
                 string iBSN,
                 string genre,
                 string description,
-                string? imagePath,
+                string? imageURL,
                 List<Author> authors,
                 List<UserBook> userBooks)
     {
@@ -30,7 +30,7 @@ public class Book : NamedEntity
         IBSN = iBSN;
         Genre = genre;
         Description = description;
-        ImagePath = imagePath;
+        ImageURL = imageURL;
         Authors = authors;
         UserBooks = userBooks;
     }

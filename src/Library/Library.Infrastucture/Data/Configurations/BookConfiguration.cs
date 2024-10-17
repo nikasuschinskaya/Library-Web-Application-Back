@@ -1,12 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Library.Domain.Entities;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Library.Infrastucture.Data.Configurations
+namespace Library.Infrastucture.Data.Configurations;
+
+public class BookConfiguration : IEntityTypeConfiguration<Book>
 {
-    internal class BookConfiguration
+    public void Configure(EntityTypeBuilder<Book> builder)
     {
+        builder.HasKey(x => x.Id);
+
+        builder.Property(x => x.Name).IsRequired().HasMaxLength(100);
+
+        builder.Property(x => x.IBSN).IsRequired().HasMaxLength(20);
+
+        builder.Property(x => x.Genre).IsRequired().HasMaxLength(25);
+
+        builder.Property(x => x.Description).IsRequired().HasMaxLength(300);
     }
 }

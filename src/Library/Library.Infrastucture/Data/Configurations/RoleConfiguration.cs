@@ -1,12 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Library.Domain.Entities;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Library.Infrastucture.Data.Configurations
+namespace Library.Infrastucture.Data.Configurations;
+
+public class RoleConfiguration : IEntityTypeConfiguration<Role>
 {
-    internal class RoleConfiguration
+    public void Configure(EntityTypeBuilder<Role> builder)
     {
+        builder.HasKey(x => x.Id);
+
+        builder.Property(x => x.Name).IsRequired().HasMaxLength(30);
     }
 }

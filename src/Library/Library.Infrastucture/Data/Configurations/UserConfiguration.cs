@@ -1,12 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Library.Domain.Entities;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Library.Infrastucture.Data.Configurations
+namespace Library.Infrastucture.Data.Configurations;
+
+public class UserConfiguration : IEntityTypeConfiguration<User>
 {
-    internal class UserConfiguration
+    public void Configure(EntityTypeBuilder<User> builder)
     {
+        builder.HasKey(x => x.Id);
+
+        builder.Property(x => x.Name).IsRequired().HasMaxLength(35);
+        
+        builder.Property(x => x.Email).IsRequired().HasMaxLength(70);
+        
+        builder.Property(x => x.Password).IsRequired().HasMaxLength(150);    
     }
 }

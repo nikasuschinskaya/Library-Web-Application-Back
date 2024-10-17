@@ -1,19 +1,21 @@
 ﻿using Library.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Library.Infrastucture.Data.Configurations
+namespace Library.Infrastucture.Data.Configurations;
+
+public class AuthorConfiguration : IEntityTypeConfiguration<Author>
 {
-    public class AuthorConfiguration : IEntityTypeConfiguration<Author>
+    public void Configure(EntityTypeBuilder<Author> builder)
     {
-        public void Configure(EntityTypeBuilder<Author> builder)
-        {
-            throw new NotImplementedException();
-        }
+        builder.HasKey(x => x.Id);
+
+        builder.Property(x => x.Name).IsRequired().HasMaxLength(25);
+        
+        builder.Property(x => x.Surname).IsRequired().HasMaxLength(40);
+        
+        builder.Property(x => x.Country).IsRequired().HasMaxLength(45);
+
+        builder.Property(x => x.BirthDate).IsRequired();
     }
 }

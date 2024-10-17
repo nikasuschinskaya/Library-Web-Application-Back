@@ -6,23 +6,23 @@ namespace Library.Domain.Entities
     public class User : NamedEntity
     {
         public string Email { get; set; }
-        public string PasswordHash { get; set; }
+        public string Password { get; set; }
         public virtual Role Role { get; set; }
-        public virtual List<Book> Books { get; set; }
+        public virtual List<UserBook> UserBooks { get; set; }
 
         public User() { }
 
-        public User(string name, string email, string passwordHash)
-        : this(Guid.NewGuid(), name, email, passwordHash, new Role(nameof(Roles.User)), []) { }
+        public User(string name, string email, string password)
+        : this(Guid.NewGuid(), name, email, password, new Role(nameof(Roles.User)), []) { }
 
-        public User(Guid id, string name, string email, string passwordHash, Role role, List<Book> books)
+        public User(Guid id, string name, string email, string password, Role role, List<UserBook> userBooks)
         {
             Id = id;
             Name = name;
             Email = email;
-            PasswordHash = passwordHash;
+            Password = password;
             Role = role;
-            Books = books;
+            UserBooks = userBooks;
         }
     }
 }

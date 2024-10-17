@@ -1,25 +1,24 @@
 ﻿using Library.Application.Interfaces;
 using Library.Domain.Entities.Base;
 
-namespace Library.Infrastucture.Data.Initializers.Base
+namespace Library.Infrastucture.Data.Initializers.Base;
+
+public class BaseInitializer<T> : IInitializer<T> where T : BaseEntity
 {
-    public class BaseInitializer<T> : IInitializer<T> where T : BaseEntity
+    public IEnumerable<T> Entities { get; private set; }
+
+    public BaseInitializer(IEnumerable<T> initialEntities) =>
+        Entities = initialEntities;
+
+    public void Initialize(IUnitOfWork unitOfWork)
     {
-        public IEnumerable<T> Entities { get; private set; }
+        var repository = unitOfWork.Repository<T>();
 
-        public BaseInitializer(IEnumerable<T> initialEntities) =>
-            Entities = initialEntities;
-
-        public void Initialize(IUnitOfWork unitOfWork)
+        foreach (var entity in Entities)
         {
-            var repository = unitOfWork.Repository<T>();
-
-            foreach (var entity in Entities)
-            {
-                repository.Create(entity);
-            }
-
-            unitOfWork.CompleteAsync();
+            repository.Create(entity);
         }
+
+        unitOfWork.CompleteAsync();
     }
 }

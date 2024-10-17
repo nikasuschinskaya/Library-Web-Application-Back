@@ -1,8 +1,8 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿//using Microsoft.AspNetCore.Http;
 
-namespace Library.Application.Models;
+//namespace Library.Application.Models;
 
-public class BookImageUpload
-{
-    public IFormFile Image { get; set; }
-}
+//public class BookImageUpload
+//{
+//    public IFormFile Image { get; set; }
+//}
