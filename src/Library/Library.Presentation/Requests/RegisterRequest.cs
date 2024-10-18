@@ -1,4 +1,4 @@
-﻿namespace Library.Presentation.Authentication;
+﻿namespace Library.Presentation.Requests;
 
 public record class RegisterRequest(
     string FirstName,

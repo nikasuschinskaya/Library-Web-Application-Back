@@ -192,3 +192,6 @@ C:\Users\User\source\repos\LibraryWebApp-back\src\Library\Library.Api\obj\Debug\
 C:\Users\User\source\repos\LibraryWebApp-back\src\Library\Library.Api\obj\Debug\net8.0\Library.Api.pdb
 C:\Users\User\source\repos\LibraryWebApp-back\src\Library\Library.Api\obj\Debug\net8.0\Library.Api.genruntimeconfig.cache
 C:\Users\User\source\repos\LibraryWebApp-back\src\Library\Library.Api\obj\Debug\net8.0\ref\Library.Api.dll
+C:\Users\User\source\repos\LibraryWebApp-back\src\Library\Library.Api\bin\Debug\net8.0\FluentValidation.dll
+C:\Users\User\source\repos\LibraryWebApp-back\src\Library\Library.Api\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
+C:\Users\User\source\repos\LibraryWebApp-back\src\Library\Library.Api\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll

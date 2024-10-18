@@ -1,4 +1,4 @@
-﻿namespace Library.Presentation.Authentication;
+﻿namespace Library.Presentation.Responses;
 
 public record class AuthenticationResponse(
     Guid Id,

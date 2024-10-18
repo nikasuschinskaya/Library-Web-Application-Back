@@ -12,7 +12,7 @@ namespace Library.Infrastucture.Data.Initializers
             _roleInitializer = roleInitializer;
         }
 
-        public void Initialize(UnitOfWork unitOfWork)
+        public void Initialize(IUnitOfWork unitOfWork)
         {
             _roleInitializer.Initialize(unitOfWork);
         }
