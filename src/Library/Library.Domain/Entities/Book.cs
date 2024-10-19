@@ -4,7 +4,7 @@ namespace Library.Domain.Entities;
 
 public class Book : NamedEntity
 {
-    public string IBSN { get; set; }
+    public string ISBN { get; set; }
     public string Genre { get; set; }
     public string Description { get; set; }
     public string? ImageURL { get; set; }
@@ -18,7 +18,7 @@ public class Book : NamedEntity
 
     public Book(Guid id,
                 string name,
-                string iBSN,
+                string iSBN,
                 string genre,
                 string description,
                 string? imageURL,
@@ -27,7 +27,7 @@ public class Book : NamedEntity
     {
         Id = id;
         Name = name;
-        IBSN = iBSN;
+        ISBN = iSBN;
         Genre = genre;
         Description = description;
         ImageURL = imageURL;

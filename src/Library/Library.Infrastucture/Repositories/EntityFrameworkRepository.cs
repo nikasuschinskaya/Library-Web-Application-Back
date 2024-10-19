@@ -20,8 +20,7 @@ public class EntityFrameworkRepository<T> : IRepository<T> where T : BaseEntity
 
     public void Delete(T entity) => _dbSet.Remove(entity);
 
-    public async Task<IEnumerable<T>> GetAll(CancellationToken cancellationToken = default) => 
-        await _dbSet.ToListAsync(cancellationToken);
+    public IQueryable<T> GetAll() => _dbSet;
 
     public async Task<T?> GetByIdAsync(Guid id, CancellationToken cancellationToken = default) =>
         await _dbSet.Where(entity => entity.Id == id).FirstOrDefaultAsync(cancellationToken);

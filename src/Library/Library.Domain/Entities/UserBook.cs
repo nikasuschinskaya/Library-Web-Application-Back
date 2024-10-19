@@ -18,12 +18,12 @@ namespace Library.Domain.Entities
 
         public UserBook() { }
 
-        public UserBook(Guid userId, Guid bookId, DateTime returnDate)
+        public UserBook(Guid userId, Guid bookId)
         {
             UserId = userId;
             BookId = bookId;
-            ReturnDate = returnDate;
 
+            ReturnDate = DateTime.UtcNow.AddDays(10);
             DateTaken = DateTime.UtcNow;
             Status = BookStatus.Taken;
         }

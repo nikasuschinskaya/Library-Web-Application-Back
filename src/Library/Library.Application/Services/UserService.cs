@@ -6,6 +6,6 @@ using System.Threading.Tasks;
 
 namespace Library.Application.Services;
 
-public class UserBookService
+public class UserService
 {
 }

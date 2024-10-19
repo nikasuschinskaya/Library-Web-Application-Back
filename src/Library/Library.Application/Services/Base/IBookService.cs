@@ -11,5 +11,5 @@ public interface IBookService
     Task UpdateBookAsync(Book book, CancellationToken cancellationToken = default);
     Task DeleteBookAsync(Guid id, CancellationToken cancellationToken = default);
     Task GiveBookToUserAsync(Guid bookId, Guid userId, CancellationToken cancellationToken = default);
-    Task AddBookImageAsync(string imageURL, CancellationToken cancellationToken = default);
+    Task AddBookImageAsync(Guid id, string imageURL, CancellationToken cancellationToken = default);
 }

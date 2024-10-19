@@ -46,6 +46,7 @@ var builder = WebApplication.CreateBuilder(args);
     builder.Services.AddAuthorizationBuilder()
         .AddPolicy("Admin", policy => policy.RequireRole("Admin"))
         .AddPolicy("User", policy => policy.RequireRole("User"));
+
 }
 
 var app = builder.Build();

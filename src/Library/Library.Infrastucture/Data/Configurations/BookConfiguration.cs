@@ -12,7 +12,7 @@ public class BookConfiguration : IEntityTypeConfiguration<Book>
 
         builder.Property(x => x.Name).IsRequired().HasMaxLength(100);
 
-        builder.Property(x => x.IBSN).IsRequired().HasMaxLength(20);
+        builder.Property(x => x.ISBN).IsRequired().HasMaxLength(20);
 
         builder.Property(x => x.Genre).IsRequired().HasMaxLength(25);
 
