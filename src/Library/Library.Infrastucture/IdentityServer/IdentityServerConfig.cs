@@ -26,7 +26,7 @@ public static class IdentityServerConfig
             {
                 ClientId = "client",
                 AllowedGrantTypes = GrantTypes.ResourceOwnerPasswordAndClientCredentials,
-                AccessTokenLifetime = 3600, // 1 час для access token
+                AccessTokenLifetime = 900, // 15 минут для access token
                 AllowOfflineAccess = true, // включаем refresh token
                 RefreshTokenUsage = TokenUsage.ReUse,
                 RefreshTokenExpiration = TokenExpiration.Sliding,

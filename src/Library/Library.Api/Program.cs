@@ -16,6 +16,7 @@ var builder = WebApplication.CreateBuilder(args);
         .InjectRepositories()
         .InjectDbContextInitializers()
         .InjectJwtTokens(builder.Configuration)
+        //.InjectIdentityServer(builder.Configuration)
         .InjectServices()
         .InjectValidators()
         .InjectAutoMapper()

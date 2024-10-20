@@ -2,6 +2,7 @@
 using Library.Application.Models;
 using Library.Application.Services.Base;
 using Library.Domain.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace Library.Application.Services;
 
@@ -58,7 +59,7 @@ public class AuthService : IAuthService
             ExpiryDate = DateTime.UtcNow.AddDays(7)
         };
 
-        await _unitOfWork.RefreshTokenRepository.AddAsync(refreshToken, cancellationToken);
+        _unitOfWork.Repository<RefreshToken>().Create(refreshToken);
         await _unitOfWork.CompleteAsync(cancellationToken);
 
         return new TokenResponse(accessToken, refreshToken.Token);
@@ -66,14 +67,31 @@ public class AuthService : IAuthService
 
     public async Task<TokenResponse> RefreshAccessTokenAsync(string refreshToken, CancellationToken cancellationToken = default)
     {
-        var storedToken = await _unitOfWork.RefreshTokenRepository.GetByTokenAsync(refreshToken, cancellationToken);
+        var storedToken = await _unitOfWork.Repository<RefreshToken>().GetAll()
+            .FirstOrDefaultAsync(t => t.Token == refreshToken, cancellationToken);
+
         if (storedToken == null || storedToken.ExpiryDate <= DateTime.UtcNow || storedToken.IsRevoked)
-        {
             throw new Exception("Invalid refresh token.");
-        }
 
         var accessToken = _jwtTokenService.GenerateAccessToken(storedToken.UserId.ToString());
+
         return new TokenResponse(accessToken, refreshToken);
+    }
+
+
+    public async Task RevokeRefreshTokenAsync(string refreshToken, CancellationToken cancellationToken = default)
+    {
+        var storedToken = await _unitOfWork.Repository<RefreshToken>().GetAll()
+            .FirstOrDefaultAsync(t => t.Token == refreshToken, cancellationToken) 
+            ?? throw new Exception("Invalid refresh token.");
+
+        if (storedToken.IsRevoked)
+            throw new Exception("Token has already been revoked.");
+
+        storedToken.IsRevoked = true;
+
+        _unitOfWork.Repository<RefreshToken>().Update(storedToken);
+        await _unitOfWork.CompleteAsync(cancellationToken);
     }
 }
 

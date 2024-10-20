@@ -21,7 +21,7 @@ public class JwtTokenService : IJwtTokenService
         var tokenDescriptor = new SecurityTokenDescriptor
         {
             Subject = new ClaimsIdentity(new[] { new Claim("id", userId) }),
-            Expires = DateTime.UtcNow.AddMinutes(15), // Время жизни access token
+            Expires = DateTime.UtcNow.AddMinutes(15),
             SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
         };
 
@@ -40,7 +40,7 @@ public class JwtTokenService : IJwtTokenService
             IssuerSigningKey = new SymmetricSecurityKey(key),
             ValidateIssuer = false,
             ValidateAudience = false,
-            ClockSkew = TimeSpan.Zero // Уменьшаем задержку времени для проверки токена
+            ClockSkew = TimeSpan.Zero 
         }, out SecurityToken validatedToken);
 
         return validatedToken != null;

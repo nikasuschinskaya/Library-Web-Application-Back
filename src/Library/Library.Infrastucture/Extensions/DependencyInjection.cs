@@ -5,6 +5,7 @@ using Library.Infrastucture.Data.Initializers;
 using Library.Infrastucture.IdentityServer;
 using Library.Infrastucture.Repositories;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -32,7 +33,6 @@ public static class DependencyInjection
     public static IServiceCollection InjectRepositories(this IServiceCollection services)
     {
         services.AddScoped(typeof(IRepository<>), typeof(EntityFrameworkRepository<>));
-        services.AddScoped<IRefreshTokenRepository, RefreshTokenRepository>();
 
         return services;
     }
@@ -53,6 +53,53 @@ public static class DependencyInjection
 
         return services;
     }
+
+    //public static IServiceCollection InjectIdentityServer(this IServiceCollection services, IConfiguration configuration)
+    //{
+    //    services.AddIdentity<User, IdentityRole>()
+    //       .AddEntityFrameworkStores<LibraryDbContext>() 
+    //       .AddDefaultTokenProviders();
+
+    //    services.AddIdentityServer(options =>
+    //    {
+    //        options.Events.RaiseSuccessEvents = true;
+    //        options.Events.RaiseFailureEvents = true;
+    //        options.Events.RaiseErrorEvents = true;
+    //    })
+    //    .AddInMemoryApiScopes(IdentityServerConfig.ApiScopes) 
+    //    .AddInMemoryClients(IdentityServerConfig.Clients)     
+    //    .AddInMemoryIdentityResources(IdentityServerConfig.IdentityResources) 
+    //    .AddAspNetIdentity<User>() 
+    //    .AddDeveloperSigningCredential(); 
+
+     
+    //    var jwtSettings = configuration.GetSection("Jwt");
+    //    var key = Encoding.UTF8.GetBytes(jwtSettings["Key"]);
+    //    services.AddAuthentication(options =>
+    //    {
+    //        options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    //        options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+    //    })
+    //    .AddJwtBearer(options =>
+    //    {
+    //        options.TokenValidationParameters = new TokenValidationParameters
+    //        {
+    //            ValidateIssuer = true,
+    //            ValidateAudience = true,
+    //            ValidateLifetime = true,
+    //            ValidateIssuerSigningKey = true,
+    //            ValidIssuer = jwtSettings["Issuer"],
+    //            ValidAudience = jwtSettings["Audience"],
+    //            IssuerSigningKey = new SymmetricSecurityKey(key)
+    //        };
+    //    });
+
+      
+    //    services.AddIdentityServer()
+    //        .AddAspNetIdentity<User>(); 
+
+    //    return services;
+    //}
 
     public static IServiceCollection InjectJwtTokens(this IServiceCollection services, IConfiguration configuration)
     {

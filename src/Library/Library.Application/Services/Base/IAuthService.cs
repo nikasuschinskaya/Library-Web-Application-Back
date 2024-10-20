@@ -8,4 +8,5 @@ public interface IAuthService
     Task<User> RegisterAsync(string name, string email, string password, CancellationToken cancellationToken = default);
     Task<TokenResponse> LoginAsync(string email, string password, CancellationToken cancellationToken = default);
     Task<TokenResponse> RefreshAccessTokenAsync(string refreshToken, CancellationToken cancellationToken = default);
+    Task RevokeRefreshTokenAsync(string refreshToken, CancellationToken cancellationToken = default);
 }
