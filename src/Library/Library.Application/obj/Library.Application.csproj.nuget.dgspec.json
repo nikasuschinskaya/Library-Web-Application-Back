@@ -54,6 +54,26 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Duende.AccessTokenManagement": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Duende.IdentityServer": {
+              "target": "Package",
+              "version": "[7.0.7, )"
+            },
+            "Duende.IdentityServer.AspNetIdentity": {
+              "target": "Package",
+              "version": "[7.0.7, )"
+            },
+            "Duende.IdentityServer.EntityFramework": {
+              "target": "Package",
+              "version": "[7.0.7, )"
+            },
+            "Duende.IdentityServer.Storage": {
+              "target": "Package",
+              "version": "[7.0.7, )"
+            },
             "Microsoft.AspNetCore.Http.Features": {
               "target": "Package",
               "version": "[2.2.0, )"

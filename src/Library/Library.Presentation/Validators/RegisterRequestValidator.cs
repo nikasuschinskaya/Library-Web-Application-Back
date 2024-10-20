@@ -7,13 +7,9 @@ public class RegisterRequestValidator : AbstractValidator<RegisterRequest>
 {
     public RegisterRequestValidator()
     {
-        RuleFor(x => x.FirstName)
-           .NotEmpty().WithMessage("First Name is required.")
-           .Length(2, 50).WithMessage("First Name must be between 2 and 50 characters.");
-
-        RuleFor(x => x.LastName)
-            .NotEmpty().WithMessage("Last Name is required.")
-            .Length(2, 50).WithMessage("Last Name must be between 2 and 50 characters.");
+        RuleFor(x => x.Username)
+           .NotEmpty().WithMessage("Username is required.")
+           .Length(2, 50).WithMessage("Username must be between 2 and 50 characters.");
 
         RuleFor(x => x.Email)
             .NotEmpty().WithMessage("Email is required.")

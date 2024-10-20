@@ -10,4 +10,5 @@ public interface ILibraryDbContext
     DbSet<Role> Roles { get; set; }
     DbSet<Book> Books { get; set; }
     DbSet<UserBook> UserBooks { get; set; }
+    DbSet<RefreshToken> RefreshTokens { get; set; }
 }

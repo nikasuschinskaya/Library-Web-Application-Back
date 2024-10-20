@@ -1,52 +1,26 @@
-using FluentValidation;
-using FluentValidation.AspNetCore;
+using Library.Api.Extensions;
 using Library.Api.Middlewares;
-using Library.Application.Interfaces;
-using Library.Domain.Entities;
-using Library.Infrastucture.Data;
+using Library.Application.Extensions;
 using Library.Infrastucture.Data.Initializers;
-using Library.Infrastucture.Repositories;
-using Library.Presentation.Validators;
-using Microsoft.EntityFrameworkCore;
+using Library.Infrastucture.Extensions;
+using Library.Presentation.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 {
     builder.Services.AddControllers();
-
     builder.Services.AddEndpointsApiExplorer();
     builder.Services.AddSwaggerGen();
 
-    builder.Services.AddDbContext<LibraryDbContext>(options =>
-    {
-        var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-        options.UseSqlServer(connectionString);
-    });
-
-    builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
-
-    builder.Services.AddScoped(typeof(IRepository<>), typeof(EntityFrameworkRepository<>));
-
-    builder.Services.AddSingleton<IInitializer<Role>, RoleInitializer>();
-    builder.Services.AddScoped<DbContextInitializer>((provider) =>
-    {
-        var roleInitializer = provider.GetRequiredService<IInitializer<Role>>();
-        var initializer = new DbContextInitializer(roleInitializer);
-        var unitOfWork = provider.GetRequiredService<IUnitOfWork>();
-
-        initializer.Initialize(unitOfWork);
-        return initializer;
-    });
-
-    builder.Services.AddFluentValidationAutoValidation();
-    builder.Services.AddValidatorsFromAssemblyContaining<LoginRequestValidator>();
-    builder.Services.AddValidatorsFromAssemblyContaining<RegisterRequestValidator>();
-
-    builder.Services.AddCors();
-
-    builder.Services.AddAuthorizationBuilder()
-        .AddPolicy("Admin", policy => policy.RequireRole("Admin"))
-        .AddPolicy("User", policy => policy.RequireRole("User"));
-
+    builder.Services
+        .InjectDbContext(builder.Configuration)
+        .InjectRepositories()
+        .InjectDbContextInitializers()
+        .InjectJwtTokens(builder.Configuration)
+        .InjectServices()
+        .InjectValidators()
+        .InjectAutoMapper()
+        .AddCorsPolicy()
+        .AddPolicyBasedAuthorization();
 }
 
 var app = builder.Build();

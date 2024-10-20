@@ -2,7 +2,7 @@
 
 public record class AuthenticationResponse(
     Guid Id,
-    string FirstName,
-    string LastName,
+    string Username,
     string Email,
+    string Password,
     string Token);
