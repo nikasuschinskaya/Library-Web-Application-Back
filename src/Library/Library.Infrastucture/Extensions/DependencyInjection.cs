@@ -1,4 +1,4 @@
-﻿using Library.Application.Interfaces;
+﻿using Library.Application.Interfaces.Common;
 using Library.Domain.Entities;
 using Library.Infrastucture.Data;
 using Library.Infrastucture.Data.Initializers;

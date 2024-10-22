@@ -1,4 +1,4 @@
-﻿using Library.Application.Services.Base;
+﻿using Library.Application.Interfaces.Services;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;

@@ -1,4 +1,5 @@
 ﻿using Library.Domain.Entities.Base;
+using Library.Domain.Enums;
 
 namespace Library.Domain.Entities;
 
@@ -8,13 +9,15 @@ public class Book : NamedEntity
     public string Genre { get; set; }
     public string Description { get; set; }
     public string? ImageURL { get; set; }
+    public int Count { get; set; }
     public virtual List<Author> Authors { get; set; }
     public virtual List<UserBook> UserBooks { get; set; } = [];
+    public BookStockStatus BookStockStatus => Count > 0 ? BookStockStatus.InStock : BookStockStatus.NotInStock;
 
     public Book() { }
 
-    public Book(string name, string iSBN, string genre, string description, List<Author> authors)
-       : this(Guid.NewGuid(), name, iSBN, genre, description, string.Empty, authors, []) { }
+    public Book(string name, string iSBN, string genre, string description, int count, List<Author> authors)
+       : this(Guid.NewGuid(), name, iSBN, genre, description, string.Empty, count, authors, []) { }
 
     public Book(Guid id,
                 string name,
@@ -22,6 +25,7 @@ public class Book : NamedEntity
                 string genre,
                 string description,
                 string? imageURL,
+                int count,
                 List<Author> authors,
                 List<UserBook> userBooks)
     {
@@ -31,6 +35,7 @@ public class Book : NamedEntity
         Genre = genre;
         Description = description;
         ImageURL = imageURL;
+        Count = count;
         Authors = authors;
         UserBooks = userBooks;
     }

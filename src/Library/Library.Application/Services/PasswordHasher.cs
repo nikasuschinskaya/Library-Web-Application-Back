@@ -1,4 +1,4 @@
-﻿using Library.Application.Services.Base;
+﻿using Library.Application.Interfaces.Services;
 using System.Security.Cryptography;
 
 namespace Library.Application.Services;

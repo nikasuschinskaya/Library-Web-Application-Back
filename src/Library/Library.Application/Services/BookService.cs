@@ -1,6 +1,7 @@
-﻿using Library.Application.Interfaces;
-using Library.Application.Services.Base;
+﻿using Library.Application.Interfaces.Common;
+using Library.Application.Interfaces.Services;
 using Library.Domain.Entities;
+using Library.Domain.Enums;
 using Library.Domain.Exceptions;
 using Microsoft.EntityFrameworkCore;
 
@@ -46,7 +47,9 @@ public class BookService : IBookService
 
     public async Task<IEnumerable<Book>> GetAllBooksAsync(CancellationToken cancellationToken = default)
     {
-        return await _unitOfWork.Repository<Book>().GetAll().ToListAsync(cancellationToken);
+        return await _unitOfWork.Repository<Book>().GetAll()
+            .Include(b => b.Authors)
+            .ToListAsync(cancellationToken);
     }
 
     public async Task<Book?> GetBookByIdAsync(Guid id, CancellationToken cancellationToken = default) => 
@@ -58,10 +61,37 @@ public class BookService : IBookService
             .FirstOrDefaultAsync(book => book.ISBN == iSBN, cancellationToken);
     }
 
-    public async Task GiveBookToUserAsync(Guid bookId, Guid userId, CancellationToken cancellationToken = default)
+    public async Task TakeBookAsync(Guid bookId, Guid userId, CancellationToken cancellationToken = default)
     {
+        var book = await _unitOfWork.Repository<Book>().GetByIdAsync(bookId, cancellationToken) 
+            ?? throw new Exception("Book not found.");
+
+        if (book.Count <= 0)
+            throw new Exception("Book is not available.");
+
         var userBook = new UserBook(userId, bookId);
         _unitOfWork.Repository<UserBook>().Create(userBook);
+
+        book.Count--;
+
+        _unitOfWork.Repository<Book>().Update(book);
+        await _unitOfWork.CompleteAsync(cancellationToken);
+    }
+
+    public async Task ReturnBookAsync(Guid bookId, Guid userId, CancellationToken cancellationToken = default)
+    {
+        var userBook = await _unitOfWork.Repository<UserBook>().GetAll()
+           .FirstOrDefaultAsync(ub => ub.UserId == userId && ub.BookId == bookId, cancellationToken);
+
+        if (userBook == null || userBook.Status != UserBookStatus.Taken)
+            throw new Exception("No active borrow record found.");
+
+        userBook.Status = UserBookStatus.Returned;
+        var book = await _unitOfWork.Repository<Book>().GetByIdAsync(bookId);
+        book.Count++;
+
+        _unitOfWork.Repository<Book>().Update(book);
+        _unitOfWork.Repository<UserBook>().Update(userBook);
         await _unitOfWork.CompleteAsync(cancellationToken);
     }
 

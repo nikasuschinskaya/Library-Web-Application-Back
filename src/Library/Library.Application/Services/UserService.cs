@@ -1,12 +1,9 @@
-﻿using Library.Application.Interfaces;
-using Library.Application.Services.Base;
+﻿using Library.Application.Interfaces.Common;
+using Library.Application.Interfaces.Services;
 using Library.Domain.Entities;
+using Library.Domain.Enums;
+using Library.Domain.Exceptions;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Library.Application.Services;
 
@@ -16,25 +13,32 @@ public class UserService : IUserService
 
     public UserService(IUnitOfWork unitOfWork) => _unitOfWork = unitOfWork;
 
-
-    public Task<IEnumerable<User>> GetAllUsersAsync(CancellationToken cancellationToken = default)
-    {
-        throw new NotImplementedException();
-    }
+    public async Task<IEnumerable<User>> GetAllUsersAsync(CancellationToken cancellationToken = default) =>
+        await _unitOfWork.Repository<User>().GetAll().ToListAsync(cancellationToken);
 
     public async Task<User?> GetByEmailAsync(string email, CancellationToken cancellationToken = default)
     {
         return await _unitOfWork.Repository<User>().GetAll()
+            .Include(u => u.UserBooks)
             .FirstOrDefaultAsync(user => user.Email == email, cancellationToken);
     }
 
-    public Task NotifyUserAboutBookExpirationAsync(Guid userId, Guid bookId, CancellationToken cancellationToken)
+    public async Task<User?> GetUserByIdAsync(Guid id, CancellationToken cancellationToken = default)
     {
-        throw new NotImplementedException();
+        return await _unitOfWork.Repository<User>().GetAll()
+            .Where(user => user.Id == id)
+            .Include(u => u.UserBooks)
+            .FirstOrDefaultAsync(cancellationToken);
     }
 
-    public Task Update(User user, CancellationToken cancellationToken = default)
+    //public async Task NotifyUserAboutBookExpirationAsync(Guid userId, Guid bookId, CancellationToken cancellationToken)
+    //{
+
+    //}
+
+    public async Task Update(User user, CancellationToken cancellationToken = default)
     {
-        throw new NotImplementedException();
+        _unitOfWork.Repository<User>().Update(user);
+        await _unitOfWork.CompleteAsync(cancellationToken);
     }
 }

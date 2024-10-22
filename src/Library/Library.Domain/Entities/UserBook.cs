@@ -14,7 +14,7 @@ public class UserBook : BaseEntity
     public DateTime DateTaken { get; set; }
     public DateTime ReturnDate { get; set; }
 
-    public BookStatus Status { get; set; }
+    public UserBookStatus Status { get; set; }
 
     public UserBook() { }
 
@@ -25,14 +25,6 @@ public class UserBook : BaseEntity
 
         ReturnDate = DateTime.UtcNow.AddDays(10);
         DateTaken = DateTime.UtcNow;
-        Status = BookStatus.Taken;
-    }
-
-    public void ReturnBook()
-    {
-        if (Status != BookStatus.Returned)
-        {
-            Status = BookStatus.Returned;
-        }
+        Status = UserBookStatus.Taken;
     }
 }

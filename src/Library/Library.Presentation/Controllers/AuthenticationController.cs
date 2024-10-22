@@ -1,7 +1,10 @@
-﻿using Library.Application.Services.Base;
+﻿using AutoMapper;
+using Library.Application.Interfaces.Services;
+using Library.Domain.Entities;
 using Library.Presentation.Requests;
 using Library.Presentation.Responses;
 using Microsoft.AspNetCore.Mvc;
+using System.Net;
 
 namespace Library.Presentation.Controllers;
 
@@ -10,63 +13,44 @@ namespace Library.Presentation.Controllers;
 public class AuthenticationController : ControllerBase
 {
     private readonly IAuthService _authService;
+    private readonly IMapper _mapper;
 
-    public AuthenticationController(IAuthService authService)
+    public AuthenticationController(IAuthService authService, IMapper mapper)
     {
         _authService = authService;
+        _mapper = mapper;
     }
 
-    [HttpPost("refresh-token")]
-    public async Task<IActionResult> RefreshToken([FromBody] string refreshToken, CancellationToken cancellationToken)
+
+    [HttpPost("register")]
+    [ProducesResponseType(typeof(AuthTokensResponse), (int)HttpStatusCode.OK)]
+    [ProducesResponseType((int)HttpStatusCode.BadRequest)]
+    public async Task<IActionResult> Register([FromBody] RegisterRequest request, CancellationToken cancellationToken)
     {
-        try
-        {
-            var tokenResponse = await _authService.RefreshAccessTokenAsync(refreshToken, cancellationToken);
-            return Ok(tokenResponse);
-        }
-        catch (Exception ex)
-        {
-            return BadRequest(new { message = ex.Message });
-        }
+        var authTokens = await _authService.RegisterAsync(request.Name, request.Email, request.Password, cancellationToken);
+        var response = _mapper.Map<AuthTokens, AuthTokensResponse>(authTokens);
+        return authTokens is not null ? Ok(response) : BadRequest();
+    }
+
+
+    [HttpPost("login")]
+    [ProducesResponseType(typeof(AuthTokensResponse), (int)HttpStatusCode.OK)]
+    [ProducesResponseType((int)HttpStatusCode.Unauthorized)]
+    public async Task<IActionResult> Login([FromBody] LoginRequest request, CancellationToken cancellationToken)
+    {
+        var authTokens = await _authService.LoginAsync(request.Email, request.Password, cancellationToken);
+        var response = _mapper.Map<AuthTokens, AuthTokensResponse>(authTokens);
+        return authTokens is not null ? Ok(response) : Unauthorized();
+    }
+
+
+    [HttpPost("refresh-access-token")]
+    [ProducesResponseType(typeof(AuthTokensResponse), (int)HttpStatusCode.OK)]
+    [ProducesResponseType((int)HttpStatusCode.BadRequest)]
+    public async Task<IActionResult> RefreshToken([FromBody] AuthTokensRequest request, CancellationToken cancellationToken)
+    {
+        var authTokens = await _authService.RefreshAccessTokenAsync(request.AccessToken, request.RefreshToken, cancellationToken);
+        var response = _mapper.Map<AuthTokens, AuthTokensResponse>(authTokens);
+        return authTokens is not null ? Ok(response) : BadRequest();
     }
 }
-
-
-
-//    [HttpPost("register")]
-//    public IActionResult Register(RegisterRequest request)
-//    {
-//        var authResult = _authenticationService.RegisterAsync(
-//            request.Username,
-//            request.Email,
-//            request.Password);
-
-//        var response = new AuthenticationResponse(
-//            authResult.Result.Id,
-//            authResult.Result.Username,
-//            authResult.Result.Email,
-//            authResult.Result.Password,
-//            authResult.Result.Token
-//            );
-
-//        return Ok(response);
-//    }
-
-//    [HttpPost("login")]
-//    public IActionResult Login(LoginRequest request)
-//    {
-//        var authResult = _authenticationService.LoginAsync(
-//            request.Email,
-//            request.Password);
-
-//        var response = new AuthenticationResponse(
-//            authResult.Result.Id,
-//            authResult.Result.Username,
-//            authResult.Result.Email,
-//            authResult.Result.Password,
-//            authResult.Result.Token
-//            );
-
-//        return Ok(response);
-//    }
-//}

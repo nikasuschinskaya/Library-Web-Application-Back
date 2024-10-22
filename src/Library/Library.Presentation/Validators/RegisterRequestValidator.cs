@@ -7,7 +7,7 @@ public class RegisterRequestValidator : AbstractValidator<RegisterRequest>
 {
     public RegisterRequestValidator()
     {
-        RuleFor(x => x.Username)
+        RuleFor(x => x.Name)
            .NotEmpty().WithMessage("Username is required.")
            .Length(2, 50).WithMessage("Username must be between 2 and 50 characters.");
 

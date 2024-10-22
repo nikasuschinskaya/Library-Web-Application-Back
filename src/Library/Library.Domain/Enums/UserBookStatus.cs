@@ -1,6 +1,6 @@
 ﻿namespace Library.Domain.Enums;
 
-public enum BookStatus : byte
+public enum UserBookStatus : byte
 {
     Taken,
     Returned

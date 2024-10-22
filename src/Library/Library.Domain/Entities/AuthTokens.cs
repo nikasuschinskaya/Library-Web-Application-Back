@@ -1,14 +1,13 @@
-﻿namespace Library.Application.Models;
+﻿namespace Library.Domain.Entities;
 
-public class TokenResponse
+public class AuthTokens
 {
     public string AccessToken { get; }
     public string RefreshToken { get; }
 
-    public TokenResponse(string accessToken, string refreshToken)
+    public AuthTokens(string accessToken, string refreshToken)
     {
         AccessToken = accessToken;
         RefreshToken = refreshToken;
     }
 }
-

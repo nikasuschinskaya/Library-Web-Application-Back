@@ -1,7 +1,7 @@
 ﻿using Library.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace Library.Application.Interfaces;
+namespace Library.Application.Interfaces.Common;
 
 public interface ILibraryDbContext
 {

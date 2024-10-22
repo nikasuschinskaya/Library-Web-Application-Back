@@ -1,5 +1,5 @@
-﻿using Library.Application.Interfaces;
-using Library.Application.Services.Base;
+﻿using Library.Application.Interfaces.Common;
+using Library.Application.Interfaces.Services;
 using Library.Domain.Entities;
 using Library.Domain.Exceptions;
 using Microsoft.EntityFrameworkCore;

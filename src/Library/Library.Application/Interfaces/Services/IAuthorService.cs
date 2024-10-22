@@ -1,6 +1,6 @@
 ﻿using Library.Domain.Entities;
 
-namespace Library.Application.Services.Base;
+namespace Library.Application.Interfaces.Services;
 
 public interface IAuthorService
 {
