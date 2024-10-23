@@ -1,8 +1,6 @@
 ﻿using Library.Application.Interfaces.Common;
 using Library.Application.Interfaces.Services;
 using Library.Domain.Entities;
-using Library.Domain.Enums;
-using Library.Domain.Exceptions;
 using Microsoft.EntityFrameworkCore;
 
 namespace Library.Application.Services;
@@ -30,11 +28,6 @@ public class UserService : IUserService
             .Include(u => u.UserBooks)
             .FirstOrDefaultAsync(cancellationToken);
     }
-
-    //public async Task NotifyUserAboutBookExpirationAsync(Guid userId, Guid bookId, CancellationToken cancellationToken)
-    //{
-
-    //}
 
     public async Task Update(User user, CancellationToken cancellationToken = default)
     {

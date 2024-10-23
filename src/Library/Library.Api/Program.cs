@@ -39,7 +39,7 @@ var app = builder.Build();
 
     app.UseCors();
 
-    app.UseStaticFiles();
+    //app.UseStaticFiles();
 
     app.UseRouting();
 

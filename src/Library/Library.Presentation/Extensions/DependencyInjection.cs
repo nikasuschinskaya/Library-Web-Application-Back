@@ -18,8 +18,9 @@ public static class DependencyInjection
     public static IServiceCollection InjectValidators(this IServiceCollection services)
     {
         services.AddFluentValidationAutoValidation();
-        services.AddValidatorsFromAssemblyContaining<LoginRequestValidator>();
-        services.AddValidatorsFromAssemblyContaining<RegisterRequestValidator>();
+        services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
+        //services.AddValidatorsFromAssemblyContaining<LoginRequestValidator>();
+        //services.AddValidatorsFromAssemblyContaining<RegisterRequestValidator>();
 
         return services;
     }

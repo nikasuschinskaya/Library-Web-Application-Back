@@ -1,4 +1,6 @@
 ﻿using Library.Domain.Entities.Base;
+using Library.Domain.Enums;
+using Library.Domain.Enums.Extentions;
 
 namespace Library.Domain.Entities;
 
@@ -11,8 +13,8 @@ public class User : NamedEntity
 
     public User() { }
 
-    public User(string name, string email, string password, Role role)
-    : this(Guid.NewGuid(), name, email, password, role, []) { }
+    public User(string name, string email, string password)
+    : this(Guid.NewGuid(), name, email, password, new Role(Roles.User.StringValue()), []) { }
 
     public User(Guid id, string name, string email, string password, Role role, List<UserBook> userBooks)
     {

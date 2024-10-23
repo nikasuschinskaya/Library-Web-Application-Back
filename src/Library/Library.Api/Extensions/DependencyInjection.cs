@@ -1,4 +1,7 @@
-﻿namespace Library.Api.Extensions;
+﻿using Library.Domain.Enums;
+using Library.Domain.Enums.Extentions;
+
+namespace Library.Api.Extensions;
 
 public static class DependencyInjection
 {
@@ -20,6 +23,9 @@ public static class DependencyInjection
         services.AddAuthorizationBuilder()
             .AddPolicy("Admin", policy => policy.RequireRole("Admin"))
             .AddPolicy("User", policy => policy.RequireRole("User"));
+        //services.AddAuthorizationBuilder()
+        //    .AddPolicy(Roles.Admin.StringValue(), policy => policy.RequireRole(Roles.Admin.StringValue()))
+        //    .AddPolicy(Roles.User.StringValue(), policy => policy.RequireRole(Roles.User.StringValue()));
 
         return services;
     }

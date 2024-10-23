@@ -38,7 +38,7 @@ public class AuthService : IAuthService
 
         if (existingUser != null) throw new Exception("User already exists.");
 
-        var user = new User(name, email, _passwordHasher.HashPassword(password), new Role(nameof(Roles.User)));
+        var user = new User(name, email, _passwordHasher.HashPassword(password));
         _unitOfWork.Repository<User>().Create(user);
         await _unitOfWork.CompleteAsync(cancellationToken);
 
