@@ -33,7 +33,7 @@ public class BookController : ControllerBase
         if (!ModelState.IsValid)
             return BadRequest(ModelState);
 
-        var book = new Book(request.Name, request.ISBN, request.Genre, request.Description, request.Count, request.Authors);
+        var book = new Book(request.Name, request.ISBN, new Genre(request.Genre), request.Description, request.Count, request.Authors);
 
         await _bookService.AddBookAsync(book, cancellationToken);
 
@@ -99,7 +99,7 @@ public class BookController : ControllerBase
     [ProducesResponseType((int)HttpStatusCode.BadRequest)]
     public async Task<IActionResult> GetAllBooksOnPage(int pageNumber, CancellationToken cancellationToken = default)
     {
-        const int pageSize = 10;
+        const int pageSize = 9;
 
         var pagedBooks = await _bookService.GetBooksPagedAsync(pageNumber, pageSize, cancellationToken);
 
@@ -137,11 +137,10 @@ public class BookController : ControllerBase
         return Ok(response);
     }
 
-
     [HttpGet("filter")]
     [ProducesResponseType(typeof(IEnumerable<BookListResponse>), (int)HttpStatusCode.OK)]
     [ProducesResponseType((int)HttpStatusCode.BadRequest)]
-    public async Task<IActionResult> FilterBooks([FromBody] FilterBookRequest request, CancellationToken cancellationToken = default)
+    public async Task<IActionResult> FilterBooks([FromQuery] FilterBookRequest request, CancellationToken cancellationToken = default)
     {
         var books = await _bookService.FilterBooksAsync(request.Genre, request.AuthorName, cancellationToken);
 

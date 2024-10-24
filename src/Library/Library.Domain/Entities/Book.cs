@@ -6,7 +6,10 @@ namespace Library.Domain.Entities;
 public class Book : NamedEntity
 {
     public string ISBN { get; set; }
-    public string Genre { get; set; }
+
+    public Guid GenreId { get; set; }
+    public virtual Genre Genre { get; set; }
+
     public string Description { get; set; }
     public string? ImageURL { get; set; }
     public int Count { get; set; }
@@ -16,13 +19,13 @@ public class Book : NamedEntity
 
     public Book() { }
 
-    public Book(string name, string iSBN, string genre, string description, int count, List<Author> authors)
+    public Book(string name, string iSBN, Genre genre, string description, int count, List<Author> authors)
        : this(Guid.NewGuid(), name, iSBN, genre, description, string.Empty, count, authors, []) { }
 
     public Book(Guid id,
                 string name,
                 string iSBN,
-                string genre,
+                Genre genre,
                 string description,
                 string? imageURL,
                 int count,

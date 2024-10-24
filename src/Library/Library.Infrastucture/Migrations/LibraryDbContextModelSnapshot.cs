@@ -83,10 +83,8 @@ namespace Library.Infrastucture.Migrations
                         .HasMaxLength(1000)
                         .HasColumnType("nvarchar(1000)");
 
-                    b.Property<string>("Genre")
-                        .IsRequired()
-                        .HasMaxLength(25)
-                        .HasColumnType("nvarchar(25)");
+                    b.Property<Guid>("GenreId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("ISBN")
                         .IsRequired()
@@ -103,7 +101,25 @@ namespace Library.Infrastucture.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("GenreId");
+
                     b.ToTable("Books");
+                });
+
+            modelBuilder.Entity("Library.Domain.Entities.Genre", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(25)
+                        .HasColumnType("nvarchar(25)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Genres");
                 });
 
             modelBuilder.Entity("Library.Domain.Entities.RefreshToken", b =>
@@ -224,6 +240,17 @@ namespace Library.Infrastucture.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("Library.Domain.Entities.Book", b =>
+                {
+                    b.HasOne("Library.Domain.Entities.Genre", "Genre")
+                        .WithMany("Books")
+                        .HasForeignKey("GenreId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Genre");
+                });
+
             modelBuilder.Entity("Library.Domain.Entities.RefreshToken", b =>
                 {
                     b.HasOne("Library.Domain.Entities.User", "User")
@@ -268,6 +295,11 @@ namespace Library.Infrastucture.Migrations
             modelBuilder.Entity("Library.Domain.Entities.Book", b =>
                 {
                     b.Navigation("UserBooks");
+                });
+
+            modelBuilder.Entity("Library.Domain.Entities.Genre", b =>
+                {
+                    b.Navigation("Books");
                 });
 
             modelBuilder.Entity("Library.Domain.Entities.Role", b =>

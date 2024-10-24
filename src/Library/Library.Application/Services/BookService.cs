@@ -73,17 +73,25 @@ public class BookService : IBookService
 
     public async Task<IEnumerable<Book>> FilterBooksAsync(string? genre, string? authorName, CancellationToken cancellationToken = default)
     {
-        var query = _unitOfWork.Repository<Book>().GetAll().Include(b => b.Authors).AsQueryable();
+        var query = _unitOfWork.Repository<Book>().GetAll()
+            .Include(b => b.Genre)
+            .Include(b => b.Authors)
+            .AsQueryable();
 
         if (!string.IsNullOrWhiteSpace(genre))
-            query = query.Where(book => book.Genre.Equals(genre, StringComparison.OrdinalIgnoreCase));
+        {
+            string genreLower = genre.ToLower();  
+            query = query.Where(book => book.Genre.Name.ToLower().Equals(genreLower));
+        }
 
         if (!string.IsNullOrWhiteSpace(authorName))
-            query = query.Where(book => book.Authors.Any(a => a.Name.Contains(authorName)));
+        {
+            string authorNameLower = authorName.ToLower();  
+            query = query.Where(book => book.Authors.Any(a => a.Surname.ToLower().Contains(authorNameLower)));
+        }
 
         return await query.ToListAsync(cancellationToken);
     }
-
 
     public async Task<Book?> GetBookByIdAsync(Guid id, CancellationToken cancellationToken = default) => 
         await _unitOfWork.Repository<Book>().GetByIdAsync(id, cancellationToken);
