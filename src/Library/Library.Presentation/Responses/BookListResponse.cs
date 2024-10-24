@@ -3,8 +3,9 @@
 namespace Library.Presentation.Responses;
 
 public record class BookListResponse(
-    Guid Id,
+    //Guid Id,
     string Name,
+    string ISBN,
     string Genre,
     string? ImageURL,
     string BookStockStatus,

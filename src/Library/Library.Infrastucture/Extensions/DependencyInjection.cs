@@ -40,19 +40,19 @@ public static class DependencyInjection
     public static IServiceCollection InjectDbContextInitializers(this IServiceCollection services)
     {
         services.AddSingleton<IInitializer<Role>, RoleInitializer>();
-        services.AddSingleton<IInitializer<Author>, AuthorInitializer>();
-        services.AddSingleton<IInitializer<Book>, BookInitializer>();
+        //services.AddSingleton<IInitializer<Author>, AuthorInitializer>();
+        //services.AddSingleton<IInitializer<Book>, BookInitializer>();
 
 
         services.AddScoped<DbContextInitializer>((provider) =>
         {
             var roleInitializer = provider.GetRequiredService<IInitializer<Role>>();
-            var authorInitializer = provider.GetRequiredService<IInitializer<Author>>();
-            var bookInitializer = provider.GetRequiredService<IInitializer<Book>>();
+            //var authorInitializer = provider.GetRequiredService<IInitializer<Author>>();
+            //var bookInitializer = provider.GetRequiredService<IInitializer<Book>>();
             var unitOfWork = provider.GetRequiredService<IUnitOfWork>();
-            var initializer = new DbContextInitializer(unitOfWork, roleInitializer, authorInitializer, bookInitializer);
+            var initializer = new DbContextInitializer(unitOfWork, roleInitializer/*, authorInitializer, bookInitializer*/);
 
-            initializer.InitializeAsync();
+            initializer.Initialize();
             return initializer;
         });
 

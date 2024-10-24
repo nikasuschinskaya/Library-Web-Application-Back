@@ -11,7 +11,7 @@ public class AuthorInitializer : BaseInitializer<Author>
         new Author("Лев", "Толстой", new DateTime(1828, 9, 9), "Россия"),
         new Author("Стивен", "Кинг", new DateTime(1947, 9, 21), "США"),
         new Author("Рэй", "Брэдбери", new DateTime(1920, 8, 22), "США"),
-        new Author("Михаил", "Булкагов", new DateTime(1891, 3, 15), "Россия")
+        new Author("Михаил", "Булгаков", new DateTime(1891, 3, 15), "Россия")
     ])
     {
     }

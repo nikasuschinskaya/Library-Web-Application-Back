@@ -16,6 +16,7 @@ public class MapperProfile : Profile
             .ForMember(dest => dest.BookStockStatus, opt => opt.MapFrom(src => src.BookStockStatus.StringValue()));
         CreateMap<Book, BookResponse>()
             .ForMember(dest => dest.BookStockStatus, opt => opt.MapFrom(src => src.BookStockStatus.StringValue()));
+
         CreateMap<Author, AuthorResponse>();
     }
 }

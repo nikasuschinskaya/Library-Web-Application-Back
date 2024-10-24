@@ -4,10 +4,13 @@ using Library.Application.Extensions;
 using Library.Infrastucture.Data.Initializers;
 using Library.Infrastucture.Extensions;
 using Library.Presentation.Extensions;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 {
-    builder.Services.AddControllers();
+    builder.Services.AddControllers()
+         .AddJsonOptions(x => x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
+
     builder.Services.AddEndpointsApiExplorer();
     builder.Services.AddSwaggerGen();
 
@@ -21,7 +24,8 @@ var builder = WebApplication.CreateBuilder(args);
         .InjectValidators()
         .InjectAutoMapper()
         .AddCorsPolicy()
-        .AddPolicyBasedAuthorization();
+        //.AddPolicyBasedAuthorization()
+        ;
 }
 
 var app = builder.Build();
@@ -41,11 +45,11 @@ var app = builder.Build();
 
     //app.UseStaticFiles();
 
-    app.UseRouting();
-
-    app.UseAuthentication();
+    //app.UseRouting();
 
     app.UseHttpsRedirection();
+
+    app.UseAuthentication();
 
     app.UseAuthorization();
 

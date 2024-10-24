@@ -112,7 +112,7 @@ public class BookController : ControllerBase
     }
 
 
-    [HttpGet("book-info/{ISBN:string}")]
+    [HttpGet("book-info/{ISBN}")]
     [ProducesResponseType(typeof(BookResponse), (int)HttpStatusCode.OK)]
     [ProducesResponseType((int)HttpStatusCode.BadRequest)]
     public async Task<IActionResult> GetBookInfo(string ISBN, CancellationToken cancellationToken = default)
@@ -123,7 +123,7 @@ public class BookController : ControllerBase
     }
 
 
-    [HttpGet("search/{title:string}")]
+    [HttpGet("search/{title}")]
     [ProducesResponseType(typeof(IEnumerable<BookListResponse>), (int)HttpStatusCode.OK)]
     [ProducesResponseType((int)HttpStatusCode.BadRequest)]
     public async Task<IActionResult> SearchBooksByTitle(string title, CancellationToken cancellationToken = default)

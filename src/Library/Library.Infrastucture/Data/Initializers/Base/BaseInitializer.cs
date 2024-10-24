@@ -11,37 +11,20 @@ public class BaseInitializer<T> : IInitializer<T> where T : BaseEntity
     public BaseInitializer(IEnumerable<T> initialEntities) =>
         Entities = initialEntities;
 
-
-    public async Task InitializeAsync(IUnitOfWork unitOfWork)
+    public void Initialize(IUnitOfWork unitOfWork)
     {
         var repository = unitOfWork.Repository<T>();
 
-        var entitiesExist = (await repository.GetAll().ToListAsync()).Any(); 
+        var entitiesExist = repository.GetAll().Any();
 
         if (!entitiesExist)
         {
             foreach (var entity in Entities)
             {
-                repository.Create(entity); 
+                repository.Create(entity);
             }
 
-            await unitOfWork.CompleteAsync(); 
+            unitOfWork.CompleteAsync();
         }
     }
-    //public void Initialize(IUnitOfWork unitOfWork)
-    //{
-    //    var repository = unitOfWork.Repository<T>();
-
-    //    var entitiesExist = repository.GetAll().Any(); 
-
-    //    if (!entitiesExist)
-    //    {
-    //        foreach (var entity in Entities)
-    //        {
-    //            repository.Create(entity);
-    //        }
-
-    //        unitOfWork.CompleteAsync();
-    //    }
-    //}
 }
