@@ -9,23 +9,8 @@ using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 {
-    //builder.Services.AddControllers()
-    //     .AddJsonOptions(x => x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
     builder.Services.AddControllers()
-    .AddJsonOptions(options =>
-    {
-        options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
-        //options.JsonSerializerOptions.MaxDepth = 5;
-    });
-
-    //builder.Services.AddControllers()
-    //.AddJsonOptions(options =>
-    //{
-    //    options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve;
-    //    options.JsonSerializerOptions.MaxDepth = 15; // Увеличиваем максимальную глубину
-    //});
-
-
+         .AddJsonOptions(x => x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
 
     builder.Services.AddEndpointsApiExplorer();
     builder.Services.AddSwaggerGen();

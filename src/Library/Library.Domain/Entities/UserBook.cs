@@ -12,7 +12,7 @@ public class UserBook : BaseEntity
 {
     public Guid UserId { get; set; }
 
-    [JsonIgnore]
+    //[JsonIgnore]
     public virtual User User { get; set; }
 
     public Guid BookId { get; set; }
