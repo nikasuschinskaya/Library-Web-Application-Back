@@ -12,7 +12,7 @@ public interface IBookService
     Task<Book?> GetBookByIdAsync(Guid id, CancellationToken cancellationToken = default);
     Task<Book?> GetBookByISBNAsync(string iSBN, CancellationToken cancellationToken = default);
     Task AddBookAsync(Book book, CancellationToken cancellationToken = default);
-    Task UpdateBookAsync(Book book, CancellationToken cancellationToken = default);
+    Task UpdateBookAsync(Guid id, Book updatedBook, CancellationToken cancellationToken = default);
     Task DeleteBookAsync(Guid id, CancellationToken cancellationToken = default);
     Task TakeBookAsync(Guid bookId, Guid userId, CancellationToken cancellationToken = default);
     Task ReturnBookAsync(Guid bookId, Guid userId, CancellationToken cancellationToken = default);

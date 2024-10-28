@@ -38,7 +38,7 @@ public class GlobalExceptionHandlingMiddleware(RequestDelegate next)
         var response = httpContext.Response;
 
         response.ContentType = "application/json";
-        response.StatusCode = (int)statusCode;
+        //response.StatusCode = (int)statusCode;
 
         var error = new
         {

@@ -3,7 +3,8 @@
 namespace Library.Presentation.Responses;
 
 public record class UserResponse(
+    Guid Id,
     string Name,
     string Email,
-    string Role,
+    Role Role,
     IReadOnlyCollection<UserBook> UserBooks);

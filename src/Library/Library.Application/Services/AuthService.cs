@@ -24,14 +24,6 @@ public class AuthService : IAuthService
         _passwordHasher = passwordHasher;
     }
 
-
-    // с jwt токена доставать роль и проверять кажде действие
-    // Каждый запрос проверять токен, если он жив, то пользователь активен + при каждом запросе доставать кто это и какие у него права 
-    // Генерить токены при регистрации и возвращать только токен на реакт при авторизации и достем из него данные на юзере
-    // При каждом запросе от ползвателя смотреть кто это
-    // Любой мой запрос возвращает новый access токен,
-    // заново входить, когда 15 мин прошло (ошибка) Forbidden 403
-
     public async Task<AuthTokens> RegisterAsync(string name, string email, string password, CancellationToken cancellationToken = default)
     {
         var existingUser = await _userService.GetByEmailAsync(email, cancellationToken);
@@ -59,7 +51,7 @@ public class AuthService : IAuthService
     public async Task<AuthTokens> LoginAsync(string email, string password, CancellationToken cancellationToken = default)
     {
         var user = await _userService.GetByEmailAsync(email, cancellationToken);
-        if (user == null || _passwordHasher.VerifyPassword(user.Password, password) == false)
+        if (user == null || _passwordHasher.VerifyPassword(password, user.Password) == false)
         {
             throw new Exception("Invalid credentials.");
         }

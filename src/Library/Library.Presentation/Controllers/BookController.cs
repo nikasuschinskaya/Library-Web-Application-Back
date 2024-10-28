@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Library.Application.Interfaces.Services;
 using Library.Application.Models;
+using Library.Application.Services;
 using Library.Domain.Entities;
 using Library.Presentation.Requests;
 using Library.Presentation.Responses;
@@ -27,13 +28,13 @@ public class BookController : ControllerBase
     [HttpPost("add")]
     [ProducesResponseType((int)HttpStatusCode.Created)]
     [ProducesResponseType((int)HttpStatusCode.BadRequest)]
-    [Authorize(Roles = "Admin")]
+    //[Authorize(Roles = "Admin")]
     public async Task<IActionResult> AddBook([FromBody] BookRequest request, CancellationToken cancellationToken = default)
     {
         if (!ModelState.IsValid)
             return BadRequest(ModelState);
 
-        var book = new Book(request.Name, request.ISBN, new Genre(request.Genre), request.Description, request.Count, request.Authors);
+        var book = _mapper.Map<Book>(request);
 
         await _bookService.AddBookAsync(book, cancellationToken);
 
@@ -44,19 +45,15 @@ public class BookController : ControllerBase
     [HttpPut("update/{id:guid}")]
     [ProducesResponseType((int)HttpStatusCode.NoContent)]
     [ProducesResponseType((int)HttpStatusCode.BadRequest)]
-    [Authorize(Roles = "Admin")]
+    //[Authorize(Roles = "Admin")]
     public async Task<IActionResult> UpdateBook(Guid id, [FromBody] BookRequest request, CancellationToken cancellationToken = default)
     {
         if (!ModelState.IsValid)
             return BadRequest(ModelState);
 
-        var existingBook = await _bookService.GetBookByIdAsync(id, cancellationToken);
-        if (existingBook == null)
-            return BadRequest("Book not found.");
+        var updatedBook = _mapper.Map<Book>(request);
 
-        var updatedBook = _mapper.Map(request, existingBook);
-
-        await _bookService.UpdateBookAsync(updatedBook, cancellationToken);
+        await _bookService.UpdateBookAsync(id, updatedBook, cancellationToken);
 
         return NoContent();
     }
@@ -65,7 +62,7 @@ public class BookController : ControllerBase
     [HttpDelete("delete/{id:guid}")]
     [ProducesResponseType((int)HttpStatusCode.NoContent)]
     [ProducesResponseType((int)HttpStatusCode.BadRequest)]
-    [Authorize(Roles = "Admin")]
+    //[Authorize(Roles = "Admin")]
     public async Task<IActionResult> DeleteBook(Guid id, CancellationToken cancellationToken = default)
     {
         var book = await _bookService.GetBookByIdAsync(id, cancellationToken);
@@ -82,7 +79,7 @@ public class BookController : ControllerBase
     [HttpPut("add-image/{id:guid}")]
     [ProducesResponseType((int)HttpStatusCode.NoContent)]
     [ProducesResponseType((int)HttpStatusCode.BadRequest)]
-    [Authorize(Roles = "Admin")]
+    //[Authorize(Roles = "Admin")]
     public async Task<IActionResult> AddBookImage(Guid id, [FromBody] string imageUrl, CancellationToken cancellationToken = default)
     {
         if (string.IsNullOrEmpty(imageUrl))
@@ -112,6 +109,20 @@ public class BookController : ControllerBase
     }
 
 
+    [HttpGet("{id:guid}")]
+    [ProducesResponseType(typeof(BookResponse), (int)HttpStatusCode.OK)]
+    [ProducesResponseType((int)HttpStatusCode.NotFound)]
+    public async Task<IActionResult> GetBookById(Guid id, CancellationToken cancellationToken = default)
+    {
+        var book = await _bookService.GetBookByIdAsync(id, cancellationToken);
+        if (book == null)
+            return NotFound("Book not found.");
+
+        var response = _mapper.Map<BookResponse>(book);
+        return Ok(response);
+    }
+
+
     [HttpGet("book-info/{ISBN}")]
     [ProducesResponseType(typeof(BookResponse), (int)HttpStatusCode.OK)]
     [ProducesResponseType((int)HttpStatusCode.BadRequest)]
@@ -130,10 +141,8 @@ public class BookController : ControllerBase
     {
         var books = await _bookService.SearchBooksByTitleAsync(title, cancellationToken);
 
-        if (books == null || !books.Any())
-            return BadRequest("No books found with the given title.");
+        var response = _mapper.Map<IEnumerable<BookListResponse>>(books ?? Enumerable.Empty<Book>());
 
-        var response = _mapper.Map<IEnumerable<BookListResponse>>(books);
         return Ok(response);
     }
 
@@ -144,16 +153,15 @@ public class BookController : ControllerBase
     {
         var books = await _bookService.FilterBooksAsync(request.Genre, request.AuthorName, cancellationToken);
 
-        if (books == null || !books.Any())
-            return BadRequest("No books found matching the criteria.");
+        var response = _mapper.Map<IEnumerable<BookListResponse>>(books ?? Enumerable.Empty<Book>());
 
-        var response = _mapper.Map<IEnumerable<BookListResponse>>(books);
         return Ok(response);
     }
 
 
     [HttpPut("return-book")]
     [ProducesResponseType((int)HttpStatusCode.NoContent)]
+    //[Authorize(Roles = "User")]
     public async Task<IActionResult> ReturnBook([FromBody] UserBookRequest request, CancellationToken cancellationToken = default)
     {
         await _bookService.ReturnBookAsync(request.BookId, request.UsedId, cancellationToken);
@@ -163,6 +171,7 @@ public class BookController : ControllerBase
 
     [HttpPut("take-book")]
     [ProducesResponseType((int)HttpStatusCode.NoContent)]
+    //[Authorize(Roles = "User")]
     public async Task<IActionResult> TakeBook([FromBody] UserBookRequest request, CancellationToken cancellationToken = default)
     {
         await _bookService.TakeBookAsync(request.BookId, request.UsedId, cancellationToken);

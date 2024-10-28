@@ -23,8 +23,20 @@ public class BookService : IBookService
 
         if (existingBook) throw new EntityDublicateException();
 
+
+        var authors = new List<Author>(book.Authors);
+        book.Authors.Clear();
         _unitOfWork.Repository<Book>().Create(book);
+
         await _unitOfWork.CompleteAsync(cancellationToken);
+
+        foreach (var author in authors)
+        {
+            var exAuthor = await _unitOfWork.Repository<Author>().GetByIdAsync(author.Id, cancellationToken);
+            var exBook = await _unitOfWork.Repository<Book>().GetByIdAsync(book.Id, cancellationToken);
+            exAuthor.Books.Add(exBook);
+            await _unitOfWork.CompleteAsync();
+        }
     }
 
     public async Task AddBookImageAsync(Guid id, string imageURL, CancellationToken cancellationToken = default)
@@ -136,9 +148,19 @@ public class BookService : IBookService
         await _unitOfWork.CompleteAsync(cancellationToken);
     }
 
-    public async Task UpdateBookAsync(Book book, CancellationToken cancellationToken = default)
+    public async Task UpdateBookAsync(Guid id, Book updatedBook, CancellationToken cancellationToken = default)
     {
-        _unitOfWork.Repository<Book>().Update(book);
+        var existingBook = await _unitOfWork.Repository<Book>().GetByIdAsync(id, cancellationToken)
+            ?? throw new EntityNotFoundException(id);
+
+        existingBook.Name = updatedBook.Name;
+        existingBook.ISBN = updatedBook.ISBN;
+        existingBook.GenreId = updatedBook.GenreId;
+        existingBook.Description = updatedBook.Description;
+        existingBook.Count = updatedBook.Count;
+        existingBook.Authors = updatedBook.Authors;
+
+        //_unitOfWork.Repository<Book>().Update(book);
         await _unitOfWork.CompleteAsync(cancellationToken);
     }
 }

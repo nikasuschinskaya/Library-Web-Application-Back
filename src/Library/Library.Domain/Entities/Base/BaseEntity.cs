@@ -2,5 +2,5 @@
 
 public class BaseEntity : IEntity
 {
-    public Guid Id { get; init; }
+    public Guid Id { get; init; } = Guid.NewGuid();
 }

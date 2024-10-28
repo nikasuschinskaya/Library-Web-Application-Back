@@ -18,6 +18,7 @@ public class UserService : IUserService
     {
         return await _unitOfWork.Repository<User>().GetAll()
             .Include(u => u.UserBooks)
+            .Include(r => r.Role)
             .FirstOrDefaultAsync(user => user.Email == email, cancellationToken);
     }
 
@@ -26,6 +27,7 @@ public class UserService : IUserService
         return await _unitOfWork.Repository<User>().GetAll()
             .Where(user => user.Id == id)
             .Include(u => u.UserBooks)
+            .Include(r => r.Role)
             .FirstOrDefaultAsync(cancellationToken);
     }
 

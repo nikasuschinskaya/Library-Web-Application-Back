@@ -20,15 +20,13 @@ public class BookRequestValidator : AbstractValidator<BookRequest>
             .NotEmpty().WithMessage("Description is required.")
             .MaximumLength(1000).WithMessage("Description can't be longer than 1000 characters.");
 
-        RuleFor(book => book.Genre)
-            .NotEmpty().WithMessage("Genre is required.")
-            .MaximumLength(100).WithMessage("Genre can't be longer than 100 characters.");
+        RuleFor(book => book.GenreId)
+            .NotEmpty().WithMessage("GenreId is required.");
 
         RuleFor(book => book.Count)
             .GreaterThan(0).WithMessage("Count must be greater than zero.");
 
         RuleFor(book => book.Authors)
-            .NotEmpty().WithMessage("At least one author is required.")
-            .Must(authors => authors.All(a => a.Id != Guid.Empty)).WithMessage("Each author must have a valid Id.");
+            .NotEmpty().WithMessage("At least one author is required.");
     }
 }

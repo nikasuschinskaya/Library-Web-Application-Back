@@ -1,5 +1,6 @@
 ﻿using Library.Domain.Entities.Base;
 using Library.Domain.Enums;
+using System.Text.Json.Serialization;
 
 namespace Library.Domain.Entities;
 
@@ -14,6 +15,8 @@ public class Book : NamedEntity
     public string? ImageURL { get; set; }
     public int Count { get; set; }
     public virtual List<Author> Authors { get; set; }
+
+    [JsonIgnore]
     public virtual List<UserBook> UserBooks { get; set; } = [];
     public BookStockStatus BookStockStatus => Count > 0 ? BookStockStatus.InStock : BookStockStatus.NotInStock;
 

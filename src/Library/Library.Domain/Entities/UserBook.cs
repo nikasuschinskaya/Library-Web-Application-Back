@@ -3,6 +3,10 @@ using Library.Domain.Enums;
 
 namespace Library.Domain.Entities;
 
+/// <summary>
+/// The book taken by user
+/// </summary>
+/// <seealso cref="Library.Domain.Entities.Base.BaseEntity" />
 public class UserBook : BaseEntity
 {
     public Guid UserId { get; set; }

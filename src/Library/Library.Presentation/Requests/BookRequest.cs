@@ -6,6 +6,6 @@ public record class BookRequest(
     string Name,
     string ISBN,
     string Description,
-    string Genre,
+    Guid GenreId,
     int Count,
-    List<Author> Authors);
+    IEnumerable<AuthorRequest> Authors);
