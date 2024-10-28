@@ -8,6 +8,5 @@ public interface IUserService
     Task<User?> GetUserByIdAsync(Guid id, CancellationToken cancellationToken = default);
     Task<User?> GetByEmailAsync(string email, CancellationToken cancellationToken = default);
     Task Update(User user, CancellationToken cancellationToken = default);
-    //Task ReturnUserBookAsync(Guid userBookId, CancellationToken cancellationToken = default);
     //Task NotifyUserAboutBookExpirationAsync(Guid userId, Guid bookId, CancellationToken cancellationToken);
 }

@@ -62,7 +62,7 @@ public class BookController : ControllerBase
     [HttpDelete("delete/{id:guid}")]
     [ProducesResponseType((int)HttpStatusCode.NoContent)]
     [ProducesResponseType((int)HttpStatusCode.BadRequest)]
-    //[Authorize(Roles = "Admin")]
+    [Authorize(Roles = "Admin")]
     public async Task<IActionResult> DeleteBook(Guid id, CancellationToken cancellationToken = default)
     {
         var book = await _bookService.GetBookByIdAsync(id, cancellationToken);

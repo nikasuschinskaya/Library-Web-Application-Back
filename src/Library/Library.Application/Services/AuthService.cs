@@ -2,6 +2,7 @@
 using Library.Application.Interfaces.Services;
 using Library.Domain.Entities;
 using Library.Domain.Enums;
+using Library.Domain.Exceptions;
 using Microsoft.EntityFrameworkCore;
 
 namespace Library.Application.Services;
@@ -30,7 +31,12 @@ public class AuthService : IAuthService
 
         if (existingUser != null) throw new Exception("User already exists.");
 
-        var user = new User(name, email, _passwordHasher.HashPassword(password));
+        var userRole = await _unitOfWork.Repository<Role>().GetAll()
+            .Where(r => r.Name == nameof(Roles.User))
+            .FirstOrDefaultAsync(cancellationToken)
+            ?? throw new EntityNotFoundException("User role not found");
+
+        var user = new User(name, email, _passwordHasher.HashPassword(password), userRole);
         _unitOfWork.Repository<User>().Create(user);
         await _unitOfWork.CompleteAsync(cancellationToken);
 

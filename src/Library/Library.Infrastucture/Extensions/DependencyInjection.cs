@@ -1,11 +1,12 @@
 ﻿using Library.Application.Interfaces.Common;
+using Library.Application.Interfaces.Services;
+using Library.Application.Services;
 using Library.Domain.Entities;
 using Library.Infrastucture.Data;
 using Library.Infrastucture.Data.Initializers;
 using Library.Infrastucture.IdentityServer;
 using Library.Infrastucture.Repositories;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -39,72 +40,21 @@ public static class DependencyInjection
 
     public static IServiceCollection InjectDbContextInitializers(this IServiceCollection services)
     {
-        services.AddSingleton<IInitializer<Role>, RoleInitializer>();
-        //services.AddSingleton<IInitializer<Author>, AuthorInitializer>();
-        //services.AddSingleton<IInitializer<Book>, BookInitializer>();
-
+        services.AddScoped<IInitializer<Role>, RoleInitializer>();
+        services.AddScoped<IPasswordHasher, PasswordHasher>(); 
+        services.AddScoped<IUnitOfWork, UnitOfWork>();
 
         services.AddScoped<DbContextInitializer>((provider) =>
         {
             var roleInitializer = provider.GetRequiredService<IInitializer<Role>>();
-            //var authorInitializer = provider.GetRequiredService<IInitializer<Author>>();
-            //var bookInitializer = provider.GetRequiredService<IInitializer<Book>>();
+            var passwordHasher = provider.GetRequiredService<IPasswordHasher>();
             var unitOfWork = provider.GetRequiredService<IUnitOfWork>();
-            var initializer = new DbContextInitializer(unitOfWork, roleInitializer/*, authorInitializer, bookInitializer*/);
 
-            initializer.Initialize();
-            return initializer;
+            return new DbContextInitializer(unitOfWork, roleInitializer, passwordHasher);
         });
 
         return services;
     }
-
-    //public static IServiceCollection InjectIdentityServer(this IServiceCollection services, IConfiguration configuration)
-    //{
-    //    services.AddIdentity<User, IdentityRole>()
-    //       .AddEntityFrameworkStores<LibraryDbContext>() 
-    //       .AddDefaultTokenProviders();
-
-    //    services.AddIdentityServer(options =>
-    //    {
-    //        options.Events.RaiseSuccessEvents = true;
-    //        options.Events.RaiseFailureEvents = true;
-    //        options.Events.RaiseErrorEvents = true;
-    //    })
-    //    .AddInMemoryApiScopes(IdentityServerConfig.ApiScopes) 
-    //    .AddInMemoryClients(IdentityServerConfig.Clients)     
-    //    .AddInMemoryIdentityResources(IdentityServerConfig.IdentityResources) 
-    //    .AddAspNetIdentity<User>() 
-    //    .AddDeveloperSigningCredential(); 
-
-     
-    //    var jwtSettings = configuration.GetSection("Jwt");
-    //    var key = Encoding.UTF8.GetBytes(jwtSettings["Key"]);
-    //    services.AddAuthentication(options =>
-    //    {
-    //        options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-    //        options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-    //    })
-    //    .AddJwtBearer(options =>
-    //    {
-    //        options.TokenValidationParameters = new TokenValidationParameters
-    //        {
-    //            ValidateIssuer = true,
-    //            ValidateAudience = true,
-    //            ValidateLifetime = true,
-    //            ValidateIssuerSigningKey = true,
-    //            ValidIssuer = jwtSettings["Issuer"],
-    //            ValidAudience = jwtSettings["Audience"],
-    //            IssuerSigningKey = new SymmetricSecurityKey(key)
-    //        };
-    //    });
-
-      
-    //    services.AddIdentityServer()
-    //        .AddAspNetIdentity<User>(); 
-
-    //    return services;
-    //}
 
     public static IServiceCollection InjectJwtTokens(this IServiceCollection services, IConfiguration configuration)
     {

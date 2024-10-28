@@ -1,9 +1,11 @@
 ﻿using Library.Domain.Entities.Base;
+using System.Text.Json.Serialization;
 
 namespace Library.Domain.Entities;
 
 public class Role : NamedEntity
 {
+    [JsonIgnore]
     public virtual List<User> Users { get; set; }
 
     public Role() { }

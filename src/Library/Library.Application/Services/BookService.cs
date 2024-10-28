@@ -160,7 +160,6 @@ public class BookService : IBookService
         existingBook.Count = updatedBook.Count;
         existingBook.Authors = updatedBook.Authors;
 
-        //_unitOfWork.Repository<Book>().Update(book);
         await _unitOfWork.CompleteAsync(cancellationToken);
     }
 }

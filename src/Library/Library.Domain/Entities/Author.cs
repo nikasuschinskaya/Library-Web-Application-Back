@@ -1,4 +1,5 @@
 ﻿using Library.Domain.Entities.Base;
+using System.Text.Json.Serialization;
 
 namespace Library.Domain.Entities;
 

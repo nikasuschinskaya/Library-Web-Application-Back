@@ -22,8 +22,8 @@ public class Book : NamedEntity
 
     public Book() { }
 
-    public Book(string name, string iSBN, Genre genre, string description, int count, List<Author> authors)
-       : this(Guid.NewGuid(), name, iSBN, genre, description, string.Empty, count, authors, []) { }
+    public Book(string name, string iSBN, Genre genre, string description, int count, List<Author> authors, string? imageURL = null)
+       : this(Guid.NewGuid(), name, iSBN, genre, description, imageURL, count, authors, []) { }
 
     public Book(Guid id,
                 string name,

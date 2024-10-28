@@ -9,8 +9,23 @@ using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 {
+    //builder.Services.AddControllers()
+    //     .AddJsonOptions(x => x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
     builder.Services.AddControllers()
-         .AddJsonOptions(x => x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
+        //options.JsonSerializerOptions.MaxDepth = 5;
+    });
+
+    //builder.Services.AddControllers()
+    //.AddJsonOptions(options =>
+    //{
+    //    options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve;
+    //    options.JsonSerializerOptions.MaxDepth = 15; // Увеличиваем максимальную глубину
+    //});
+
+
 
     builder.Services.AddEndpointsApiExplorer();
     builder.Services.AddSwaggerGen();
@@ -20,19 +35,21 @@ var builder = WebApplication.CreateBuilder(args);
         .InjectRepositories()
         .InjectDbContextInitializers()
         .InjectJwtTokens(builder.Configuration)
-        //.InjectIdentityServer(builder.Configuration)
         .InjectServices()
         .InjectValidators()
         .InjectAutoMapper()
         .AddCorsPolicy()
-        //.AddPolicyBasedAuthorization()
+        .AddPolicyBasedAuthorization()
         ;
 }
 
 var app = builder.Build();
 {
-    using var scope = app.Services.CreateScope();
-    var initializer = scope.ServiceProvider.GetRequiredService<DbContextInitializer>();
+    using (var scope = app.Services.CreateScope())
+    {
+        var dbInitializer = scope.ServiceProvider.GetRequiredService<DbContextInitializer>();
+        await dbInitializer.InitializeAsync();
+    }
 
     if (app.Environment.IsDevelopment())
     {

@@ -1,6 +1,5 @@
 ﻿using FluentValidation;
 using FluentValidation.AspNetCore;
-using Library.Presentation.Validators;
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
 
@@ -10,7 +9,7 @@ public static class DependencyInjection
 {
     public static IServiceCollection InjectAutoMapper(this IServiceCollection services)
     {
-        services.AddAutoMapper(Assembly.GetExecutingAssembly()); 
+        services.AddAutoMapper(Assembly.GetExecutingAssembly());
 
         return services;
     }
@@ -19,8 +18,6 @@ public static class DependencyInjection
     {
         services.AddFluentValidationAutoValidation();
         services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
-        //services.AddValidatorsFromAssemblyContaining<LoginRequestValidator>();
-        //services.AddValidatorsFromAssemblyContaining<RegisterRequestValidator>();
 
         return services;
     }

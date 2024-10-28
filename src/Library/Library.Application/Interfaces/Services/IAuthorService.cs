@@ -9,5 +9,5 @@ public interface IAuthorService
     Task AddAuthorAsync(Author author, CancellationToken cancellationToken = default);
     Task UpdateAuthorAsync(Author author, CancellationToken cancellationToken = default);
     Task DeleteAuthorAsync(Guid id, CancellationToken cancellationToken = default);
-    Task<IEnumerable<Book>> GetBooksByAuthorAsync(Guid authorId, CancellationToken cancellationToken = default); //под вопросом - тут оставить или в бук
+    Task<IEnumerable<Book>> GetBooksByAuthorAsync(Guid authorId, CancellationToken cancellationToken = default);
 }

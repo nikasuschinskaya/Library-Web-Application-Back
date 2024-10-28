@@ -1,6 +1,8 @@
 ﻿using Library.Application.Interfaces.Common;
 using Library.Domain.Entities.Base;
 using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Library.Infrastucture.Data.Initializers.Base;
 
@@ -11,11 +13,11 @@ public class BaseInitializer<T> : IInitializer<T> where T : BaseEntity
     public BaseInitializer(IEnumerable<T> initialEntities) =>
         Entities = initialEntities;
 
-    public void Initialize(IUnitOfWork unitOfWork)
+    public async Task InitializeAsync(IUnitOfWork unitOfWork)
     {
         var repository = unitOfWork.Repository<T>();
 
-        var entitiesExist = repository.GetAll().Any();
+        var entitiesExist = await repository.GetAll().AnyAsync();
 
         if (!entitiesExist)
         {
@@ -24,7 +26,7 @@ public class BaseInitializer<T> : IInitializer<T> where T : BaseEntity
                 repository.Create(entity);
             }
 
-            unitOfWork.CompleteAsync();
+            await unitOfWork.CompleteAsync();
         }
     }
 }
