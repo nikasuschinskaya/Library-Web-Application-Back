@@ -4,7 +4,6 @@ using Library.Application.Extensions;
 using Library.Infrastucture.Data.Initializers;
 using Library.Infrastucture.Extensions;
 using Library.Presentation.Extensions;
-using System.Text.Json;
 using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -45,10 +44,6 @@ var app = builder.Build();
     app.UseMiddleware<GlobalExceptionHandlingMiddleware>();
 
     app.UseCors();
-
-    //app.UseStaticFiles();
-
-    //app.UseRouting();
 
     app.UseHttpsRedirection();
 
