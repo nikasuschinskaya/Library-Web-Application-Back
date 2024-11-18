@@ -1,9 +1,11 @@
 ﻿using Library.Domain.Entities.Base;
+using System.Text.Json.Serialization;
 
 namespace Library.Domain.Entities;
 
 public class Genre : NamedEntity
 {
+    [JsonIgnore]
     public virtual List<Book> Books { get; set; }
 
     public Genre() { }

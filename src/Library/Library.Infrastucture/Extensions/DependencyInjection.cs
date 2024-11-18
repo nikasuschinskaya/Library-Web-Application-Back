@@ -1,11 +1,13 @@
-﻿using Library.Application.Interfaces.Common;
-using Library.Application.Interfaces.Services;
-using Library.Application.Services;
-using Library.Domain.Entities;
+﻿using Library.Domain.Entities;
+using Library.Domain.Interfaces;
+using Library.Domain.Interfaces.Auth;
+using Library.Domain.Interfaces.Repositories;
+using Library.Infrastucture.Auth;
 using Library.Infrastucture.Data;
 using Library.Infrastucture.Data.Initializers;
 using Library.Infrastucture.IdentityServer;
 using Library.Infrastucture.Repositories;
+using Library.Infrastucture.Repositories.Base;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -33,25 +35,40 @@ public static class DependencyInjection
 
     public static IServiceCollection InjectRepositories(this IServiceCollection services)
     {
-        services.AddScoped(typeof(IRepository<>), typeof(EntityFrameworkRepository<>));
+        //services.AddScoped(typeof(IRepository<>), typeof(EntityFrameworkRepository<>));
+
+        services.AddScoped<IAuthorRepository, AuthorRepository>();
+        services.AddScoped<IBookRepository, BookRepository>();
+        services.AddScoped<IGenreRepository, GenreRepository>();
+        services.AddScoped<IRefreshTokenRepository, RefreshTokenRepository>();
+        services.AddScoped<IRoleRepository, RoleRepository>();
+        services.AddScoped<IUserRepository, UserRepository>();
+        services.AddScoped<IUserBookRepository, UserBookRepository>();
 
         return services;
     }
 
     public static IServiceCollection InjectDbContextInitializers(this IServiceCollection services)
     {
-        services.AddScoped<IInitializer<Role>, RoleInitializer>();
-        services.AddScoped<IPasswordHasher, PasswordHasher>(); 
+        services.AddScoped<IPasswordHasher, PasswordHasher>();
         services.AddScoped<IUnitOfWork, UnitOfWork>();
 
         services.AddScoped<DbContextInitializer>((provider) =>
         {
-            var roleInitializer = provider.GetRequiredService<IInitializer<Role>>();
             var passwordHasher = provider.GetRequiredService<IPasswordHasher>();
             var unitOfWork = provider.GetRequiredService<IUnitOfWork>();
 
-            return new DbContextInitializer(unitOfWork, roleInitializer, passwordHasher);
+            return new DbContextInitializer(unitOfWork, passwordHasher);
         });
+
+        return services;
+    }
+
+    public static IServiceCollection InjectAuthServices(this IServiceCollection services) 
+    {
+        services.AddScoped<IJwtTokenService, JwtTokenService>();
+        services.AddScoped<IPasswordHasher, PasswordHasher>();
+        services.AddScoped<IAuthService, AuthService>();
 
         return services;
     }

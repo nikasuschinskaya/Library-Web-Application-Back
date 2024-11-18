@@ -1,5 +1,6 @@
 ﻿using FluentValidation;
 using FluentValidation.AspNetCore;
+using Library.Application.Extensions;
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
 
@@ -9,6 +10,8 @@ public static class DependencyInjection
 {
     public static IServiceCollection InjectAutoMapper(this IServiceCollection services)
     {
+        services.InjectApplicationMapper();
+
         services.AddAutoMapper(Assembly.GetExecutingAssembly());
 
         return services;

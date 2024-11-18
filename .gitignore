@@ -1,0 +1,11 @@
+.vs/
+
+bin/
+obj/
+
+.vsconfig
+
+*.log
+
+.idea/
+.vscode/

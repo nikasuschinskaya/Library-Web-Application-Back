@@ -162,13 +162,13 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
             "Duende.AccessTokenManagement": {
               "target": "Package",
               "version": "[3.0.0, )"
-            },
-            "Duende.IdentityServer": {
-              "target": "Package",
-              "version": "[7.0.7, )"
             },
             "Duende.IdentityServer.AspNetIdentity": {
               "target": "Package",
@@ -189,6 +189,10 @@
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.10, )"
+            },
+            "Scrutor": {
+              "target": "Package",
+              "version": "[5.0.2, )"
             }
           },
           "imports": [
@@ -256,6 +260,20 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Ardalis.Specification": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Ardalis.Specification.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -305,9 +323,6 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Application\\Library.Application.csproj": {
-                "projectPath": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Application\\Library.Application.csproj"
-              },
               "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Domain\\Library.Domain.csproj": {
                 "projectPath": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Domain\\Library.Domain.csproj"
               }
@@ -329,9 +344,17 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Ardalis.Specification": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Ardalis.Specification.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
             "Duende.IdentityServer": {
               "target": "Package",
-              "version": "[7.0.7, )"
+              "version": "[7.0.8, )"
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",

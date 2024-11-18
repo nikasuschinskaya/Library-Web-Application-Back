@@ -9,12 +9,14 @@ public class Author : NamedEntity
     public DateTime BirthDate { get; set; }
     public string Country { get; set; }
 
+    [JsonIgnore]
     public virtual List<Book> Books { get; set; }
 
     public Author() { }
 
-    public Author(string name, string surname, DateTime birthDate, string country) : 
-        this(Guid.NewGuid(), name, surname, birthDate, country, []) { }
+    public Author(string name, string surname, DateTime birthDate, string country) :
+        this(Guid.NewGuid(), name, surname, birthDate, country, [])
+    { }
 
     public Author(Guid id,
                   string name,
@@ -23,7 +25,7 @@ public class Author : NamedEntity
                   string country,
                   List<Book> books)
     {
-        Id = id; 
+        Id = id;
         Name = name;
         Surname = surname;
         BirthDate = birthDate;

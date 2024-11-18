@@ -22,6 +22,27 @@
           "Library.Api.dll": {}
         }
       },
+      "Ardalis.Specification/8.0.0": {
+        "runtime": {
+          "lib/net8.0/Ardalis.Specification.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.0.0"
+          }
+        }
+      },
+      "Ardalis.Specification.EntityFrameworkCore/8.0.0": {
+        "dependencies": {
+          "Ardalis.Specification": "8.0.0",
+          "Microsoft.EntityFrameworkCore": "8.0.10",
+          "Microsoft.EntityFrameworkCore.Relational": "8.0.10"
+        },
+        "runtime": {
+          "lib/net8.0/Ardalis.Specification.EntityFrameworkCore.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.0.0"
+          }
+        }
+      },
       "AutoMapper/13.0.1": {
         "dependencies": {
           "Microsoft.Extensions.Options": "8.0.2"
@@ -95,21 +116,21 @@
           }
         }
       },
-      "Duende.IdentityServer/7.0.7": {
+      "Duende.IdentityServer/7.0.8": {
         "dependencies": {
-          "Duende.IdentityServer.Storage": "7.0.7",
+          "Duende.IdentityServer.Storage": "7.0.8",
           "Microsoft.AspNetCore.Authentication.OpenIdConnect": "8.0.3"
         },
         "runtime": {
           "lib/net8.0/Duende.IdentityServer.dll": {
-            "assemblyVersion": "7.0.7.0",
-            "fileVersion": "7.0.7.0"
+            "assemblyVersion": "7.0.8.0",
+            "fileVersion": "7.0.8.0"
           }
         }
       },
       "Duende.IdentityServer.AspNetIdentity/7.0.7": {
         "dependencies": {
-          "Duende.IdentityServer": "7.0.7"
+          "Duende.IdentityServer": "7.0.8"
         },
         "runtime": {
           "lib/net8.0/Duende.IdentityServer.AspNetIdentity.dll": {
@@ -120,7 +141,7 @@
       },
       "Duende.IdentityServer.EntityFramework/7.0.7": {
         "dependencies": {
-          "Duende.IdentityServer": "7.0.7",
+          "Duende.IdentityServer": "7.0.8",
           "Duende.IdentityServer.EntityFramework.Storage": "7.0.7"
         },
         "runtime": {
@@ -132,7 +153,7 @@
       },
       "Duende.IdentityServer.EntityFramework.Storage/7.0.7": {
         "dependencies": {
-          "Duende.IdentityServer.Storage": "7.0.7",
+          "Duende.IdentityServer.Storage": "7.0.8",
           "Microsoft.EntityFrameworkCore.Relational": "8.0.10"
         },
         "runtime": {
@@ -142,15 +163,15 @@
           }
         }
       },
-      "Duende.IdentityServer.Storage/7.0.7": {
+      "Duende.IdentityServer.Storage/7.0.8": {
         "dependencies": {
           "IdentityModel": "7.0.0",
           "Microsoft.AspNetCore.DataProtection.Abstractions": "8.0.3"
         },
         "runtime": {
           "lib/net8.0/Duende.IdentityServer.Storage.dll": {
-            "assemblyVersion": "7.0.7.0",
-            "fileVersion": "7.0.7.0"
+            "assemblyVersion": "7.0.8.0",
+            "fileVersion": "7.0.8.0"
           }
         }
       },
@@ -1061,6 +1082,18 @@
           }
         }
       },
+      "Scrutor/5.0.2": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2",
+          "Microsoft.Extensions.DependencyModel": "8.0.2"
+        },
+        "runtime": {
+          "lib/net8.0/Scrutor.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.0.0"
+          }
+        }
+      },
       "Swashbuckle.AspNetCore/6.4.0": {
         "dependencies": {
           "Microsoft.Extensions.ApiDescription.Server": "6.0.5",
@@ -1340,14 +1373,15 @@
       },
       "Library.Application/1.0.0": {
         "dependencies": {
+          "AutoMapper": "13.0.1",
           "Duende.AccessTokenManagement": "3.0.0",
-          "Duende.IdentityServer": "7.0.7",
           "Duende.IdentityServer.AspNetIdentity": "7.0.7",
           "Duende.IdentityServer.EntityFramework": "7.0.7",
-          "Duende.IdentityServer.Storage": "7.0.7",
+          "Duende.IdentityServer.Storage": "7.0.8",
           "Library.Domain": "1.0.0",
           "Microsoft.AspNetCore.Http.Features": "2.2.0",
-          "Microsoft.EntityFrameworkCore": "8.0.10"
+          "Microsoft.EntityFrameworkCore": "8.0.10",
+          "Scrutor": "5.0.2"
         },
         "runtime": {
           "Library.Application.dll": {
@@ -1357,6 +1391,11 @@
         }
       },
       "Library.Domain/1.0.0": {
+        "dependencies": {
+          "Ardalis.Specification": "8.0.0",
+          "Ardalis.Specification.EntityFrameworkCore": "8.0.0",
+          "Microsoft.EntityFrameworkCore": "8.0.10"
+        },
         "runtime": {
           "Library.Domain.dll": {
             "assemblyVersion": "1.0.0",
@@ -1366,8 +1405,9 @@
       },
       "Library.Infrastucture/1.0.0": {
         "dependencies": {
-          "Duende.IdentityServer": "7.0.7",
-          "Library.Application": "1.0.0",
+          "Ardalis.Specification": "8.0.0",
+          "Ardalis.Specification.EntityFrameworkCore": "8.0.0",
+          "Duende.IdentityServer": "7.0.8",
           "Library.Domain": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.10",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.10",
@@ -1405,6 +1445,20 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Ardalis.Specification/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1/YP932oZJtaDlm85rWfqvgOjALbk2+VDZaj36sM2TdsJMNkVqMbF5UzY6f7OfzA8eymv3hnCXIgYmEBEiUOhQ==",
+      "path": "ardalis.specification/8.0.0",
+      "hashPath": "ardalis.specification.8.0.0.nupkg.sha512"
+    },
+    "Ardalis.Specification.EntityFrameworkCore/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fDaCf5/7rm7Ul7yE8YafyWhxCSmWCPd+/4BUxM26Hbnb2PKZJssjAevzx9ZceASJKe4HUndSEKXJ8iz+R3rsIw==",
+      "path": "ardalis.specification.entityframeworkcore/8.0.0",
+      "hashPath": "ardalis.specification.entityframeworkcore.8.0.0.nupkg.sha512"
+    },
     "AutoMapper/13.0.1": {
       "type": "package",
       "serviceable": true,
@@ -1440,12 +1494,12 @@
       "path": "duende.accesstokenmanagement/3.0.0",
       "hashPath": "duende.accesstokenmanagement.3.0.0.nupkg.sha512"
     },
-    "Duende.IdentityServer/7.0.7": {
+    "Duende.IdentityServer/7.0.8": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-75DNg16/Qd8wYlxK+p84UoE1FVisGoBaUz0DUYhnmQw3KKNZfQ11a5vNdeWPIBWoKlaYIyxYWalFG2WtBa2DPA==",
-      "path": "duende.identityserver/7.0.7",
-      "hashPath": "duende.identityserver.7.0.7.nupkg.sha512"
+      "sha512": "sha512-rUaDFgWYHTLvZc8ZJgBbIaNdaIlLu3vqfaP4N3SKMhk+3HB4PWxpKRsmD7rv2VSbaVsE8mc/g4muH50aV786ug==",
+      "path": "duende.identityserver/7.0.8",
+      "hashPath": "duende.identityserver.7.0.8.nupkg.sha512"
     },
     "Duende.IdentityServer.AspNetIdentity/7.0.7": {
       "type": "package",
@@ -1468,12 +1522,12 @@
       "path": "duende.identityserver.entityframework.storage/7.0.7",
       "hashPath": "duende.identityserver.entityframework.storage.7.0.7.nupkg.sha512"
     },
-    "Duende.IdentityServer.Storage/7.0.7": {
+    "Duende.IdentityServer.Storage/7.0.8": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-B2g7DiVsX0wqQEft5m3ASqOAiOYMBNSvnT3m03i2SvKYbewN2mu/L4GaYGIkgNvXNcWdq//GxTjDC9xgLxhImw==",
-      "path": "duende.identityserver.storage/7.0.7",
-      "hashPath": "duende.identityserver.storage.7.0.7.nupkg.sha512"
+      "sha512": "sha512-SG0k4QunnIoK2+X0muNaZRRWY5HvlOkr9zFBn66MxyY6+mTb0JZ1lQNA9MNNokX7LRHIKwYsmbDxfjkBVa5iVw==",
+      "path": "duende.identityserver.storage/7.0.8",
+      "hashPath": "duende.identityserver.storage.7.0.8.nupkg.sha512"
     },
     "FluentValidation/11.10.0": {
       "type": "package",
@@ -2020,6 +2074,13 @@
       "sha512": "sha512-KZYeKBET/2Z0gY1WlTAK7+RHTl7GSbtvTLDXEZZojUdAPqpQNDL6tHv7VUpqfX5VEOh+uRGKaZXkuD253nEOBQ==",
       "path": "mono.texttemplating/2.2.1",
       "hashPath": "mono.texttemplating.2.2.1.nupkg.sha512"
+    },
+    "Scrutor/5.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GkmAfKlp9//FJmssFoF8u5+LEiKsrvKKitYuWgKKq0AILK4l2hASqv09WyKyiNJ3BKRlh/ZwoEV+8yi77AkAgg==",
+      "path": "scrutor/5.0.2",
+      "hashPath": "scrutor.5.0.2.nupkg.sha512"
     },
     "Swashbuckle.AspNetCore/6.4.0": {
       "type": "package",

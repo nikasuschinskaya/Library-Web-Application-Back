@@ -1,6 +1,5 @@
 ﻿using Library.Domain.Entities.Base;
 using Library.Domain.Enums;
-using System.Text.Json.Serialization;
 
 namespace Library.Domain.Entities;
 
@@ -12,7 +11,6 @@ public class UserBook : BaseEntity
 {
     public Guid UserId { get; set; }
 
-    //[JsonIgnore]
     public virtual User User { get; set; }
 
     public Guid BookId { get; set; }

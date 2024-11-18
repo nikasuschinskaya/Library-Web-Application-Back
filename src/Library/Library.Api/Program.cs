@@ -19,11 +19,13 @@ var builder = WebApplication.CreateBuilder(args);
         .InjectRepositories()
         .InjectDbContextInitializers()
         .InjectJwtTokens(builder.Configuration)
-        .InjectServices()
+        .InjectAuthServices()
+        .InjectUseCases()
+        //.InjectServices()
         .InjectValidators()
         .InjectAutoMapper()
         .AddCorsPolicy()
-        .AddPolicyBasedAuthorization()
+        //.AddPolicyBasedAuthorization()
         ;
 }
 

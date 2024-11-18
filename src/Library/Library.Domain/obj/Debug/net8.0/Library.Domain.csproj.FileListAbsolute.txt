@@ -22,3 +22,4 @@ C:\Users\User\source\repos\LibraryWebApp-back\src\Library\Library.Domain\obj\Deb
 C:\Users\User\source\repos\LibraryWebApp-back\src\Library\Library.Domain\obj\Debug\net8.0\refint\Library.Domain.dll
 C:\Users\User\source\repos\LibraryWebApp-back\src\Library\Library.Domain\obj\Debug\net8.0\Library.Domain.pdb
 C:\Users\User\source\repos\LibraryWebApp-back\src\Library\Library.Domain\obj\Debug\net8.0\ref\Library.Domain.dll
+C:\Users\User\source\repos\LibraryWebApp-back\src\Library\Library.Domain\obj\Debug\net8.0\Library.Domain.csproj.AssemblyReference.cache

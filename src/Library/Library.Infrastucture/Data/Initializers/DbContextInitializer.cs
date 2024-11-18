@@ -1,68 +1,84 @@
-﻿using Library.Application.Interfaces.Common;
-using Library.Application.Interfaces.Services;
-using Library.Domain.Entities;
-using Library.Domain.Enums;
-using Library.Domain.Enums.Extentions;
+﻿using Library.Domain.Entities;
+using Library.Domain.Interfaces;
+using Library.Domain.Interfaces.Auth;
+using Library.Domain.Specifications;
 
 namespace Library.Infrastucture.Data.Initializers
 {
     public class DbContextInitializer
     {
         private readonly IUnitOfWork _unitOfWork;
-        private readonly IInitializer<Role> _roleInitializer;
         private readonly IPasswordHasher _passwordHasher;
 
         public DbContextInitializer(IUnitOfWork unitOfWork,
-                                    IInitializer<Role> roleInitializer,
                                     IPasswordHasher passwordHasher)
         {
             _unitOfWork = unitOfWork;
-            _roleInitializer = roleInitializer;
             _passwordHasher = passwordHasher;
         }
 
         public async Task InitializeAsync()
         {
-            await _roleInitializer.InitializeAsync(_unitOfWork);
+            await InitializeRolesAsync(/*CancellationToken.None*/);
 
-            await InitializeAdminUser();
+            await InitializeAdminUserAsync(/*CancellationToken.None*/);
 
-            InitializeGenresAuthorsAndBooks();
-            await _unitOfWork.CompleteAsync();
+            await InitializeGenresAuthorsAndBooksAsync(/*CancellationToken.None*/);
+
         }
 
-        public async Task InitializeAdminUser()
+
+        public async Task InitializeRolesAsync(CancellationToken cancellationToken = default)
         {
-            var adminRole = _unitOfWork.Repository<Role>().GetAll()
-                .FirstOrDefault(r => r.Name.Equals(Roles.Admin.StringValue()));
-
-            var user = new User("nika_susch2003", "nikaAdmin@gmail.com", _passwordHasher.HashPassword("Nika2003!"), adminRole);
-
-
-            var userRepository = _unitOfWork.Repository<User>();
-            var refreshTokenRepository = _unitOfWork.Repository<RefreshToken>();
-
-            if (!userRepository.GetAll().ToList().Any())
-            {
-                userRepository.Create(user);
-            }
-
-            var refreshToken = new RefreshToken
-            {
-                Token = Guid.NewGuid().ToString(),
-                UserId = user.Id,
-                ExpiryDate = DateTime.UtcNow.AddDays(7)
-            };
-
-            if (!refreshTokenRepository.GetAll().ToList().Any())
-            {
-                refreshTokenRepository.Create(refreshToken);
-            }
-            
-            await _unitOfWork.CompleteAsync();
+            var roleInitializer = new RoleInitializer(_unitOfWork.Roles, _unitOfWork);
+            await roleInitializer.InitializeRolesAsync(cancellationToken);
         }
 
-        public void InitializeGenresAuthorsAndBooks()
+        public async Task InitializeAdminUserAsync(CancellationToken cancellationToken = default)
+        {
+            var adminUserInitializer = new AdminUserInitializer(_unitOfWork.Users,
+                _unitOfWork.Roles,
+                _unitOfWork.RefreshTokens,
+                _unitOfWork,
+                _passwordHasher);
+
+            await adminUserInitializer.InitializeAdminAsync(cancellationToken);
+
+            await _unitOfWork.SaveChangesAsync(cancellationToken);
+        }
+
+        //public async Task InitializeAdminUser(CancellationToken cancellationToken = default)
+        //{
+        //    var adminRole = _unitOfWork.Repository<Role>().GetAll()
+        //        .FirstOrDefault(r => r.Name.Equals(Roles.Admin.StringValue()));
+
+        //    var user = new User("nika_susch2003", "nikaAdmin@gmail.com", _passwordHasher.HashPassword("Nika2003!"), adminRole);
+
+
+        //    var userRepository = _unitOfWork.Repository<User>();
+        //    var refreshTokenRepository = _unitOfWork.Repository<RefreshToken>();
+
+        //    if (!userRepository.GetAll().ToList().Any())
+        //    {
+        //        userRepository.Create(user);
+        //    }
+
+        //    var refreshToken = new RefreshToken
+        //    {
+        //        Token = Guid.NewGuid().ToString(),
+        //        UserId = user.Id,
+        //        ExpiryDate = DateTime.UtcNow.AddDays(7)
+        //    };
+
+        //    if (!refreshTokenRepository.GetAll().ToList().Any())
+        //    {
+        //        refreshTokenRepository.Create(refreshToken);
+        //    }
+
+        //    await _unitOfWork.SaveChangesAsync(cancellationToken);
+        //}
+
+        public async Task InitializeGenresAuthorsAndBooksAsync(CancellationToken cancellationToken = default)
         {
             var genres = new List<Genre>()
             {
@@ -223,14 +239,13 @@ namespace Library.Infrastucture.Data.Initializers
             authorList[4].Books.Add(books[13]);
 
 
-            var bookRepository = _unitOfWork.Repository<Book>();
-            var authorRepository = _unitOfWork.Repository<Author>();
-            var genreRepository = _unitOfWork.Repository<Genre>();
+            var bookRepository = _unitOfWork.Books;
+            var authorRepository = _unitOfWork.Authors;
+            var genreRepository = _unitOfWork.Genres;
 
-
-            if (!bookRepository.GetAll().ToList().Any() &&
-                !authorRepository.GetAll().ToList().Any() &&
-                !genreRepository.GetAll().ToList().Any())
+            if (!(await bookRepository.ListAsync(new EmptySpecification<Book>(), cancellationToken)).Any() &&
+                !(await authorRepository.ListAsync(new EmptySpecification<Author>(), cancellationToken)).Any() &&
+                !(await genreRepository.ListAsync(new EmptySpecification<Genre>(), cancellationToken)).Any())
             {
                 foreach (var genre in genres)
                 {
@@ -247,6 +262,8 @@ namespace Library.Infrastucture.Data.Initializers
                     }
                 }
             }
+
+            await _unitOfWork.SaveChangesAsync(cancellationToken);
         }
     }
 }

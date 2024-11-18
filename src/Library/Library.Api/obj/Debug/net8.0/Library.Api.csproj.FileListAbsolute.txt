@@ -211,3 +211,6 @@ C:\Users\User\source\repos\LibraryWebApp-back\src\Library\Library.Api\bin\Debug\
 C:\Users\User\source\repos\LibraryWebApp-back\src\Library\Library.Api\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\User\source\repos\LibraryWebApp-back\src\Library\Library.Api\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
 C:\Users\User\source\repos\LibraryWebApp-back\src\Library\Library.Api\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\User\source\repos\LibraryWebApp-back\src\Library\Library.Api\bin\Debug\net8.0\Ardalis.Specification.dll
+C:\Users\User\source\repos\LibraryWebApp-back\src\Library\Library.Api\bin\Debug\net8.0\Ardalis.Specification.EntityFrameworkCore.dll
+C:\Users\User\source\repos\LibraryWebApp-back\src\Library\Library.Api\bin\Debug\net8.0\Scrutor.dll

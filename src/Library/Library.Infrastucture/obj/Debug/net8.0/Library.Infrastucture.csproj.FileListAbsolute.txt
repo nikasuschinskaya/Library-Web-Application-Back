@@ -20,9 +20,7 @@ C:\Users\User\source\repos\LibraryWebApp-back\src\Library\Library.Infrastucture\
 C:\Users\User\source\repos\LibraryWebApp-back\src\Library\Library.Infrastucture\bin\Debug\net8.0\Library.Infrastucture.runtimeconfig.json
 C:\Users\User\source\repos\LibraryWebApp-back\src\Library\Library.Infrastucture\bin\Debug\net8.0\Library.Infrastucture.dll
 C:\Users\User\source\repos\LibraryWebApp-back\src\Library\Library.Infrastucture\bin\Debug\net8.0\Library.Infrastucture.pdb
-C:\Users\User\source\repos\LibraryWebApp-back\src\Library\Library.Infrastucture\bin\Debug\net8.0\Library.Application.dll
 C:\Users\User\source\repos\LibraryWebApp-back\src\Library\Library.Infrastucture\bin\Debug\net8.0\Library.Domain.dll
-C:\Users\User\source\repos\LibraryWebApp-back\src\Library\Library.Infrastucture\bin\Debug\net8.0\Library.Application.pdb
 C:\Users\User\source\repos\LibraryWebApp-back\src\Library\Library.Infrastucture\bin\Debug\net8.0\Library.Domain.pdb
 C:\Users\User\source\repos\LibraryWebApp-back\src\Library\Library.Infrastucture\obj\Debug\net8.0\Library.Infrastucture.csproj.AssemblyReference.cache
 C:\Users\User\source\repos\LibraryWebApp-back\src\Library\Library.Infrastucture\obj\Debug\net8.0\Library.Infrastucture.GeneratedMSBuildEditorConfig.editorconfig

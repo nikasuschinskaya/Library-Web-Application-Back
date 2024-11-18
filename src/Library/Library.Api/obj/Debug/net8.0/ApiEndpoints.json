@@ -141,41 +141,6 @@
   },
   {
     "ContainingType": "Library.Presentation.Controllers.AuthorController",
-    "Method": "GetBooksByAuthor",
-    "RelativePath": "api/Author/{id}/books",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Guid",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[Library.Presentation.Responses.BookResponse, Library.Presentation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      },
-      {
-        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 404
-      }
-    ]
-  },
-  {
-    "ContainingType": "Library.Presentation.Controllers.AuthorController",
     "Method": "AddAuthor",
     "RelativePath": "api/Author/add",
     "HttpMethod": "POST",
@@ -337,7 +302,7 @@
     "Parameters": [
       {
         "Name": "request",
-        "Type": "Library.Presentation.Requests.BookRequest",
+        "Type": "Library.Presentation.Requests.BookAddRequest",
         "IsRequired": true
       }
     ],
@@ -410,7 +375,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "Library.Application.Models.PagedList\u00601[[Library.Presentation.Responses.BookListResponse, Library.Presentation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "Library.Domain.Models.PagedList\u00601[[Library.Presentation.Responses.BookListResponse, Library.Presentation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -652,7 +617,7 @@
   },
   {
     "ContainingType": "Library.Presentation.Controllers.GenreController",
-    "Method": "GetAuthorById",
+    "Method": "GetGenreById",
     "RelativePath": "api/Genre/{id}",
     "HttpMethod": "GET",
     "IsController": true,

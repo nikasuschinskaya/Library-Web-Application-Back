@@ -29,29 +29,56 @@ public class GlobalExceptionHandlingMiddleware(RequestDelegate next)
         }
     }
 
+
     private async Task HandleExceptionAsync(
-        HttpContext httpContext,
-        string exceptionMessage,
-        HttpStatusCode statusCode,
-        string message)
+       HttpContext httpContext,
+       string exceptionMessage,
+       HttpStatusCode statusCode,
+       string message)
     {
         var response = httpContext.Response;
 
-        response.ContentType = "application/json";
-        //response.StatusCode = (int)statusCode;
-
-        var error = new
+        if (!response.HasStarted)
         {
-            Message = message,
-            ExceptionMessage = exceptionMessage,
-            StatusCode = statusCode
-        };
+            response.ContentType = "application/json";
+            response.StatusCode = (int)statusCode;
 
-        string result = JsonSerializer.Serialize(error);
+            var error = new
+            {
+                Message = message,
+                ExceptionMessage = exceptionMessage,
+                StatusCode = statusCode
+            };
 
-        await response.WriteAsJsonAsync(result);
+            string result = JsonSerializer.Serialize(error);
 
-        httpContext.Response.StatusCode = (int)statusCode;
-        await httpContext.Response.WriteAsync(message);
+            await response.WriteAsync(result);
+        }
     }
+
+    //private async Task HandleExceptionAsync(
+    //    HttpContext httpContext,
+    //    string exceptionMessage,
+    //    HttpStatusCode statusCode,
+    //    string message)
+    //{
+    //    var response = httpContext.Response;
+
+    //    response.ContentType = "application/json";
+    //    response.StatusCode = (int)statusCode;
+
+    //    var error = new
+    //    {
+    //        Message = message,
+    //        ExceptionMessage = exceptionMessage,
+    //        StatusCode = statusCode
+    //    };
+
+    //    string result = JsonSerializer.Serialize(error);
+
+    //    await response.WriteAsJsonAsync(result);
+
+    //    httpContext.Response.StatusCode = (int)statusCode;
+    //    await httpContext.Response.WriteAsync(message);
+    //}
 }

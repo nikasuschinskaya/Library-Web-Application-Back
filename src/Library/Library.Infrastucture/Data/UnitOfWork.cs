@@ -1,5 +1,5 @@
-﻿using Library.Application.Interfaces.Common;
-using Library.Domain.Entities.Base;
+﻿using Library.Domain.Interfaces;
+using Library.Domain.Interfaces.Repositories;
 using Library.Infrastucture.Repositories;
 
 namespace Library.Infrastucture.Data;
@@ -7,30 +7,59 @@ namespace Library.Infrastucture.Data;
 public class UnitOfWork : IUnitOfWork
 {
     private readonly LibraryDbContext _context;
-    private readonly Dictionary<string, object> _repositories;
+    private bool _disposed;
 
-    public UnitOfWork(LibraryDbContext context)
+    public UnitOfWork(LibraryDbContext context) => _context = context;
+
+
+    private IAuthorRepository? _authors;
+    public IAuthorRepository Authors => _authors ??= new AuthorRepository(_context);
+
+
+    private IBookRepository? _books;
+    public IBookRepository Books => _books ??= new BookRepository(_context);
+
+
+    private IGenreRepository? _genres;
+    public IGenreRepository Genres => _genres ??= new GenreRepository(_context);
+
+
+    private IRefreshTokenRepository? _refreshTokens;
+    public IRefreshTokenRepository RefreshTokens => _refreshTokens ??= new RefreshTokenRepository(_context);
+
+
+    private IRoleRepository? _roles;
+    public IRoleRepository Roles => _roles ??= new RoleRepository(_context);
+
+
+    private IUserBookRepository? _userBooks;
+    public IUserBookRepository UserBooks => _userBooks ??= new UserBookRepository(_context);
+
+
+    private IUserRepository? _users;
+    public IUserRepository Users => _users ??= new UserRepository(_context);
+
+
+    public async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
     {
-        _context = context;
-        _repositories = new Dictionary<string, object>();
+        return await _context.SaveChangesAsync(cancellationToken);
     }
 
-    public IRepository<T> Repository<T>() where T : BaseEntity
+    protected virtual void Dispose(bool disposing)
     {
-        var type = typeof(T).Name;
-
-        if (!_repositories.TryGetValue(type, out object? value))
+        if (!_disposed)
         {
-            var repositoryInstance = new EntityFrameworkRepository<T>(_context);
-            value = repositoryInstance;
-            _repositories.Add(type, value);
+            if (disposing)
+            {
+                _context.Dispose();
+            }
+            _disposed = true;
         }
-
-        return (IRepository<T>)value;
     }
 
-    public async Task<int> CompleteAsync(CancellationToken cancellationToken = default) =>
-        await _context.SaveChangesAsync(cancellationToken);
-
-    public void Dispose() => _context.Dispose();
+    public void Dispose()
+    {
+        Dispose(true);
+        GC.SuppressFinalize(this);
+    }
 }

@@ -170,3 +170,8 @@ C:\Users\User\source\repos\LibraryWebApp-back\src\Library\Library.UnitTests\obj\
 C:\Users\User\source\repos\LibraryWebApp-back\src\Library\Library.UnitTests\obj\Debug\net8.0\Library.UnitTests.genruntimeconfig.cache
 C:\Users\User\source\repos\LibraryWebApp-back\src\Library\Library.UnitTests\obj\Debug\net8.0\ref\Library.UnitTests.dll
 C:\Users\User\source\repos\LibraryWebApp-back\src\Library\Library.UnitTests\bin\Debug\net8.0\Moq.dll
+C:\Users\User\source\repos\LibraryWebApp-back\src\Library\Library.UnitTests\bin\Debug\net8.0\Ardalis.Specification.dll
+C:\Users\User\source\repos\LibraryWebApp-back\src\Library\Library.UnitTests\bin\Debug\net8.0\Ardalis.Specification.EntityFrameworkCore.dll
+C:\Users\User\source\repos\LibraryWebApp-back\src\Library\Library.UnitTests\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\User\source\repos\LibraryWebApp-back\src\Library\Library.UnitTests\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\User\source\repos\LibraryWebApp-back\src\Library\Library.UnitTests\bin\Debug\net8.0\Scrutor.dll

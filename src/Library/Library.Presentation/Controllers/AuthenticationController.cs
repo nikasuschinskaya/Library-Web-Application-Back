@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
-using Library.Application.Interfaces.Services;
-using Library.Domain.Entities;
+using Library.Domain.Interfaces.Auth;
+using Library.Domain.Models;
 using Library.Presentation.Requests;
 using Library.Presentation.Responses;
 using Microsoft.AspNetCore.Mvc;

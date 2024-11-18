@@ -1,4 +1,4 @@
-﻿using Library.Domain.Enums.Extentions;
+﻿using Library.Domain.Extentions;
 
 namespace Library.Domain.Enums;
 

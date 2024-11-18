@@ -26,11 +26,11 @@ public static class IdentityServerConfig
             {
                 ClientId = "client",
                 AllowedGrantTypes = GrantTypes.ResourceOwnerPasswordAndClientCredentials,
-                AccessTokenLifetime = 900, // 15 минут для access token
+                AccessTokenLifetime = 900, 
                 AllowOfflineAccess = true,
                 RefreshTokenUsage = TokenUsage.ReUse,
                 RefreshTokenExpiration = TokenExpiration.Sliding,
-                SlidingRefreshTokenLifetime = 1296000, // 15 дней
+                SlidingRefreshTokenLifetime = 1296000, 
                 ClientSecrets = { new Secret("secret".Sha256()) },
                 AllowedScopes = { "api1", IdentityServerConstants.StandardScopes.OpenId, IdentityServerConstants.StandardScopes.Profile }
             }

@@ -1,7 +1,4 @@
-﻿using Library.Domain.Enums;
-using Library.Domain.Enums.Extentions;
-
-namespace Library.Api.Extensions;
+﻿namespace Library.Api.Extensions;
 
 public static class DependencyInjection
 {

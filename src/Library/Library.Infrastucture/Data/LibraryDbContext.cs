@@ -1,11 +1,11 @@
-﻿using Library.Application.Interfaces.Common;
-using Library.Domain.Entities;
+﻿using Library.Domain.Entities;
+using Library.Domain.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
 
 namespace Library.Infrastucture.Data;
 
-public class LibraryDbContext(DbContextOptions<LibraryDbContext> options) 
+public class LibraryDbContext(DbContextOptions<LibraryDbContext> options)
     : DbContext(options), ILibraryDbContext
 {
     public DbSet<Author> Authors { get; set; }
@@ -14,7 +14,7 @@ public class LibraryDbContext(DbContextOptions<LibraryDbContext> options)
     public DbSet<Book> Books { get; set; }
     public DbSet<Genre> Genres { get; set; }
     public DbSet<UserBook> UserBooks { get; set; }
-    public DbSet<RefreshToken> RefreshTokens {  get; set; }
+    public DbSet<RefreshToken> RefreshTokens { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

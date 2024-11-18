@@ -1,6 +1,6 @@
 ﻿using FluentAssertions;
-using Library.Application.Interfaces.Services;
-using Library.Application.Services;
+using Library.Domain.Interfaces.Auth;
+using Library.Infrastucture.Auth;
 
 namespace Library.UnitTests;
 
