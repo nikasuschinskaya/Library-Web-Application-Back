@@ -13,6 +13,4 @@ public interface IUnitOfWork : IDisposable
     IUserRepository Users { get; }
 
     Task<int> SaveChangesAsync(CancellationToken cancellationToken = default);
-    //IRepository<T> Repository<T>() where T : BaseEntity;
-    //Task<int> CompleteAsync(CancellationToken cancellationToken = default);
 }

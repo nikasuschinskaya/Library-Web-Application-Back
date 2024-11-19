@@ -15,12 +15,10 @@ public class AddBookUseCase : IAddBookUseCase
     public async Task ExecuteAsync(Book book, IEnumerable<Guid> authorIds, CancellationToken cancellationToken = default)
     {
         var existingBook = await _unitOfWork.Books.GetBySpecAsync(new BookByISBNSpecification(book.ISBN), cancellationToken);
-
         if (existingBook != null)
             throw new AlreadyExistsException($"The book with ISBN {book.ISBN} already exists.");
 
         var authors = new List<Author>();
-
         foreach (var authorId in authorIds)
         {
             var author = await _unitOfWork.Authors.GetByIdAsync(authorId, cancellationToken)
@@ -28,42 +26,25 @@ public class AddBookUseCase : IAddBookUseCase
             authors.Add(author);
         }
 
-        book.Authors = authors;
+        foreach (var author in authors)
+        {
+            book.Authors.Add(author);
+        }
 
         book.Authors.Clear();
 
         _unitOfWork.Books.Create(book);
-
         await _unitOfWork.SaveChangesAsync(cancellationToken);
 
         foreach (var author in authors)
         {
-            var existingAuthor = await _unitOfWork.Authors.GetByIdAsync(author.Id, cancellationToken)
-                ?? throw new EntityNotFoundException($"Author with ID {author.Id} was not found.");
+            _unitOfWork.Authors.Attach(author);
 
-            existingAuthor.Books.Add(book);
-            await _unitOfWork.SaveChangesAsync(cancellationToken);
+            author.Books.Add(book);
+
+            _unitOfWork.Authors.Update(author);
         }
+
+        await _unitOfWork.SaveChangesAsync(cancellationToken);
     }
-
-
-    //var existingBook = await _unitOfWork.Books.GetBySpecAsync(new BookByISBNSpecification(_book.ISBN), cancellationToken);
-
-    //if (existingBook != null)
-    //    throw new AlreadyExistsException($"The book with ISBN {_book.ISBN} already exists.");
-
-    //var authors = new List<Author>();
-
-    //foreach (var authorId in _authorIds)
-    //{
-    //    var author = await _unitOfWork.Authors.GetByIdAsync(authorId, cancellationToken)
-    //        ?? throw new EntityNotFoundException($"Author with ID {authorId} was not found.");
-    //    authors.Add(author);
-    //}
-
-    //_book.Authors = authors;
-    //_unitOfWork.Books.Create(_book);
-    //await _unitOfWork.SaveChangesAsync(cancellationToken);
-
-
 }

@@ -21,10 +21,15 @@ public class EntityFrameworkRepository<T> : IRepository<T> where T : class, IEnt
     public void Create(T entity) => _dbSet.Add(entity);
     public void Update(T entity) => _dbSet.Update(entity);
     public void Delete(T entity) => _dbSet.Remove(entity);
+    public void Attach(T entity)
+    {
+        if (_context.Entry(entity).State == EntityState.Detached)
+            _dbSet.Attach(entity);
+    }
 
     public async Task<T?> GetByIdAsync(Guid id, CancellationToken cancellationToken = default)
     {
-        return await _dbSet.FindAsync([id], cancellationToken);
+        return await _dbSet.Where(entity => entity.Id == id).AsNoTracking().FirstOrDefaultAsync(cancellationToken);
     }
 
     public async Task<T?> GetBySpecAsync(ISpecification<T> spec, CancellationToken cancellationToken = default)
@@ -41,14 +46,4 @@ public class EntityFrameworkRepository<T> : IRepository<T> where T : class, IEnt
     {
         return SpecificationEvaluator.Default.GetQuery(_dbSet.AsQueryable(), spec);
     }
-    //public void Create(T entity) => _dbSet.Add(entity);
-
-    //public void Delete(T entity) => _dbSet.Remove(entity);
-
-    //public IQueryable<T> GetAll() => _dbSet;
-
-    //public async Task<T?> GetByIdAsync(Guid id, CancellationToken cancellationToken = default) =>
-    //    await _dbSet.Where(entity => entity.Id == id).FirstOrDefaultAsync(cancellationToken);
-
-    //public void Update(T entity) => _dbSet.Update(entity);
 }

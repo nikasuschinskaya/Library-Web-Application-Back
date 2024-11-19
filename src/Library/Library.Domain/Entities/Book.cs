@@ -14,7 +14,7 @@ public class Book : NamedEntity
     public string Description { get; set; }
     public string? ImageURL { get; set; }
     public int Count { get; set; }
-    public virtual List<Author> Authors { get; set; }
+    public virtual List<Author> Authors { get; set; } = [];
 
     [JsonIgnore]
     public virtual List<UserBook> UserBooks { get; set; } = [];

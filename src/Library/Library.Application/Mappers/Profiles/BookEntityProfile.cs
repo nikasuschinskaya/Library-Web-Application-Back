@@ -7,14 +7,6 @@ public class BookEntityProfile : Profile
 {
     public BookEntityProfile()
     {
-
-        //existingBook.Name = updatedBook.Name;
-        //existingBook.ISBN = updatedBook.ISBN;
-        //existingBook.GenreId = updatedBook.GenreId;
-        //existingBook.Description = updatedBook.Description;
-        //existingBook.Count = updatedBook.Count;
-        //existingBook.Authors = updatedBook.Authors;
-
         CreateMap<Book, Book>()
           .ForMember(dest => dest.Id, opt => opt.Ignore())
           .ForMember(dest => dest.Name, opt => opt.MapFrom(src => src.Name))
@@ -22,12 +14,10 @@ public class BookEntityProfile : Profile
           .ForMember(dest => dest.GenreId, opt => opt.MapFrom(src => src.GenreId))
           .ForMember(dest => dest.Description, opt => opt.MapFrom(src => src.Description))
           .ForMember(dest => dest.Count, opt => opt.MapFrom(src => src.Count))
-          .ForMember(dest => dest.Authors, opt => opt.MapFrom(src => src.Authors))
           .ForMember(dest => dest.ImageURL, opt => opt.Ignore())
           .ForMember(dest => dest.UserBooks, opt => opt.Ignore())
           .ForMember(dest => dest.BookStockStatus, opt => opt.Ignore())
-
-          //.ForMember(dest => dest.Authors, opt => opt.Ignore())
+          .ForMember(dest => dest.Authors, opt => opt.Ignore())
           ;
     }
 }

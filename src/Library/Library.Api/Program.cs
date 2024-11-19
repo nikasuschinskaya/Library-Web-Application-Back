@@ -21,11 +21,10 @@ var builder = WebApplication.CreateBuilder(args);
         .InjectJwtTokens(builder.Configuration)
         .InjectAuthServices()
         .InjectUseCases()
-        //.InjectServices()
         .InjectValidators()
         .InjectAutoMapper()
         .AddCorsPolicy()
-        //.AddPolicyBasedAuthorization()
+        .AddRolesPolicy()
         ;
 }
 

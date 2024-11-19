@@ -7,24 +7,20 @@ using Library.Domain.Models;
 using Library.Domain.Specifications.RefreshTokens;
 using Library.Domain.Specifications.Roles;
 using Library.Domain.Specifications.Users;
-using Microsoft.EntityFrameworkCore;
 
 namespace Library.Infrastucture.Auth;
 
 public class AuthService : IAuthService
 {
     private readonly IJwtTokenService _jwtTokenService;
-    //private readonly IUserService _userService;
     private readonly IUnitOfWork _unitOfWork;
     private readonly IPasswordHasher _passwordHasher;
 
     public AuthService(IJwtTokenService jwtTokenService,
-                       //IUserService userService,
                        IUnitOfWork unitOfWork,
                        IPasswordHasher passwordHasher)
     {
         _jwtTokenService = jwtTokenService;
-        //_userService = userService;
         _unitOfWork = unitOfWork;
         _passwordHasher = passwordHasher;
     }
@@ -34,13 +30,9 @@ public class AuthService : IAuthService
         var userSpec = new UserByEmailSpecification(email);
         var existingUser = await _unitOfWork.Users.GetBySpecAsync(userSpec, cancellationToken);
 
-        if (existingUser != null) 
+        if (existingUser != null)
             throw new AlreadyExistsException($"User with {email} already exists.");
 
-        //var userRole = await _unitOfWork.Roles.GetAll()
-        //    .Where(r => r.Name == nameof(Roles.User))
-        //    .FirstOrDefaultAsync(cancellationToken)
-        //    ?? throw new EntityNotFoundException("User role not found");
         var roleSpec = new RoleByNameSpecification(nameof(Roles.User));
         var userRole = await _unitOfWork.Roles.GetBySpecAsync(roleSpec, cancellationToken)
             ?? throw new EntityNotFoundException("User role not found");
@@ -75,9 +67,6 @@ public class AuthService : IAuthService
 
         var accessToken = _jwtTokenService.GenerateAccessToken(user.Id.ToString());
 
-        //var refreshToken = await _unitOfWork.Repository<RefreshToken>().GetAll()
-        //    .FirstOrDefaultAsync(rt => rt.UserId == user.Id && rt.ExpiryDate > DateTime.UtcNow && !rt.IsRevoked, cancellationToken);
-
         var tokenSpec = new ActiveRefreshTokenSpecification(user.Id);
         var refreshToken = await _unitOfWork.RefreshTokens.GetBySpecAsync(tokenSpec, cancellationToken);
 
@@ -106,8 +95,6 @@ public class AuthService : IAuthService
 
         var tokenSpec = new RefreshTokenByValueSpecification(refreshToken);
         var storedToken = await _unitOfWork.RefreshTokens.GetBySpecAsync(tokenSpec, cancellationToken);
-        //var storedToken = await _unitOfWork.Repository<RefreshToken>().GetAll()
-        //    .FirstOrDefaultAsync(t => t.Token == refreshToken, cancellationToken);
 
         if (storedToken == null || storedToken.ExpiryDate <= DateTime.UtcNow || storedToken.IsRevoked)
             throw new Exception("Invalid refresh token.");
@@ -119,9 +106,6 @@ public class AuthService : IAuthService
 
     public async Task RevokeRefreshTokenAsync(string refreshToken, CancellationToken cancellationToken = default)
     {
-        //var storedToken = await _unitOfWork.Repository<RefreshToken>().GetAll()
-        //    .FirstOrDefaultAsync(t => t.Token == refreshToken, cancellationToken)
-        //    ?? throw new Exception("Invalid refresh token.");
         var tokenSpec = new RefreshTokenByValueSpecification(refreshToken);
         var storedToken = await _unitOfWork.RefreshTokens.GetBySpecAsync(tokenSpec, cancellationToken)
             ?? throw new EntityNotFoundException("Refresh token is not found.");

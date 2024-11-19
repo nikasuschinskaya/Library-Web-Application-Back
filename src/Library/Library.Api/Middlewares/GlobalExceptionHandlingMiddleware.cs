@@ -55,30 +55,4 @@ public class GlobalExceptionHandlingMiddleware(RequestDelegate next)
             await response.WriteAsync(result);
         }
     }
-
-    //private async Task HandleExceptionAsync(
-    //    HttpContext httpContext,
-    //    string exceptionMessage,
-    //    HttpStatusCode statusCode,
-    //    string message)
-    //{
-    //    var response = httpContext.Response;
-
-    //    response.ContentType = "application/json";
-    //    response.StatusCode = (int)statusCode;
-
-    //    var error = new
-    //    {
-    //        Message = message,
-    //        ExceptionMessage = exceptionMessage,
-    //        StatusCode = statusCode
-    //    };
-
-    //    string result = JsonSerializer.Serialize(error);
-
-    //    await response.WriteAsJsonAsync(result);
-
-    //    httpContext.Response.StatusCode = (int)statusCode;
-    //    await httpContext.Response.WriteAsync(message);
-    //}
 }

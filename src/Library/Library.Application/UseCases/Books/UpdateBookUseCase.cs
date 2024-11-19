@@ -20,17 +20,11 @@ public class UpdateBookUseCase : IUpdateBookUseCase
     public async Task ExecuteAsync(Guid bookId, Book updatedBook, CancellationToken cancellationToken = default)
     {
         var existingBook = await _unitOfWork.Books.GetByIdAsync(bookId, cancellationToken)
-            ?? throw new EntityNotFoundException($"Book with {bookId} not found.");
-
-        //existingBook.Name = updatedBook.Name;
-        //existingBook.ISBN = updatedBook.ISBN;
-        //existingBook.GenreId = updatedBook.GenreId;
-        //existingBook.Description = updatedBook.Description;
-        //existingBook.Count = updatedBook.Count;
-        //existingBook.Authors = updatedBook.Authors;
+            ?? throw new EntityNotFoundException($"Book with ID {bookId} not found.");
 
         _mapper.Map(updatedBook, existingBook);
 
+        _unitOfWork.Books.Update(existingBook);
         await _unitOfWork.SaveChangesAsync(cancellationToken);
     }
 }

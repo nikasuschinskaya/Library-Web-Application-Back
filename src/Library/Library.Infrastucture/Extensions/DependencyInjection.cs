@@ -1,12 +1,10 @@
-﻿using Library.Domain.Entities;
-using Library.Domain.Interfaces;
+﻿using Library.Domain.Interfaces;
 using Library.Domain.Interfaces.Auth;
 using Library.Domain.Interfaces.Repositories;
 using Library.Infrastucture.Auth;
 using Library.Infrastucture.Data;
 using Library.Infrastucture.Data.Initializers;
 using Library.Infrastucture.IdentityServer;
-using Library.Infrastucture.Repositories;
 using Library.Infrastucture.Repositories.Base;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
@@ -35,15 +33,7 @@ public static class DependencyInjection
 
     public static IServiceCollection InjectRepositories(this IServiceCollection services)
     {
-        //services.AddScoped(typeof(IRepository<>), typeof(EntityFrameworkRepository<>));
-
-        services.AddScoped<IAuthorRepository, AuthorRepository>();
-        services.AddScoped<IBookRepository, BookRepository>();
-        services.AddScoped<IGenreRepository, GenreRepository>();
-        services.AddScoped<IRefreshTokenRepository, RefreshTokenRepository>();
-        services.AddScoped<IRoleRepository, RoleRepository>();
-        services.AddScoped<IUserRepository, UserRepository>();
-        services.AddScoped<IUserBookRepository, UserBookRepository>();
+        services.AddScoped(typeof(IRepository<>), typeof(EntityFrameworkRepository<>));
 
         return services;
     }
@@ -64,7 +54,7 @@ public static class DependencyInjection
         return services;
     }
 
-    public static IServiceCollection InjectAuthServices(this IServiceCollection services) 
+    public static IServiceCollection InjectAuthServices(this IServiceCollection services)
     {
         services.AddScoped<IJwtTokenService, JwtTokenService>();
         services.AddScoped<IPasswordHasher, PasswordHasher>();

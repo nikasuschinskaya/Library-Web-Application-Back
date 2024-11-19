@@ -11,9 +11,5 @@ public interface IRepository<T> where T : IEntity
     void Create(T entity);
     void Update(T entity);
     void Delete(T entity);
-    //Task<T?> GetByIdAsync(Guid id, CancellationToken cancellationToken = default);
-    //IQueryable<T> GetAll();
-    //void Create(T entity);
-    //void Update(T entity);
-    //void Delete(T entity);
+    void Attach(T entity);
 }

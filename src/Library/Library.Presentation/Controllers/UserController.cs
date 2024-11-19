@@ -12,7 +12,6 @@ namespace Library.Presentation.Controllers;
 [Route("api/[controller]")]
 public class UserController : ControllerBase
 {
-    //private readonly IUserService _userService;
     private readonly IGetUserByIdUseCase _getUserByIdUseCase;
     private readonly IGetUserByEmailUseCase _getUserByEmailUseCase;
     private readonly IGetAllUsersUseCase _getAllUsersUseCase;
@@ -33,19 +32,11 @@ public class UserController : ControllerBase
     }
 
 
-
-    //public UserController(IUserService userService, IMapper mapper)
-    //{
-    //    _userService = userService;
-    //    _mapper = mapper;
-    //}
-
     [HttpGet("{userId:guid}")]
     [ProducesResponseType(typeof(UserResponse), (int)HttpStatusCode.OK)]
     [ProducesResponseType((int)HttpStatusCode.BadRequest)]
     public async Task<IActionResult> GetUser(Guid userId, CancellationToken cancellationToken = default)
     {
-        //var user = await _userService.GetUserByIdAsync(userId, cancellationToken);
         var user = await _getUserByIdUseCase.ExecuteAsync(userId, cancellationToken);
         var response = _mapper.Map<User, UserResponse>(user);
         return Ok(response);
@@ -55,7 +46,6 @@ public class UserController : ControllerBase
     [ProducesResponseType(typeof(IEnumerable<UserResponse>), (int)HttpStatusCode.OK)]
     public async Task<IActionResult> GetAllUsers(CancellationToken cancellationToken = default)
     {
-        //var users = await _userService.GetAllUsersAsync(cancellationToken);
         var users = await _getAllUsersUseCase.ExecuteAsync(cancellationToken);
         var response = _mapper.Map<IEnumerable<UserResponse>>(users);
         return Ok(response);
@@ -66,7 +56,6 @@ public class UserController : ControllerBase
     [ProducesResponseType((int)HttpStatusCode.BadRequest)]
     public async Task<IActionResult> GetUserByEmail([FromQuery] string email, CancellationToken cancellationToken = default)
     {
-        //var user = await _userService.GetByEmailAsync(email, cancellationToken);
         var user = await _getUserByEmailUseCase.ExecuteAsync(email, cancellationToken);
         var response = _mapper.Map<User, UserResponse>(user);
         return Ok(response);
@@ -78,7 +67,6 @@ public class UserController : ControllerBase
     public async Task<IActionResult> UpdateUser(Guid userId, [FromBody] UserRequest request, CancellationToken cancellationToken = default)
     {
         var updatedUser = _mapper.Map<User>(request);
-        //await _userService.Update(user, cancellationToken);
         await _updateUserUseCase.ExecuteAsync(userId, updatedUser, cancellationToken);
         return NoContent();
     }

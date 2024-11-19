@@ -15,7 +15,7 @@ public static class DependencyInjection
         return services;
     }
 
-    public static IServiceCollection AddPolicyBasedAuthorization(this IServiceCollection services)
+    public static IServiceCollection AddRolesPolicy(this IServiceCollection services)
     {
         services.AddAuthorizationBuilder()
             .AddPolicy("Admin", policy => policy.RequireRole("Admin"))
