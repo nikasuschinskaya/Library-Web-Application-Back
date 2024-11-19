@@ -3,6 +3,62 @@
   "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{314021BF-44B6-486F-977A-298807ECC1D6}|Library.Presentation\\Library.Presentation.csproj|c:\\users\\user\\source\\repos\\librarywebapp-back\\src\\library\\library.presentation\\mappers\\profiles\\authorprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{314021BF-44B6-486F-977A-298807ECC1D6}|Library.Presentation\\Library.Presentation.csproj|solutionrelative:library.presentation\\mappers\\profiles\\authorprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{314021BF-44B6-486F-977A-298807ECC1D6}|Library.Presentation\\Library.Presentation.csproj|c:\\users\\user\\source\\repos\\librarywebapp-back\\src\\library\\library.presentation\\requests\\bookrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{314021BF-44B6-486F-977A-298807ECC1D6}|Library.Presentation\\Library.Presentation.csproj|solutionrelative:library.presentation\\requests\\bookrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{314021BF-44B6-486F-977A-298807ECC1D6}|Library.Presentation\\Library.Presentation.csproj|c:\\users\\user\\source\\repos\\librarywebapp-back\\src\\library\\library.presentation\\mappers\\profiles\\bookprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{314021BF-44B6-486F-977A-298807ECC1D6}|Library.Presentation\\Library.Presentation.csproj|solutionrelative:library.presentation\\mappers\\profiles\\bookprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{314021BF-44B6-486F-977A-298807ECC1D6}|Library.Presentation\\Library.Presentation.csproj|c:\\users\\user\\source\\repos\\librarywebapp-back\\src\\library\\library.presentation\\mappers\\profiles\\genreprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{314021BF-44B6-486F-977A-298807ECC1D6}|Library.Presentation\\Library.Presentation.csproj|solutionrelative:library.presentation\\mappers\\profiles\\genreprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{314021BF-44B6-486F-977A-298807ECC1D6}|Library.Presentation\\Library.Presentation.csproj|c:\\users\\user\\source\\repos\\librarywebapp-back\\src\\library\\library.presentation\\mappers\\profiles\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{314021BF-44B6-486F-977A-298807ECC1D6}|Library.Presentation\\Library.Presentation.csproj|solutionrelative:library.presentation\\mappers\\profiles\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{314021BF-44B6-486F-977A-298807ECC1D6}|Library.Presentation\\Library.Presentation.csproj|c:\\users\\user\\source\\repos\\librarywebapp-back\\src\\library\\library.presentation\\mappers\\profiles\\authprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{314021BF-44B6-486F-977A-298807ECC1D6}|Library.Presentation\\Library.Presentation.csproj|solutionrelative:library.presentation\\mappers\\profiles\\authprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{314021BF-44B6-486F-977A-298807ECC1D6}|Library.Presentation\\Library.Presentation.csproj|c:\\users\\user\\source\\repos\\librarywebapp-back\\src\\library\\library.presentation\\responses\\userresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{314021BF-44B6-486F-977A-298807ECC1D6}|Library.Presentation\\Library.Presentation.csproj|solutionrelative:library.presentation\\responses\\userresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{314021BF-44B6-486F-977A-298807ECC1D6}|Library.Presentation\\Library.Presentation.csproj|c:\\users\\user\\source\\repos\\librarywebapp-back\\src\\library\\library.presentation\\responses\\genreresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{314021BF-44B6-486F-977A-298807ECC1D6}|Library.Presentation\\Library.Presentation.csproj|solutionrelative:library.presentation\\responses\\genreresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{314021BF-44B6-486F-977A-298807ECC1D6}|Library.Presentation\\Library.Presentation.csproj|c:\\users\\user\\source\\repos\\librarywebapp-back\\src\\library\\library.presentation\\requests\\bookaddrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{314021BF-44B6-486F-977A-298807ECC1D6}|Library.Presentation\\Library.Presentation.csproj|solutionrelative:library.presentation\\requests\\bookaddrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{314021BF-44B6-486F-977A-298807ECC1D6}|Library.Presentation\\Library.Presentation.csproj|c:\\users\\user\\source\\repos\\librarywebapp-back\\src\\library\\library.presentation\\responses\\authorresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{314021BF-44B6-486F-977A-298807ECC1D6}|Library.Presentation\\Library.Presentation.csproj|solutionrelative:library.presentation\\responses\\authorresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{314021BF-44B6-486F-977A-298807ECC1D6}|Library.Presentation\\Library.Presentation.csproj|c:\\users\\user\\source\\repos\\librarywebapp-back\\src\\library\\library.presentation\\responses\\booklistresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{314021BF-44B6-486F-977A-298807ECC1D6}|Library.Presentation\\Library.Presentation.csproj|solutionrelative:library.presentation\\responses\\booklistresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{314021BF-44B6-486F-977A-298807ECC1D6}|Library.Presentation\\Library.Presentation.csproj|c:\\users\\user\\source\\repos\\librarywebapp-back\\src\\library\\library.presentation\\responses\\bookresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{314021BF-44B6-486F-977A-298807ECC1D6}|Library.Presentation\\Library.Presentation.csproj|solutionrelative:library.presentation\\responses\\bookresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{314021BF-44B6-486F-977A-298807ECC1D6}|Library.Presentation\\Library.Presentation.csproj|c:\\users\\user\\source\\repos\\librarywebapp-back\\src\\library\\library.presentation\\requests\\authorrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{314021BF-44B6-486F-977A-298807ECC1D6}|Library.Presentation\\Library.Presentation.csproj|solutionrelative:library.presentation\\requests\\authorrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{314021BF-44B6-486F-977A-298807ECC1D6}|Library.Presentation\\Library.Presentation.csproj|c:\\users\\user\\source\\repos\\librarywebapp-back\\src\\library\\library.presentation\\requests\\userrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{314021BF-44B6-486F-977A-298807ECC1D6}|Library.Presentation\\Library.Presentation.csproj|solutionrelative:library.presentation\\requests\\userrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AE6F6D21-E881-44B4-9CEB-42EAF90A0C0D}|Library.Application\\Library.Application.csproj|c:\\users\\user\\source\\repos\\librarywebapp-back\\src\\library\\library.application\\usecases\\books\\addbookusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AE6F6D21-E881-44B4-9CEB-42EAF90A0C0D}|Library.Application\\Library.Application.csproj|solutionrelative:library.application\\usecases\\books\\addbookusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -27,36 +83,8 @@
       "RelativeMoniker": "D:0:0:{314021BF-44B6-486F-977A-298807ECC1D6}|Library.Presentation\\Library.Presentation.csproj|solutionrelative:library.presentation\\validators\\authorrequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{314021BF-44B6-486F-977A-298807ECC1D6}|Library.Presentation\\Library.Presentation.csproj|c:\\users\\user\\source\\repos\\librarywebapp-back\\src\\library\\library.presentation\\requests\\bookaddrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{314021BF-44B6-486F-977A-298807ECC1D6}|Library.Presentation\\Library.Presentation.csproj|solutionrelative:library.presentation\\requests\\bookaddrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{314021BF-44B6-486F-977A-298807ECC1D6}|Library.Presentation\\Library.Presentation.csproj|c:\\users\\user\\source\\repos\\librarywebapp-back\\src\\library\\library.presentation\\requests\\authtokensrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{314021BF-44B6-486F-977A-298807ECC1D6}|Library.Presentation\\Library.Presentation.csproj|solutionrelative:library.presentation\\requests\\authtokensrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{314021BF-44B6-486F-977A-298807ECC1D6}|Library.Presentation\\Library.Presentation.csproj|c:\\users\\user\\source\\repos\\librarywebapp-back\\src\\library\\library.presentation\\requests\\authorrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{314021BF-44B6-486F-977A-298807ECC1D6}|Library.Presentation\\Library.Presentation.csproj|solutionrelative:library.presentation\\requests\\authorrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{314021BF-44B6-486F-977A-298807ECC1D6}|Library.Presentation\\Library.Presentation.csproj|c:\\users\\user\\source\\repos\\librarywebapp-back\\src\\library\\library.presentation\\mappers\\profiles\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{314021BF-44B6-486F-977A-298807ECC1D6}|Library.Presentation\\Library.Presentation.csproj|solutionrelative:library.presentation\\mappers\\profiles\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{314021BF-44B6-486F-977A-298807ECC1D6}|Library.Presentation\\Library.Presentation.csproj|c:\\users\\user\\source\\repos\\librarywebapp-back\\src\\library\\library.presentation\\mappers\\profiles\\genreprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{314021BF-44B6-486F-977A-298807ECC1D6}|Library.Presentation\\Library.Presentation.csproj|solutionrelative:library.presentation\\mappers\\profiles\\genreprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{314021BF-44B6-486F-977A-298807ECC1D6}|Library.Presentation\\Library.Presentation.csproj|c:\\users\\user\\source\\repos\\librarywebapp-back\\src\\library\\library.presentation\\mappers\\profiles\\bookprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{314021BF-44B6-486F-977A-298807ECC1D6}|Library.Presentation\\Library.Presentation.csproj|solutionrelative:library.presentation\\mappers\\profiles\\bookprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{314021BF-44B6-486F-977A-298807ECC1D6}|Library.Presentation\\Library.Presentation.csproj|c:\\users\\user\\source\\repos\\librarywebapp-back\\src\\library\\library.presentation\\mappers\\profiles\\authprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{314021BF-44B6-486F-977A-298807ECC1D6}|Library.Presentation\\Library.Presentation.csproj|solutionrelative:library.presentation\\mappers\\profiles\\authprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{314021BF-44B6-486F-977A-298807ECC1D6}|Library.Presentation\\Library.Presentation.csproj|c:\\users\\user\\source\\repos\\librarywebapp-back\\src\\library\\library.presentation\\mappers\\profiles\\authorprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{314021BF-44B6-486F-977A-298807ECC1D6}|Library.Presentation\\Library.Presentation.csproj|solutionrelative:library.presentation\\mappers\\profiles\\authorprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{314021BF-44B6-486F-977A-298807ECC1D6}|Library.Presentation\\Library.Presentation.csproj|c:\\users\\user\\source\\repos\\librarywebapp-back\\src\\library\\library.presentation\\extensions\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -463,16 +491,8 @@
       "RelativeMoniker": "D:0:0:{79C0CE14-1C4E-4E93-8621-1224A1DE5EBD}|Library.Infrastucture\\Library.Infrastucture.csproj|solutionrelative:library.infrastucture\\data\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{314021BF-44B6-486F-977A-298807ECC1D6}|Library.Presentation\\Library.Presentation.csproj|c:\\users\\user\\source\\repos\\librarywebapp-back\\src\\library\\library.presentation\\requests\\bookrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{314021BF-44B6-486F-977A-298807ECC1D6}|Library.Presentation\\Library.Presentation.csproj|solutionrelative:library.presentation\\requests\\bookrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AE6F6D21-E881-44B4-9CEB-42EAF90A0C0D}|Library.Application\\Library.Application.csproj|c:\\users\\user\\source\\repos\\librarywebapp-back\\src\\library\\library.application\\interfaces\\usecases\\books\\iaddbookusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AE6F6D21-E881-44B4-9CEB-42EAF90A0C0D}|Library.Application\\Library.Application.csproj|solutionrelative:library.application\\interfaces\\usecases\\books\\iaddbookusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{314021BF-44B6-486F-977A-298807ECC1D6}|Library.Presentation\\Library.Presentation.csproj|c:\\users\\user\\source\\repos\\librarywebapp-back\\src\\library\\library.presentation\\responses\\bookresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{314021BF-44B6-486F-977A-298807ECC1D6}|Library.Presentation\\Library.Presentation.csproj|solutionrelative:library.presentation\\responses\\bookresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AE6F6D21-E881-44B4-9CEB-42EAF90A0C0D}|Library.Application\\Library.Application.csproj|c:\\users\\user\\source\\repos\\librarywebapp-back\\src\\library\\library.application\\interfaces\\usecases\\books\\iupdatebookusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -647,10 +667,6 @@
       "RelativeMoniker": "D:0:0:{EA5702CE-5146-486E-A850-361C30ED61AB}|Library.Domain\\Library.Domain.csproj|solutionrelative:library.domain\\library.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{314021BF-44B6-486F-977A-298807ECC1D6}|Library.Presentation\\Library.Presentation.csproj|c:\\users\\user\\source\\repos\\librarywebapp-back\\src\\library\\library.presentation\\responses\\booklistresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{314021BF-44B6-486F-977A-298807ECC1D6}|Library.Presentation\\Library.Presentation.csproj|solutionrelative:library.presentation\\responses\\booklistresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{79C0CE14-1C4E-4E93-8621-1224A1DE5EBD}|Library.Infrastucture\\Library.Infrastucture.csproj|c:\\users\\user\\source\\repos\\librarywebapp-back\\src\\library\\library.infrastucture\\library.infrastucture.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{79C0CE14-1C4E-4E93-8621-1224A1DE5EBD}|Library.Infrastucture\\Library.Infrastucture.csproj|solutionrelative:library.infrastucture\\library.infrastucture.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
@@ -659,20 +675,8 @@
       "RelativeMoniker": "D:0:0:{314021BF-44B6-486F-977A-298807ECC1D6}|Library.Presentation\\Library.Presentation.csproj|solutionrelative:library.presentation\\requests\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{314021BF-44B6-486F-977A-298807ECC1D6}|Library.Presentation\\Library.Presentation.csproj|c:\\users\\user\\source\\repos\\librarywebapp-back\\src\\library\\library.presentation\\responses\\authorresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{314021BF-44B6-486F-977A-298807ECC1D6}|Library.Presentation\\Library.Presentation.csproj|solutionrelative:library.presentation\\responses\\authorresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{314021BF-44B6-486F-977A-298807ECC1D6}|Library.Presentation\\Library.Presentation.csproj|c:\\users\\user\\source\\repos\\librarywebapp-back\\src\\library\\library.presentation\\responses\\authtokensresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{314021BF-44B6-486F-977A-298807ECC1D6}|Library.Presentation\\Library.Presentation.csproj|solutionrelative:library.presentation\\responses\\authtokensresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{314021BF-44B6-486F-977A-298807ECC1D6}|Library.Presentation\\Library.Presentation.csproj|c:\\users\\user\\source\\repos\\librarywebapp-back\\src\\library\\library.presentation\\responses\\userresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{314021BF-44B6-486F-977A-298807ECC1D6}|Library.Presentation\\Library.Presentation.csproj|solutionrelative:library.presentation\\responses\\userresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{314021BF-44B6-486F-977A-298807ECC1D6}|Library.Presentation\\Library.Presentation.csproj|c:\\users\\user\\source\\repos\\librarywebapp-back\\src\\library\\library.presentation\\requests\\userrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{314021BF-44B6-486F-977A-298807ECC1D6}|Library.Presentation\\Library.Presentation.csproj|solutionrelative:library.presentation\\requests\\userrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{314021BF-44B6-486F-977A-298807ECC1D6}|Library.Presentation\\Library.Presentation.csproj|c:\\users\\user\\source\\repos\\librarywebapp-back\\src\\library\\library.presentation\\requests\\filterbookrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -681,10 +685,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{314021BF-44B6-486F-977A-298807ECC1D6}|Library.Presentation\\Library.Presentation.csproj|c:\\users\\user\\source\\repos\\librarywebapp-back\\src\\library\\library.presentation\\requests\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{314021BF-44B6-486F-977A-298807ECC1D6}|Library.Presentation\\Library.Presentation.csproj|solutionrelative:library.presentation\\requests\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{314021BF-44B6-486F-977A-298807ECC1D6}|Library.Presentation\\Library.Presentation.csproj|c:\\users\\user\\source\\repos\\librarywebapp-back\\src\\library\\library.presentation\\responses\\genreresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{314021BF-44B6-486F-977A-298807ECC1D6}|Library.Presentation\\Library.Presentation.csproj|solutionrelative:library.presentation\\responses\\genreresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8966CA66-08D3-456C-9274-2BA4E526EE66}|Library.Api\\Library.Api.csproj|c:\\users\\user\\source\\repos\\librarywebapp-back\\src\\library\\library.api\\tempkey.jwk||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -742,11 +742,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 15,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 22,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "Library.Presentation\\Controllers\\UserController.cs",
@@ -760,7 +760,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 26,
               "Title": "AuthenticationController.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Controllers\\AuthenticationController.cs",
               "RelativeDocumentMoniker": "Library.Presentation\\Controllers\\AuthenticationController.cs",
@@ -774,7 +774,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 86,
+              "DocumentIndex": 93,
               "Title": "Book.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Domain\\Entities\\Book.cs",
               "RelativeDocumentMoniker": "Library.Domain\\Entities\\Book.cs",
@@ -788,20 +788,21 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 161,
+              "DocumentIndex": 10,
               "Title": "BookListResponse.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Responses\\BookListResponse.cs",
               "RelativeDocumentMoniker": "Library.Presentation\\Responses\\BookListResponse.cs",
               "ToolTip": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Responses\\BookListResponse.cs",
               "RelativeToolTip": "Library.Presentation\\Responses\\BookListResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-22T00:11:59.652Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 24,
               "Title": "BookController.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Controllers\\BookController.cs",
               "RelativeDocumentMoniker": "Library.Presentation\\Controllers\\BookController.cs",
@@ -815,7 +816,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 15,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Api\\Program.cs",
               "RelativeDocumentMoniker": "Library.Api\\Program.cs",
@@ -833,59 +834,189 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AuthTokensRequest.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Requests\\AuthTokensRequest.cs",
-              "RelativeDocumentMoniker": "Library.Presentation\\Requests\\AuthTokensRequest.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Requests\\AuthTokensRequest.cs",
-              "RelativeToolTip": "Library.Presentation\\Requests\\AuthTokensRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "BookProfile.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Mappers\\Profiles\\BookProfile.cs",
+              "RelativeDocumentMoniker": "Library.Presentation\\Mappers\\Profiles\\BookProfile.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Mappers\\Profiles\\BookProfile.cs",
+              "RelativeToolTip": "Library.Presentation\\Mappers\\Profiles\\BookProfile.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA0wAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T21:00:51.953Z",
+              "WhenOpened": "2024-11-14T21:49:27.154Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
+              "Title": "AuthProfile.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Mappers\\Profiles\\AuthProfile.cs",
+              "RelativeDocumentMoniker": "Library.Presentation\\Mappers\\Profiles\\AuthProfile.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Mappers\\Profiles\\AuthProfile.cs",
+              "RelativeToolTip": "Library.Presentation\\Mappers\\Profiles\\AuthProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T21:49:09.359Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "BookAddRequest.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Requests\\BookAddRequest.cs",
               "RelativeDocumentMoniker": "Library.Presentation\\Requests\\BookAddRequest.cs",
               "ToolTip": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Requests\\BookAddRequest.cs",
               "RelativeToolTip": "Library.Presentation\\Requests\\BookAddRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-15T12:40:07.735Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AuthorRequestValidator.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Validators\\AuthorRequestValidator.cs",
-              "RelativeDocumentMoniker": "Library.Presentation\\Validators\\AuthorRequestValidator.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Validators\\AuthorRequestValidator.cs",
-              "RelativeToolTip": "Library.Presentation\\Validators\\AuthorRequestValidator.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAABZAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "GenreProfile.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Mappers\\Profiles\\GenreProfile.cs",
+              "RelativeDocumentMoniker": "Library.Presentation\\Mappers\\Profiles\\GenreProfile.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Mappers\\Profiles\\GenreProfile.cs",
+              "RelativeToolTip": "Library.Presentation\\Mappers\\Profiles\\GenreProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T23:12:10.477Z",
+              "WhenOpened": "2024-11-14T21:50:32.097Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GenreResponse.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Responses\\GenreResponse.cs",
+              "RelativeDocumentMoniker": "Library.Presentation\\Responses\\GenreResponse.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Responses\\GenreResponse.cs",
+              "RelativeToolTip": "Library.Presentation\\Responses\\GenreResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T19:31:34.156Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "FilterBookRequestValidator.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Validators\\FilterBookRequestValidator.cs",
-              "RelativeDocumentMoniker": "Library.Presentation\\Validators\\FilterBookRequestValidator.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Validators\\FilterBookRequestValidator.cs",
-              "RelativeToolTip": "Library.Presentation\\Validators\\FilterBookRequestValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Title": "UserProfile.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Mappers\\Profiles\\UserProfile.cs",
+              "RelativeDocumentMoniker": "Library.Presentation\\Mappers\\Profiles\\UserProfile.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Mappers\\Profiles\\UserProfile.cs",
+              "RelativeToolTip": "Library.Presentation\\Mappers\\Profiles\\UserProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T23:19:05.705Z",
+              "WhenOpened": "2024-11-14T21:49:19.027Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
+              "Title": "UserResponse.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Responses\\UserResponse.cs",
+              "RelativeDocumentMoniker": "Library.Presentation\\Responses\\UserResponse.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Responses\\UserResponse.cs",
+              "RelativeToolTip": "Library.Presentation\\Responses\\UserResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T16:45:48.729Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BookRequest.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Requests\\BookRequest.cs",
+              "RelativeDocumentMoniker": "Library.Presentation\\Requests\\BookRequest.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Requests\\BookRequest.cs",
+              "RelativeToolTip": "Library.Presentation\\Requests\\BookRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T22:10:32.168Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthorProfile.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Mappers\\Profiles\\AuthorProfile.cs",
+              "RelativeDocumentMoniker": "Library.Presentation\\Mappers\\Profiles\\AuthorProfile.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Mappers\\Profiles\\AuthorProfile.cs",
+              "RelativeToolTip": "Library.Presentation\\Mappers\\Profiles\\AuthorProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T21:49:37.92Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AuthorResponse.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Responses\\AuthorResponse.cs",
+              "RelativeDocumentMoniker": "Library.Presentation\\Responses\\AuthorResponse.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Responses\\AuthorResponse.cs",
+              "RelativeToolTip": "Library.Presentation\\Responses\\AuthorResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T22:58:52.888Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BookResponse.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Responses\\BookResponse.cs",
+              "RelativeDocumentMoniker": "Library.Presentation\\Responses\\BookResponse.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Responses\\BookResponse.cs",
+              "RelativeToolTip": "Library.Presentation\\Responses\\BookResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAswAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T03:12:17.983Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AuthorRequest.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Requests\\AuthorRequest.cs",
+              "RelativeDocumentMoniker": "Library.Presentation\\Requests\\AuthorRequest.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Requests\\AuthorRequest.cs",
+              "RelativeToolTip": "Library.Presentation\\Requests\\AuthorRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T22:54:46.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UserRequest.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Requests\\UserRequest.cs",
+              "RelativeDocumentMoniker": "Library.Presentation\\Requests\\UserRequest.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Requests\\UserRequest.cs",
+              "RelativeToolTip": "Library.Presentation\\Requests\\UserRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T00:37:56.739Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AddBookUseCase.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Application\\UseCases\\Books\\AddBookUseCase.cs",
+              "RelativeDocumentMoniker": "Library.Application\\UseCases\\Books\\AddBookUseCase.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Application\\UseCases\\Books\\AddBookUseCase.cs",
+              "RelativeToolTip": "Library.Application\\UseCases\\Books\\AddBookUseCase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T13:02:29.92Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "GlobalExceptionHandlingMiddleware.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Api\\Middlewares\\GlobalExceptionHandlingMiddleware.cs",
               "RelativeDocumentMoniker": "Library.Api\\Middlewares\\GlobalExceptionHandlingMiddleware.cs",
@@ -898,7 +1029,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 17,
               "Title": "DependencyInjection.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Api\\Extensions\\DependencyInjection.cs",
               "RelativeDocumentMoniker": "Library.Api\\Extensions\\DependencyInjection.cs",
@@ -911,98 +1042,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AddBookUseCase.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Application\\UseCases\\Books\\AddBookUseCase.cs",
-              "RelativeDocumentMoniker": "Library.Application\\UseCases\\Books\\AddBookUseCase.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Application\\UseCases\\Books\\AddBookUseCase.cs",
-              "RelativeToolTip": "Library.Application\\UseCases\\Books\\AddBookUseCase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 18,
+              "Title": "FilterBookRequestValidator.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Validators\\FilterBookRequestValidator.cs",
+              "RelativeDocumentMoniker": "Library.Presentation\\Validators\\FilterBookRequestValidator.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Validators\\FilterBookRequestValidator.cs",
+              "RelativeToolTip": "Library.Presentation\\Validators\\FilterBookRequestValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T13:02:29.92Z",
+              "WhenOpened": "2024-10-22T23:19:05.705Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AuthorRequest.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Requests\\AuthorRequest.cs",
-              "RelativeDocumentMoniker": "Library.Presentation\\Requests\\AuthorRequest.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Requests\\AuthorRequest.cs",
-              "RelativeToolTip": "Library.Presentation\\Requests\\AuthorRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAXAAAAAAAAAA==",
+              "DocumentIndex": 19,
+              "Title": "AuthorRequestValidator.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Validators\\AuthorRequestValidator.cs",
+              "RelativeDocumentMoniker": "Library.Presentation\\Validators\\AuthorRequestValidator.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Validators\\AuthorRequestValidator.cs",
+              "RelativeToolTip": "Library.Presentation\\Validators\\AuthorRequestValidator.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAABZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T22:54:46.451Z",
+              "WhenOpened": "2024-10-22T23:12:10.477Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "UserProfile.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Mappers\\Profiles\\UserProfile.cs",
-              "RelativeDocumentMoniker": "Library.Presentation\\Mappers\\Profiles\\UserProfile.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Mappers\\Profiles\\UserProfile.cs",
-              "RelativeToolTip": "Library.Presentation\\Mappers\\Profiles\\UserProfile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABTAAAAAAAAAA==",
+              "DocumentIndex": 20,
+              "Title": "AuthTokensRequest.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Requests\\AuthTokensRequest.cs",
+              "RelativeDocumentMoniker": "Library.Presentation\\Requests\\AuthTokensRequest.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Requests\\AuthTokensRequest.cs",
+              "RelativeToolTip": "Library.Presentation\\Requests\\AuthTokensRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T21:49:19.027Z",
+              "WhenOpened": "2024-10-21T21:00:51.953Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "GenreProfile.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Mappers\\Profiles\\GenreProfile.cs",
-              "RelativeDocumentMoniker": "Library.Presentation\\Mappers\\Profiles\\GenreProfile.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Mappers\\Profiles\\GenreProfile.cs",
-              "RelativeToolTip": "Library.Presentation\\Mappers\\Profiles\\GenreProfile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T21:50:32.097Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "BookProfile.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Mappers\\Profiles\\BookProfile.cs",
-              "RelativeDocumentMoniker": "Library.Presentation\\Mappers\\Profiles\\BookProfile.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Mappers\\Profiles\\BookProfile.cs",
-              "RelativeToolTip": "Library.Presentation\\Mappers\\Profiles\\BookProfile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T21:49:27.154Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "AuthProfile.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Mappers\\Profiles\\AuthProfile.cs",
-              "RelativeDocumentMoniker": "Library.Presentation\\Mappers\\Profiles\\AuthProfile.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Mappers\\Profiles\\AuthProfile.cs",
-              "RelativeToolTip": "Library.Presentation\\Mappers\\Profiles\\AuthProfile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T21:49:09.359Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "AuthorProfile.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Mappers\\Profiles\\AuthorProfile.cs",
-              "RelativeDocumentMoniker": "Library.Presentation\\Mappers\\Profiles\\AuthorProfile.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Mappers\\Profiles\\AuthorProfile.cs",
-              "RelativeToolTip": "Library.Presentation\\Mappers\\Profiles\\AuthorProfile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T21:49:37.92Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 21,
               "Title": "DependencyInjection.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Extensions\\DependencyInjection.cs",
               "RelativeDocumentMoniker": "Library.Presentation\\Extensions\\DependencyInjection.cs",
@@ -1015,7 +1094,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 23,
               "Title": "GenreController.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Controllers\\GenreController.cs",
               "RelativeDocumentMoniker": "Library.Presentation\\Controllers\\GenreController.cs",
@@ -1028,7 +1107,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 25,
               "Title": "AuthorController.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Controllers\\AuthorController.cs",
               "RelativeDocumentMoniker": "Library.Presentation\\Controllers\\AuthorController.cs",
@@ -1041,7 +1120,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 27,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Infrastucture\\Repositories\\UserRepository.cs",
               "RelativeDocumentMoniker": "Library.Infrastucture\\Repositories\\UserRepository.cs",
@@ -1054,7 +1133,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 28,
               "Title": "RoleRepository.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Infrastucture\\Repositories\\RoleRepository.cs",
               "RelativeDocumentMoniker": "Library.Infrastucture\\Repositories\\RoleRepository.cs",
@@ -1067,7 +1146,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 29,
               "Title": "UserBookRepository.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Infrastucture\\Repositories\\UserBookRepository.cs",
               "RelativeDocumentMoniker": "Library.Infrastucture\\Repositories\\UserBookRepository.cs",
@@ -1080,7 +1159,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 30,
               "Title": "RefreshTokenRepository.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Infrastucture\\Repositories\\RefreshTokenRepository.cs",
               "RelativeDocumentMoniker": "Library.Infrastucture\\Repositories\\RefreshTokenRepository.cs",
@@ -1093,7 +1172,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 31,
               "Title": "GenreRepository.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Infrastucture\\Repositories\\GenreRepository.cs",
               "RelativeDocumentMoniker": "Library.Infrastucture\\Repositories\\GenreRepository.cs",
@@ -1106,7 +1185,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 32,
               "Title": "BookRepository.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Infrastucture\\Repositories\\BookRepository.cs",
               "RelativeDocumentMoniker": "Library.Infrastucture\\Repositories\\BookRepository.cs",
@@ -1119,7 +1198,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 33,
               "Title": "AuthorRepository.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Infrastucture\\Repositories\\AuthorRepository.cs",
               "RelativeDocumentMoniker": "Library.Infrastucture\\Repositories\\AuthorRepository.cs",
@@ -1132,7 +1211,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 34,
               "Title": "EntityFrameworkRepository.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Infrastucture\\Repositories\\Base\\EntityFrameworkRepository.cs",
               "RelativeDocumentMoniker": "Library.Infrastucture\\Repositories\\Base\\EntityFrameworkRepository.cs",
@@ -1145,7 +1224,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 35,
               "Title": "DependencyInjection.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Infrastucture\\Extensions\\DependencyInjection.cs",
               "RelativeDocumentMoniker": "Library.Infrastucture\\Extensions\\DependencyInjection.cs",
@@ -1158,7 +1237,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 36,
               "Title": "IdentityServerConfig.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Infrastucture\\IdentityServer\\IdentityServerConfig.cs",
               "RelativeDocumentMoniker": "Library.Infrastucture\\IdentityServer\\IdentityServerConfig.cs",
@@ -1171,7 +1250,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 38,
               "Title": "UserConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Infrastucture\\Data\\Configurations\\UserConfiguration.cs",
               "RelativeDocumentMoniker": "Library.Infrastucture\\Data\\Configurations\\UserConfiguration.cs",
@@ -1184,7 +1263,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 39,
               "Title": "RoleConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Infrastucture\\Data\\Configurations\\RoleConfiguration.cs",
               "RelativeDocumentMoniker": "Library.Infrastucture\\Data\\Configurations\\RoleConfiguration.cs",
@@ -1197,7 +1276,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 37,
               "Title": "UserBookConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Infrastucture\\Data\\Configurations\\UserBookConfiguration.cs",
               "RelativeDocumentMoniker": "Library.Infrastucture\\Data\\Configurations\\UserBookConfiguration.cs",
@@ -1210,7 +1289,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 40,
               "Title": "RefreshTokenConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Infrastucture\\Data\\Configurations\\RefreshTokenConfiguration.cs",
               "RelativeDocumentMoniker": "Library.Infrastucture\\Data\\Configurations\\RefreshTokenConfiguration.cs",
@@ -1223,7 +1302,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 41,
               "Title": "GenreConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Infrastucture\\Data\\Configurations\\GenreConfiguration.cs",
               "RelativeDocumentMoniker": "Library.Infrastucture\\Data\\Configurations\\GenreConfiguration.cs",
@@ -1236,7 +1315,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 42,
               "Title": "BookConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Infrastucture\\Data\\Configurations\\BookConfiguration.cs",
               "RelativeDocumentMoniker": "Library.Infrastucture\\Data\\Configurations\\BookConfiguration.cs",
@@ -1249,7 +1328,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 43,
               "Title": "AuthorConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Infrastucture\\Data\\Configurations\\AuthorConfiguration.cs",
               "RelativeDocumentMoniker": "Library.Infrastucture\\Data\\Configurations\\AuthorConfiguration.cs",
@@ -1262,7 +1341,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 44,
               "Title": "PasswordHasher.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Infrastucture\\Auth\\PasswordHasher.cs",
               "RelativeDocumentMoniker": "Library.Infrastucture\\Auth\\PasswordHasher.cs",
@@ -1275,7 +1354,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 45,
               "Title": "JwtTokenService.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Infrastucture\\Auth\\JwtTokenService.cs",
               "RelativeDocumentMoniker": "Library.Infrastucture\\Auth\\JwtTokenService.cs",
@@ -1288,7 +1367,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 46,
               "Title": "AuthService.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Infrastucture\\Auth\\AuthService.cs",
               "RelativeDocumentMoniker": "Library.Infrastucture\\Auth\\AuthService.cs",
@@ -1301,7 +1380,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 47,
               "Title": "EmptySpecification.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Domain\\Specifications\\EmptySpecification.cs",
               "RelativeDocumentMoniker": "Library.Domain\\Specifications\\EmptySpecification.cs",
@@ -1314,7 +1393,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 48,
               "Title": "UserByEmailSpecification.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Domain\\Specifications\\Users\\UserByEmailSpecification.cs",
               "RelativeDocumentMoniker": "Library.Domain\\Specifications\\Users\\UserByEmailSpecification.cs",
@@ -1327,7 +1406,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 49,
               "Title": "AllUsersOrderedSpecification.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Domain\\Specifications\\Users\\AllUsersOrderedSpecification.cs",
               "RelativeDocumentMoniker": "Library.Domain\\Specifications\\Users\\AllUsersOrderedSpecification.cs",
@@ -1340,7 +1419,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 50,
               "Title": "RoleByNameSpecification.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Domain\\Specifications\\Roles\\RoleByNameSpecification.cs",
               "RelativeDocumentMoniker": "Library.Domain\\Specifications\\Roles\\RoleByNameSpecification.cs",
@@ -1353,7 +1432,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 51,
               "Title": "RefreshTokenByValueSpecification.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Domain\\Specifications\\RefreshTokens\\RefreshTokenByValueSpecification.cs",
               "RelativeDocumentMoniker": "Library.Domain\\Specifications\\RefreshTokens\\RefreshTokenByValueSpecification.cs",
@@ -1366,7 +1445,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 52,
               "Title": "ActiveRefreshTokenSpecification.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Domain\\Specifications\\RefreshTokens\\ActiveRefreshTokenSpecification.cs",
               "RelativeDocumentMoniker": "Library.Domain\\Specifications\\RefreshTokens\\ActiveRefreshTokenSpecification.cs",
@@ -1379,7 +1458,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 53,
               "Title": "AllGenresOrderedSpecification.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Domain\\Specifications\\Genres\\AllGenresOrderedSpecification.cs",
               "RelativeDocumentMoniker": "Library.Domain\\Specifications\\Genres\\AllGenresOrderedSpecification.cs",
@@ -1392,7 +1471,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 54,
               "Title": "PagedBooksSpecification.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Domain\\Specifications\\Books\\PagedBooksSpecification.cs",
               "RelativeDocumentMoniker": "Library.Domain\\Specifications\\Books\\PagedBooksSpecification.cs",
@@ -1405,7 +1484,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 55,
               "Title": "BooksByTitleSpecification.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Domain\\Specifications\\Books\\BooksByTitleSpecification.cs",
               "RelativeDocumentMoniker": "Library.Domain\\Specifications\\Books\\BooksByTitleSpecification.cs",
@@ -1418,7 +1497,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 56,
               "Title": "BooksByGenreSpecification.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Domain\\Specifications\\Books\\BooksByGenreSpecification.cs",
               "RelativeDocumentMoniker": "Library.Domain\\Specifications\\Books\\BooksByGenreSpecification.cs",
@@ -1431,7 +1510,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 57,
               "Title": "BooksByGenreAndAuthorSpecification.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Domain\\Specifications\\Books\\BooksByGenreAndAuthorSpecification.cs",
               "RelativeDocumentMoniker": "Library.Domain\\Specifications\\Books\\BooksByGenreAndAuthorSpecification.cs",
@@ -1444,7 +1523,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 58,
               "Title": "BooksByAuthorSpecification.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Domain\\Specifications\\Books\\BooksByAuthorSpecification.cs",
               "RelativeDocumentMoniker": "Library.Domain\\Specifications\\Books\\BooksByAuthorSpecification.cs",
@@ -1457,7 +1536,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 59,
               "Title": "BookByISBNSpecification.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Domain\\Specifications\\Books\\BookByISBNSpecification.cs",
               "RelativeDocumentMoniker": "Library.Domain\\Specifications\\Books\\BookByISBNSpecification.cs",
@@ -1470,7 +1549,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 60,
               "Title": "ActiveUserBookSpecification.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Domain\\Specifications\\Books\\ActiveUserBookSpecification.cs",
               "RelativeDocumentMoniker": "Library.Domain\\Specifications\\Books\\ActiveUserBookSpecification.cs",
@@ -1483,7 +1562,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 61,
               "Title": "AuthorByIdsSpecification.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Domain\\Specifications\\Authors\\AuthorByIdsSpecification.cs",
               "RelativeDocumentMoniker": "Library.Domain\\Specifications\\Authors\\AuthorByIdsSpecification.cs",
@@ -1496,7 +1575,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 62,
               "Title": "AuthorByDetailsSpecification.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Domain\\Specifications\\Authors\\AuthorByDetailsSpecification.cs",
               "RelativeDocumentMoniker": "Library.Domain\\Specifications\\Authors\\AuthorByDetailsSpecification.cs",
@@ -1509,7 +1588,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 63,
               "Title": "AllAuthorsOrderedSpecification.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Domain\\Specifications\\Authors\\AllAuthorsOrderedSpecification.cs",
               "RelativeDocumentMoniker": "Library.Domain\\Specifications\\Authors\\AllAuthorsOrderedSpecification.cs",
@@ -1522,7 +1601,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 64,
               "Title": "PagedList.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Domain\\Models\\PagedList.cs",
               "RelativeDocumentMoniker": "Library.Domain\\Models\\PagedList.cs",
@@ -1535,7 +1614,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 65,
               "Title": "AuthTokens.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Domain\\Models\\AuthTokens.cs",
               "RelativeDocumentMoniker": "Library.Domain\\Models\\AuthTokens.cs",
@@ -1548,7 +1627,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 66,
               "Title": "IUnitOfWork.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Domain\\Interfaces\\IUnitOfWork.cs",
               "RelativeDocumentMoniker": "Library.Domain\\Interfaces\\IUnitOfWork.cs",
@@ -1561,7 +1640,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 67,
               "Title": "ILibraryDbContext.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Domain\\Interfaces\\ILibraryDbContext.cs",
               "RelativeDocumentMoniker": "Library.Domain\\Interfaces\\ILibraryDbContext.cs",
@@ -1574,7 +1653,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 68,
               "Title": "IInitializer.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Domain\\Interfaces\\IInitializer.cs",
               "RelativeDocumentMoniker": "Library.Domain\\Interfaces\\IInitializer.cs",
@@ -1587,7 +1666,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 69,
               "Title": "IUserRepository.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Domain\\Interfaces\\Repositories\\IUserRepository.cs",
               "RelativeDocumentMoniker": "Library.Domain\\Interfaces\\Repositories\\IUserRepository.cs",
@@ -1600,7 +1679,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 70,
               "Title": "IUserBookRepository.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Domain\\Interfaces\\Repositories\\IUserBookRepository.cs",
               "RelativeDocumentMoniker": "Library.Domain\\Interfaces\\Repositories\\IUserBookRepository.cs",
@@ -1613,7 +1692,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 71,
               "Title": "IRoleRepository.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Domain\\Interfaces\\Repositories\\IRoleRepository.cs",
               "RelativeDocumentMoniker": "Library.Domain\\Interfaces\\Repositories\\IRoleRepository.cs",
@@ -1626,7 +1705,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 72,
               "Title": "IRepository.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Domain\\Interfaces\\Repositories\\IRepository.cs",
               "RelativeDocumentMoniker": "Library.Domain\\Interfaces\\Repositories\\IRepository.cs",
@@ -1639,7 +1718,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 73,
               "Title": "IRefreshTokenRepository.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Domain\\Interfaces\\Repositories\\IRefreshTokenRepository.cs",
               "RelativeDocumentMoniker": "Library.Domain\\Interfaces\\Repositories\\IRefreshTokenRepository.cs",
@@ -1652,7 +1731,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 74,
               "Title": "IGenreRepository.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Domain\\Interfaces\\Repositories\\IGenreRepository.cs",
               "RelativeDocumentMoniker": "Library.Domain\\Interfaces\\Repositories\\IGenreRepository.cs",
@@ -1665,7 +1744,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 75,
               "Title": "IAuthorRepository.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Domain\\Interfaces\\Repositories\\IAuthorRepository.cs",
               "RelativeDocumentMoniker": "Library.Domain\\Interfaces\\Repositories\\IAuthorRepository.cs",
@@ -1678,7 +1757,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 76,
               "Title": "IPasswordHasher.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Domain\\Interfaces\\Auth\\IPasswordHasher.cs",
               "RelativeDocumentMoniker": "Library.Domain\\Interfaces\\Auth\\IPasswordHasher.cs",
@@ -1691,7 +1770,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 77,
               "Title": "IJwtTokenService.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Domain\\Interfaces\\Auth\\IJwtTokenService.cs",
               "RelativeDocumentMoniker": "Library.Domain\\Interfaces\\Auth\\IJwtTokenService.cs",
@@ -1704,7 +1783,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 71,
+              "DocumentIndex": 78,
               "Title": "IAuthService.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Domain\\Interfaces\\Auth\\IAuthService.cs",
               "RelativeDocumentMoniker": "Library.Domain\\Interfaces\\Auth\\IAuthService.cs",
@@ -1717,7 +1796,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
+              "DocumentIndex": 79,
               "Title": "StringValueAttribute.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Domain\\Extentions\\StringValueAttribute.cs",
               "RelativeDocumentMoniker": "Library.Domain\\Extentions\\StringValueAttribute.cs",
@@ -1730,7 +1809,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 73,
+              "DocumentIndex": 80,
               "Title": "PagedListExtension.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Domain\\Extentions\\PagedListExtension.cs",
               "RelativeDocumentMoniker": "Library.Domain\\Extentions\\PagedListExtension.cs",
@@ -1743,7 +1822,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 74,
+              "DocumentIndex": 81,
               "Title": "EnumExtention.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Domain\\Extentions\\EnumExtention.cs",
               "RelativeDocumentMoniker": "Library.Domain\\Extentions\\EnumExtention.cs",
@@ -1756,7 +1835,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 75,
+              "DocumentIndex": 82,
               "Title": "EntityNotFoundException.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Domain\\Exceptions\\EntityNotFoundException.cs",
               "RelativeDocumentMoniker": "Library.Domain\\Exceptions\\EntityNotFoundException.cs",
@@ -1769,7 +1848,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 76,
+              "DocumentIndex": 83,
               "Title": "AlreadyExistsException.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Domain\\Exceptions\\AlreadyExistsException.cs",
               "RelativeDocumentMoniker": "Library.Domain\\Exceptions\\AlreadyExistsException.cs",
@@ -1782,7 +1861,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 77,
+              "DocumentIndex": 84,
               "Title": "UserBookStatus.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Domain\\Enums\\UserBookStatus.cs",
               "RelativeDocumentMoniker": "Library.Domain\\Enums\\UserBookStatus.cs",
@@ -1795,7 +1874,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 78,
+              "DocumentIndex": 85,
               "Title": "BookStockStatus.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Domain\\Enums\\BookStockStatus.cs",
               "RelativeDocumentMoniker": "Library.Domain\\Enums\\BookStockStatus.cs",
@@ -1808,7 +1887,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 79,
+              "DocumentIndex": 86,
               "Title": "Roles.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Domain\\Enums\\Roles.cs",
               "RelativeDocumentMoniker": "Library.Domain\\Enums\\Roles.cs",
@@ -1821,7 +1900,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 80,
+              "DocumentIndex": 87,
               "Title": "UserBook.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Domain\\Entities\\UserBook.cs",
               "RelativeDocumentMoniker": "Library.Domain\\Entities\\UserBook.cs",
@@ -1834,7 +1913,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 81,
+              "DocumentIndex": 88,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Domain\\Entities\\User.cs",
               "RelativeDocumentMoniker": "Library.Domain\\Entities\\User.cs",
@@ -1847,7 +1926,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 82,
+              "DocumentIndex": 89,
               "Title": "Role.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Domain\\Entities\\Role.cs",
               "RelativeDocumentMoniker": "Library.Domain\\Entities\\Role.cs",
@@ -1860,7 +1939,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 83,
+              "DocumentIndex": 90,
               "Title": "RefreshToken.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Domain\\Entities\\RefreshToken.cs",
               "RelativeDocumentMoniker": "Library.Domain\\Entities\\RefreshToken.cs",
@@ -1873,7 +1952,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 84,
+              "DocumentIndex": 91,
               "Title": "Genre.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Domain\\Entities\\Genre.cs",
               "RelativeDocumentMoniker": "Library.Domain\\Entities\\Genre.cs",
@@ -1886,7 +1965,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 85,
+              "DocumentIndex": 92,
               "Title": "Author.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Domain\\Entities\\Author.cs",
               "RelativeDocumentMoniker": "Library.Domain\\Entities\\Author.cs",
@@ -1899,7 +1978,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 87,
+              "DocumentIndex": 94,
               "Title": "NamedEntity.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Domain\\Entities\\Base\\NamedEntity.cs",
               "RelativeDocumentMoniker": "Library.Domain\\Entities\\Base\\NamedEntity.cs",
@@ -1912,7 +1991,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 88,
+              "DocumentIndex": 95,
               "Title": "IEntity.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Domain\\Entities\\Base\\IEntity.cs",
               "RelativeDocumentMoniker": "Library.Domain\\Entities\\Base\\IEntity.cs",
@@ -1925,7 +2004,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 89,
+              "DocumentIndex": 96,
               "Title": "BaseEntity.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Domain\\Entities\\Base\\BaseEntity.cs",
               "RelativeDocumentMoniker": "Library.Domain\\Entities\\Base\\BaseEntity.cs",
@@ -1938,7 +2017,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 90,
+              "DocumentIndex": 97,
               "Title": "UpdateUserUseCase.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Application\\UseCases\\Users\\UpdateUserUseCase.cs",
               "RelativeDocumentMoniker": "Library.Application\\UseCases\\Users\\UpdateUserUseCase.cs",
@@ -1951,7 +2030,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 91,
+              "DocumentIndex": 98,
               "Title": "GetUserByIdUseCase.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Application\\UseCases\\Users\\GetUserByIdUseCase.cs",
               "RelativeDocumentMoniker": "Library.Application\\UseCases\\Users\\GetUserByIdUseCase.cs",
@@ -1964,7 +2043,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 92,
+              "DocumentIndex": 99,
               "Title": "GetUserByEmailUseCase.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Application\\UseCases\\Users\\GetUserByEmailUseCase.cs",
               "RelativeDocumentMoniker": "Library.Application\\UseCases\\Users\\GetUserByEmailUseCase.cs",
@@ -1977,7 +2056,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 93,
+              "DocumentIndex": 100,
               "Title": "GetAllUsersUseCase.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Application\\UseCases\\Users\\GetAllUsersUseCase.cs",
               "RelativeDocumentMoniker": "Library.Application\\UseCases\\Users\\GetAllUsersUseCase.cs",
@@ -1990,7 +2069,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 94,
+              "DocumentIndex": 101,
               "Title": "GetGenreByIdUseCase.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Application\\UseCases\\Genres\\GetGenreByIdUseCase.cs",
               "RelativeDocumentMoniker": "Library.Application\\UseCases\\Genres\\GetGenreByIdUseCase.cs",
@@ -2003,7 +2082,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 95,
+              "DocumentIndex": 102,
               "Title": "GetAllGenresUseCase.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Application\\UseCases\\Genres\\GetAllGenresUseCase.cs",
               "RelativeDocumentMoniker": "Library.Application\\UseCases\\Genres\\GetAllGenresUseCase.cs",
@@ -2016,7 +2095,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 96,
+              "DocumentIndex": 103,
               "Title": "UpdateBookUseCase.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Application\\UseCases\\Books\\UpdateBookUseCase.cs",
               "RelativeDocumentMoniker": "Library.Application\\UseCases\\Books\\UpdateBookUseCase.cs",
@@ -2029,7 +2108,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 97,
+              "DocumentIndex": 104,
               "Title": "SearchBooksByTitleUseCase.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Application\\UseCases\\Books\\SearchBooksByTitleUseCase.cs",
               "RelativeDocumentMoniker": "Library.Application\\UseCases\\Books\\SearchBooksByTitleUseCase.cs",
@@ -2042,7 +2121,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 98,
+              "DocumentIndex": 105,
               "Title": "TakeBookUseCase.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Application\\UseCases\\Books\\TakeBookUseCase.cs",
               "RelativeDocumentMoniker": "Library.Application\\UseCases\\Books\\TakeBookUseCase.cs",
@@ -2055,7 +2134,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 99,
+              "DocumentIndex": 106,
               "Title": "ReturnBookUseCase.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Application\\UseCases\\Books\\ReturnBookUseCase.cs",
               "RelativeDocumentMoniker": "Library.Application\\UseCases\\Books\\ReturnBookUseCase.cs",
@@ -2068,7 +2147,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 100,
+              "DocumentIndex": 107,
               "Title": "GetBooksPagedUseCase.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Application\\UseCases\\Books\\GetBooksPagedUseCase.cs",
               "RelativeDocumentMoniker": "Library.Application\\UseCases\\Books\\GetBooksPagedUseCase.cs",
@@ -2081,7 +2160,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 101,
+              "DocumentIndex": 108,
               "Title": "GetBooksByAuthorUseCase.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Application\\UseCases\\Books\\GetBooksByAuthorUseCase.cs",
               "RelativeDocumentMoniker": "Library.Application\\UseCases\\Books\\GetBooksByAuthorUseCase.cs",
@@ -2094,7 +2173,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 102,
+              "DocumentIndex": 109,
               "Title": "GetBookByISBNUseCase.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Application\\UseCases\\Books\\GetBookByISBNUseCase.cs",
               "RelativeDocumentMoniker": "Library.Application\\UseCases\\Books\\GetBookByISBNUseCase.cs",
@@ -2107,7 +2186,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 103,
+              "DocumentIndex": 110,
               "Title": "GetBookByIdUseCase.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Application\\UseCases\\Books\\GetBookByIdUseCase.cs",
               "RelativeDocumentMoniker": "Library.Application\\UseCases\\Books\\GetBookByIdUseCase.cs",
@@ -2120,7 +2199,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 104,
+              "DocumentIndex": 111,
               "Title": "FilterBooksUseCase.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Application\\UseCases\\Books\\FilterBooksUseCase.cs",
               "RelativeDocumentMoniker": "Library.Application\\UseCases\\Books\\FilterBooksUseCase.cs",
@@ -2133,7 +2212,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 105,
+              "DocumentIndex": 112,
               "Title": "DeleteBookUseCase.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Application\\UseCases\\Books\\DeleteBookUseCase.cs",
               "RelativeDocumentMoniker": "Library.Application\\UseCases\\Books\\DeleteBookUseCase.cs",
@@ -2146,7 +2225,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 106,
+              "DocumentIndex": 113,
               "Title": "AddBookImageUseCase.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Application\\UseCases\\Books\\AddBookImageUseCase.cs",
               "RelativeDocumentMoniker": "Library.Application\\UseCases\\Books\\AddBookImageUseCase.cs",
@@ -2159,7 +2238,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 107,
+              "DocumentIndex": 114,
               "Title": "UpdateAuthorUseCase.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Application\\UseCases\\Authors\\UpdateAuthorUseCase.cs",
               "RelativeDocumentMoniker": "Library.Application\\UseCases\\Authors\\UpdateAuthorUseCase.cs",
@@ -2172,7 +2251,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 108,
+              "DocumentIndex": 115,
               "Title": "GetAuthorByIdUseCase.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Application\\UseCases\\Authors\\GetAuthorByIdUseCase.cs",
               "RelativeDocumentMoniker": "Library.Application\\UseCases\\Authors\\GetAuthorByIdUseCase.cs",
@@ -2185,7 +2264,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 109,
+              "DocumentIndex": 116,
               "Title": "GetAllAuthorsUseCase.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Application\\UseCases\\Authors\\GetAllAuthorsUseCase.cs",
               "RelativeDocumentMoniker": "Library.Application\\UseCases\\Authors\\GetAllAuthorsUseCase.cs",
@@ -2198,7 +2277,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 110,
+              "DocumentIndex": 117,
               "Title": "DeleteAuthorUseCase.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Application\\UseCases\\Authors\\DeleteAuthorUseCase.cs",
               "RelativeDocumentMoniker": "Library.Application\\UseCases\\Authors\\DeleteAuthorUseCase.cs",
@@ -2211,7 +2290,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 111,
+              "DocumentIndex": 118,
               "Title": "AddAuthorUseCase.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Application\\UseCases\\Authors\\AddAuthorUseCase.cs",
               "RelativeDocumentMoniker": "Library.Application\\UseCases\\Authors\\AddAuthorUseCase.cs",
@@ -2224,7 +2303,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 112,
+              "DocumentIndex": 119,
               "Title": "BookEntityProfile.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Application\\Mappers\\Profiles\\BookEntityProfile.cs",
               "RelativeDocumentMoniker": "Library.Application\\Mappers\\Profiles\\BookEntityProfile.cs",
@@ -2237,7 +2316,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 113,
+              "DocumentIndex": 120,
               "Title": "DependencyInjection.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Application\\Extensions\\DependencyInjection.cs",
               "RelativeDocumentMoniker": "Library.Application\\Extensions\\DependencyInjection.cs",
@@ -2250,7 +2329,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 114,
+              "DocumentIndex": 121,
               "Title": "UnitOfWork.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Infrastucture\\Data\\UnitOfWork.cs",
               "RelativeDocumentMoniker": "Library.Infrastucture\\Data\\UnitOfWork.cs",
@@ -2263,20 +2342,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 115,
-              "Title": "BookRequest.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Requests\\BookRequest.cs",
-              "RelativeDocumentMoniker": "Library.Presentation\\Requests\\BookRequest.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Requests\\BookRequest.cs",
-              "RelativeToolTip": "Library.Presentation\\Requests\\BookRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T22:10:32.168Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 116,
+              "DocumentIndex": 122,
               "Title": "IAddBookUseCase.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Application\\Interfaces\\UseCases\\Books\\IAddBookUseCase.cs",
               "RelativeDocumentMoniker": "Library.Application\\Interfaces\\UseCases\\Books\\IAddBookUseCase.cs",
@@ -2289,20 +2355,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 117,
-              "Title": "BookResponse.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Responses\\BookResponse.cs",
-              "RelativeDocumentMoniker": "Library.Presentation\\Responses\\BookResponse.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Responses\\BookResponse.cs",
-              "RelativeToolTip": "Library.Presentation\\Responses\\BookResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAswAcAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T03:12:17.983Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 118,
+              "DocumentIndex": 123,
               "Title": "IUpdateBookUseCase.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Application\\Interfaces\\UseCases\\Books\\IUpdateBookUseCase.cs",
               "RelativeDocumentMoniker": "Library.Application\\Interfaces\\UseCases\\Books\\IUpdateBookUseCase.cs",
@@ -2315,7 +2368,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 119,
+              "DocumentIndex": 124,
               "Title": "DbContextInitializer.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Infrastucture\\Data\\Initializers\\DbContextInitializer.cs",
               "RelativeDocumentMoniker": "Library.Infrastucture\\Data\\Initializers\\DbContextInitializer.cs",
@@ -2327,7 +2380,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 120,
+              "DocumentIndex": 125,
               "Title": "RoleInitializer.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Infrastucture\\Data\\Initializers\\RoleInitializer.cs",
               "RelativeDocumentMoniker": "Library.Infrastucture\\Data\\Initializers\\RoleInitializer.cs",
@@ -2339,7 +2392,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 121,
+              "DocumentIndex": 126,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Api\\appsettings.json",
               "RelativeDocumentMoniker": "Library.Api\\appsettings.json",
@@ -2351,7 +2404,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 124,
+              "DocumentIndex": 129,
               "Title": "RefreshTokenRepositoryTests.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.UnitTests\\RefreshTokenRepositoryTests.cs",
               "RelativeDocumentMoniker": "Library.UnitTests\\RefreshTokenRepositoryTests.cs",
@@ -2363,7 +2416,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 123,
+              "DocumentIndex": 128,
               "Title": "PasswordHasherTests.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.UnitTests\\PasswordHasherTests.cs",
               "RelativeDocumentMoniker": "Library.UnitTests\\PasswordHasherTests.cs",
@@ -2375,7 +2428,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 122,
+              "DocumentIndex": 127,
               "Title": "GlobalUsings.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.UnitTests\\GlobalUsings.cs",
               "RelativeDocumentMoniker": "Library.UnitTests\\GlobalUsings.cs",
@@ -2387,7 +2440,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 125,
+              "DocumentIndex": 130,
               "Title": "AuthServiceTests.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.UnitTests\\AuthServiceTests.cs",
               "RelativeDocumentMoniker": "Library.UnitTests\\AuthServiceTests.cs",
@@ -2399,7 +2452,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 126,
+              "DocumentIndex": 131,
               "Title": "BaseInitializer.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Infrastucture\\Data\\Initializers\\Base\\BaseInitializer.cs",
               "RelativeDocumentMoniker": "Library.Infrastucture\\Data\\Initializers\\Base\\BaseInitializer.cs",
@@ -2411,7 +2464,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 127,
+              "DocumentIndex": 132,
               "Title": "AdminUserInitializer.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Infrastucture\\Data\\Initializers\\AdminUserInitializer.cs",
               "RelativeDocumentMoniker": "Library.Infrastucture\\Data\\Initializers\\AdminUserInitializer.cs",
@@ -2423,7 +2476,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 128,
+              "DocumentIndex": 133,
               "Title": "LibraryDbContext.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Infrastucture\\Data\\LibraryDbContext.cs",
               "RelativeDocumentMoniker": "Library.Infrastucture\\Data\\LibraryDbContext.cs",
@@ -2435,7 +2488,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 129,
+              "DocumentIndex": 134,
               "Title": "UserRequestValidator.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Validators\\UserRequestValidator.cs",
               "RelativeDocumentMoniker": "Library.Presentation\\Validators\\UserRequestValidator.cs",
@@ -2447,7 +2500,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 130,
+              "DocumentIndex": 135,
               "Title": "UserBookRequestValidator.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Validators\\UserBookRequestValidator.cs",
               "RelativeDocumentMoniker": "Library.Presentation\\Validators\\UserBookRequestValidator.cs",
@@ -2459,7 +2512,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 131,
+              "DocumentIndex": 136,
               "Title": "RegisterRequestValidator.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Validators\\RegisterRequestValidator.cs",
               "RelativeDocumentMoniker": "Library.Presentation\\Validators\\RegisterRequestValidator.cs",
@@ -2471,7 +2524,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 132,
+              "DocumentIndex": 137,
               "Title": "LoginRequestValidator.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Validators\\LoginRequestValidator.cs",
               "RelativeDocumentMoniker": "Library.Presentation\\Validators\\LoginRequestValidator.cs",
@@ -2483,7 +2536,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 133,
+              "DocumentIndex": 138,
               "Title": "AuthTokensRequestValidator.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Validators\\AuthTokensRequestValidator.cs",
               "RelativeDocumentMoniker": "Library.Presentation\\Validators\\AuthTokensRequestValidator.cs",
@@ -2495,7 +2548,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 134,
+              "DocumentIndex": 139,
               "Title": "BookRequestValidator.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Validators\\BookRequestValidator.cs",
               "RelativeDocumentMoniker": "Library.Presentation\\Validators\\BookRequestValidator.cs",
@@ -2507,7 +2560,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 135,
+              "DocumentIndex": 140,
               "Title": "IBookRepository.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Domain\\Interfaces\\Repositories\\IBookRepository.cs",
               "RelativeDocumentMoniker": "Library.Domain\\Interfaces\\Repositories\\IBookRepository.cs",
@@ -2519,7 +2572,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 136,
+              "DocumentIndex": 141,
               "Title": "IDeleteAuthorUseCase.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Application\\Interfaces\\UseCases\\Authors\\IDeleteAuthorUseCase.cs",
               "RelativeDocumentMoniker": "Library.Application\\Interfaces\\UseCases\\Authors\\IDeleteAuthorUseCase.cs",
@@ -2531,7 +2584,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 137,
+              "DocumentIndex": 142,
               "Title": "IAddAuthorUseCase.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Application\\Interfaces\\UseCases\\Authors\\IAddAuthorUseCase.cs",
               "RelativeDocumentMoniker": "Library.Application\\Interfaces\\UseCases\\Authors\\IAddAuthorUseCase.cs",
@@ -2543,7 +2596,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 138,
+              "DocumentIndex": 143,
               "Title": "IUpdateUserUseCase.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Application\\Interfaces\\UseCases\\Users\\IUpdateUserUseCase.cs",
               "RelativeDocumentMoniker": "Library.Application\\Interfaces\\UseCases\\Users\\IUpdateUserUseCase.cs",
@@ -2555,7 +2608,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 139,
+              "DocumentIndex": 144,
               "Title": "IGetUserByIdUseCase.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Application\\Interfaces\\UseCases\\Users\\IGetUserByIdUseCase.cs",
               "RelativeDocumentMoniker": "Library.Application\\Interfaces\\UseCases\\Users\\IGetUserByIdUseCase.cs",
@@ -2567,7 +2620,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 140,
+              "DocumentIndex": 145,
               "Title": "IGetUserByEmailUseCase.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Application\\Interfaces\\UseCases\\Users\\IGetUserByEmailUseCase.cs",
               "RelativeDocumentMoniker": "Library.Application\\Interfaces\\UseCases\\Users\\IGetUserByEmailUseCase.cs",
@@ -2579,7 +2632,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 141,
+              "DocumentIndex": 146,
               "Title": "IGetAllUsersUseCase.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Application\\Interfaces\\UseCases\\Users\\IGetAllUsersUseCase.cs",
               "RelativeDocumentMoniker": "Library.Application\\Interfaces\\UseCases\\Users\\IGetAllUsersUseCase.cs",
@@ -2591,7 +2644,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 142,
+              "DocumentIndex": 147,
               "Title": "IGetGenreByIdUseCase.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Application\\Interfaces\\UseCases\\Genres\\IGetGenreByIdUseCase.cs",
               "RelativeDocumentMoniker": "Library.Application\\Interfaces\\UseCases\\Genres\\IGetGenreByIdUseCase.cs",
@@ -2603,7 +2656,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 143,
+              "DocumentIndex": 148,
               "Title": "IGetAllGenresUseCase.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Application\\Interfaces\\UseCases\\Genres\\IGetAllGenresUseCase.cs",
               "RelativeDocumentMoniker": "Library.Application\\Interfaces\\UseCases\\Genres\\IGetAllGenresUseCase.cs",
@@ -2615,7 +2668,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 144,
+              "DocumentIndex": 149,
               "Title": "ITakeBookUseCase.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Application\\Interfaces\\UseCases\\Books\\ITakeBookUseCase.cs",
               "RelativeDocumentMoniker": "Library.Application\\Interfaces\\UseCases\\Books\\ITakeBookUseCase.cs",
@@ -2627,7 +2680,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 145,
+              "DocumentIndex": 150,
               "Title": "ISearchBooksByTitleUseCase.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Application\\Interfaces\\UseCases\\Books\\ISearchBooksByTitleUseCase.cs",
               "RelativeDocumentMoniker": "Library.Application\\Interfaces\\UseCases\\Books\\ISearchBooksByTitleUseCase.cs",
@@ -2639,7 +2692,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 146,
+              "DocumentIndex": 151,
               "Title": "IReturnBookUseCase.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Application\\Interfaces\\UseCases\\Books\\IReturnBookUseCase.cs",
               "RelativeDocumentMoniker": "Library.Application\\Interfaces\\UseCases\\Books\\IReturnBookUseCase.cs",
@@ -2651,7 +2704,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 147,
+              "DocumentIndex": 152,
               "Title": "IGetBooksPagedUseCase.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Application\\Interfaces\\UseCases\\Books\\IGetBooksPagedUseCase.cs",
               "RelativeDocumentMoniker": "Library.Application\\Interfaces\\UseCases\\Books\\IGetBooksPagedUseCase.cs",
@@ -2663,7 +2716,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 148,
+              "DocumentIndex": 153,
               "Title": "IGetBooksByAuthorUseCase.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Application\\Interfaces\\UseCases\\Books\\IGetBooksByAuthorUseCase.cs",
               "RelativeDocumentMoniker": "Library.Application\\Interfaces\\UseCases\\Books\\IGetBooksByAuthorUseCase.cs",
@@ -2675,7 +2728,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 149,
+              "DocumentIndex": 154,
               "Title": "IGetBookByISBNUseCase.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Application\\Interfaces\\UseCases\\Books\\IGetBookByISBNUseCase.cs",
               "RelativeDocumentMoniker": "Library.Application\\Interfaces\\UseCases\\Books\\IGetBookByISBNUseCase.cs",
@@ -2687,7 +2740,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 150,
+              "DocumentIndex": 155,
               "Title": "IGetBookByIdUseCase.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Application\\Interfaces\\UseCases\\Books\\IGetBookByIdUseCase.cs",
               "RelativeDocumentMoniker": "Library.Application\\Interfaces\\UseCases\\Books\\IGetBookByIdUseCase.cs",
@@ -2699,7 +2752,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 151,
+              "DocumentIndex": 156,
               "Title": "IFilterBooksUseCase.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Application\\Interfaces\\UseCases\\Books\\IFilterBooksUseCase.cs",
               "RelativeDocumentMoniker": "Library.Application\\Interfaces\\UseCases\\Books\\IFilterBooksUseCase.cs",
@@ -2711,7 +2764,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 152,
+              "DocumentIndex": 157,
               "Title": "IDeleteBookUseCase.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Application\\Interfaces\\UseCases\\Books\\IDeleteBookUseCase.cs",
               "RelativeDocumentMoniker": "Library.Application\\Interfaces\\UseCases\\Books\\IDeleteBookUseCase.cs",
@@ -2723,7 +2776,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 153,
+              "DocumentIndex": 158,
               "Title": "IAddBookImageUseCase.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Application\\Interfaces\\UseCases\\Books\\IAddBookImageUseCase.cs",
               "RelativeDocumentMoniker": "Library.Application\\Interfaces\\UseCases\\Books\\IAddBookImageUseCase.cs",
@@ -2735,7 +2788,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 154,
+              "DocumentIndex": 159,
               "Title": "IUpdateAuthorUseCase.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Application\\Interfaces\\UseCases\\Authors\\IUpdateAuthorUseCase.cs",
               "RelativeDocumentMoniker": "Library.Application\\Interfaces\\UseCases\\Authors\\IUpdateAuthorUseCase.cs",
@@ -2747,7 +2800,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 155,
+              "DocumentIndex": 160,
               "Title": "IGetAuthorByIdUseCase.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Application\\Interfaces\\UseCases\\Authors\\IGetAuthorByIdUseCase.cs",
               "RelativeDocumentMoniker": "Library.Application\\Interfaces\\UseCases\\Authors\\IGetAuthorByIdUseCase.cs",
@@ -2759,7 +2812,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 156,
+              "DocumentIndex": 161,
               "Title": "IGetAllAuthorsUseCase.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Application\\Interfaces\\UseCases\\Authors\\IGetAllAuthorsUseCase.cs",
               "RelativeDocumentMoniker": "Library.Application\\Interfaces\\UseCases\\Authors\\IGetAllAuthorsUseCase.cs",
@@ -2771,7 +2824,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 157,
+              "DocumentIndex": 162,
               "Title": "IUseCase.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Application\\Interfaces\\UseCases\\IUseCase.cs",
               "RelativeDocumentMoniker": "Library.Application\\Interfaces\\UseCases\\IUseCase.cs",
@@ -2783,7 +2836,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 158,
+              "DocumentIndex": 163,
               "Title": "Library.Application.csproj",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Application\\Library.Application.csproj",
               "RelativeDocumentMoniker": "Library.Application\\Library.Application.csproj",
@@ -2795,7 +2848,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 159,
+              "DocumentIndex": 164,
               "Title": "UserBookRequest.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Requests\\UserBookRequest.cs",
               "RelativeDocumentMoniker": "Library.Presentation\\Requests\\UserBookRequest.cs",
@@ -2807,7 +2860,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 160,
+              "DocumentIndex": 165,
               "Title": "Library.Domain.csproj",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Domain\\Library.Domain.csproj",
               "RelativeDocumentMoniker": "Library.Domain\\Library.Domain.csproj",
@@ -2819,7 +2872,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 162,
+              "DocumentIndex": 166,
               "Title": "Library.Infrastucture.csproj",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Infrastucture\\Library.Infrastucture.csproj",
               "RelativeDocumentMoniker": "Library.Infrastucture\\Library.Infrastucture.csproj",
@@ -2831,7 +2884,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 163,
+              "DocumentIndex": 167,
               "Title": "RegisterRequest.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Requests\\RegisterRequest.cs",
               "RelativeDocumentMoniker": "Library.Presentation\\Requests\\RegisterRequest.cs",
@@ -2843,19 +2896,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 164,
-              "Title": "AuthorResponse.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Responses\\AuthorResponse.cs",
-              "RelativeDocumentMoniker": "Library.Presentation\\Responses\\AuthorResponse.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Responses\\AuthorResponse.cs",
-              "RelativeToolTip": "Library.Presentation\\Responses\\AuthorResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T22:58:52.888Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 165,
+              "DocumentIndex": 168,
               "Title": "AuthTokensResponse.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Responses\\AuthTokensResponse.cs",
               "RelativeDocumentMoniker": "Library.Presentation\\Responses\\AuthTokensResponse.cs",
@@ -2867,31 +2908,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 166,
-              "Title": "UserResponse.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Responses\\UserResponse.cs",
-              "RelativeDocumentMoniker": "Library.Presentation\\Responses\\UserResponse.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Responses\\UserResponse.cs",
-              "RelativeToolTip": "Library.Presentation\\Responses\\UserResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T16:45:48.729Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 167,
-              "Title": "UserRequest.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Requests\\UserRequest.cs",
-              "RelativeDocumentMoniker": "Library.Presentation\\Requests\\UserRequest.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Requests\\UserRequest.cs",
-              "RelativeToolTip": "Library.Presentation\\Requests\\UserRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T00:37:56.739Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 168,
+              "DocumentIndex": 169,
               "Title": "FilterBookRequest.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Requests\\FilterBookRequest.cs",
               "RelativeDocumentMoniker": "Library.Presentation\\Requests\\FilterBookRequest.cs",
@@ -2903,7 +2920,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 169,
+              "DocumentIndex": 170,
               "Title": "LoginRequest.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Requests\\LoginRequest.cs",
               "RelativeDocumentMoniker": "Library.Presentation\\Requests\\LoginRequest.cs",
@@ -2912,18 +2929,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-16T16:46:09.658Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 170,
-              "Title": "GenreResponse.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Responses\\GenreResponse.cs",
-              "RelativeDocumentMoniker": "Library.Presentation\\Responses\\GenreResponse.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\LibraryWebApp-back\\src\\Library\\Library.Presentation\\Responses\\GenreResponse.cs",
-              "RelativeToolTip": "Library.Presentation\\Responses\\GenreResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T19:31:34.156Z"
             },
             {
               "$type": "Document",
