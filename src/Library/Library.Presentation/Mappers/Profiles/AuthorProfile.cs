@@ -24,7 +24,6 @@ public class AuthorProfile : Profile
             .ForMember(dest => dest.BirthDate, opt => opt.MapFrom(src => src.BirthDate))
             .ForMember(dest => dest.Country, opt => opt.MapFrom(src => src.Country))
             .ForMember(dest => dest.Books, opt => opt.MapFrom(src => src.Books))
-            //.ForMember(dest => dest.Books, opt => opt.Ignore())
             ;
     }
 }

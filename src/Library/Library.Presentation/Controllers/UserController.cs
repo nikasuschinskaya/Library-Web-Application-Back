@@ -42,6 +42,7 @@ public class UserController : ControllerBase
         return Ok(response);
     }
 
+
     [HttpGet("all")]
     [ProducesResponseType(typeof(IEnumerable<UserResponse>), (int)HttpStatusCode.OK)]
     public async Task<IActionResult> GetAllUsers(CancellationToken cancellationToken = default)
@@ -50,6 +51,7 @@ public class UserController : ControllerBase
         var response = _mapper.Map<IEnumerable<UserResponse>>(users);
         return Ok(response);
     }
+
 
     [HttpGet("by-email")]
     [ProducesResponseType(typeof(UserResponse), (int)HttpStatusCode.OK)]
@@ -60,6 +62,7 @@ public class UserController : ControllerBase
         var response = _mapper.Map<User, UserResponse>(user);
         return Ok(response);
     }
+
 
     [HttpPut("update/{userId:guid}")]
     [ProducesResponseType((int)HttpStatusCode.NoContent)]

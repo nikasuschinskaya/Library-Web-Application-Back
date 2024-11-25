@@ -8,4 +8,5 @@ public record class BookRequest(
     string Description,
     Guid GenreId,
     int Count,
+    string? ImageURL,
     IEnumerable<AuthorRequest> Authors);

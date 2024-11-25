@@ -6,7 +6,9 @@ using Library.Infrastucture.Data;
 using Library.Infrastucture.Data.Initializers;
 using Library.Infrastucture.IdentityServer;
 using Library.Infrastucture.Repositories.Base;
+using Library.Infrastucture.Storages;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -34,6 +36,20 @@ public static class DependencyInjection
     public static IServiceCollection InjectRepositories(this IServiceCollection services)
     {
         services.AddScoped(typeof(IRepository<>), typeof(EntityFrameworkRepository<>));
+
+        return services;
+    }
+
+    public static IServiceCollection InjectFileStorage(this IServiceCollection services, IWebHostEnvironment env)
+    {
+        string uploadPath = Path.Combine(env.WebRootPath, "uploads");
+
+        if (!Directory.Exists(uploadPath))
+        {
+            Directory.CreateDirectory(uploadPath);
+        }
+
+        services.AddSingleton<IFileStorage>(new FileSystemStorage(uploadPath));
 
         return services;
     }

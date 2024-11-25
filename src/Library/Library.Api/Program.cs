@@ -19,6 +19,7 @@ var builder = WebApplication.CreateBuilder(args);
         .InjectRepositories()
         .InjectDbContextInitializers()
         .InjectJwtTokens(builder.Configuration)
+        .InjectFileStorage(builder.Environment)
         .InjectAuthServices()
         .InjectUseCases()
         .InjectValidators()
@@ -45,6 +46,8 @@ var app = builder.Build();
     app.UseMiddleware<GlobalExceptionHandlingMiddleware>();
 
     app.UseCors();
+
+    app.UseStaticFiles();
 
     app.UseHttpsRedirection();
 

@@ -8,7 +8,7 @@ public class BooksByGenreSpecification : Specification<Book>
     public BooksByGenreSpecification(string genre)
     {
         Query.Include(x => x.Genre)
-            .Where(book => book.Genre.Name == genre)
-            .AsNoTracking();
+             .Where(book => book.Genre.Name == genre)
+             .AsNoTracking();
     }
 }

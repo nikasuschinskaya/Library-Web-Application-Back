@@ -214,3 +214,4 @@ C:\Users\User\source\repos\LibraryWebApp-back\src\Library\Library.Api\bin\Debug\
 C:\Users\User\source\repos\LibraryWebApp-back\src\Library\Library.Api\bin\Debug\net8.0\Ardalis.Specification.dll
 C:\Users\User\source\repos\LibraryWebApp-back\src\Library\Library.Api\bin\Debug\net8.0\Ardalis.Specification.EntityFrameworkCore.dll
 C:\Users\User\source\repos\LibraryWebApp-back\src\Library\Library.Api\bin\Debug\net8.0\Scrutor.dll
+C:\Users\User\source\repos\LibraryWebApp-back\src\Library\Library.Api\bin\Debug\net8.0\Library.Api.staticwebassets.runtime.json

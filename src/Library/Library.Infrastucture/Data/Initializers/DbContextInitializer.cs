@@ -19,14 +19,12 @@ namespace Library.Infrastucture.Data.Initializers
 
         public async Task InitializeAsync()
         {
-            await InitializeRolesAsync(/*CancellationToken.None*/);
+            await InitializeRolesAsync();
 
-            await InitializeAdminUserAsync(/*CancellationToken.None*/);
+            await InitializeAdminUserAsync();
 
-            await InitializeGenresAuthorsAndBooksAsync(/*CancellationToken.None*/);
-
+            await InitializeGenresAuthorsAndBooksAsync();
         }
-
 
         public async Task InitializeRolesAsync(CancellationToken cancellationToken = default)
         {
@@ -46,37 +44,6 @@ namespace Library.Infrastucture.Data.Initializers
 
             await _unitOfWork.SaveChangesAsync(cancellationToken);
         }
-
-        //public async Task InitializeAdminUser(CancellationToken cancellationToken = default)
-        //{
-        //    var adminRole = _unitOfWork.Repository<Role>().GetAll()
-        //        .FirstOrDefault(r => r.Name.Equals(Roles.Admin.StringValue()));
-
-        //    var user = new User("nika_susch2003", "nikaAdmin@gmail.com", _passwordHasher.HashPassword("Nika2003!"), adminRole);
-
-
-        //    var userRepository = _unitOfWork.Repository<User>();
-        //    var refreshTokenRepository = _unitOfWork.Repository<RefreshToken>();
-
-        //    if (!userRepository.GetAll().ToList().Any())
-        //    {
-        //        userRepository.Create(user);
-        //    }
-
-        //    var refreshToken = new RefreshToken
-        //    {
-        //        Token = Guid.NewGuid().ToString(),
-        //        UserId = user.Id,
-        //        ExpiryDate = DateTime.UtcNow.AddDays(7)
-        //    };
-
-        //    if (!refreshTokenRepository.GetAll().ToList().Any())
-        //    {
-        //        refreshTokenRepository.Create(refreshToken);
-        //    }
-
-        //    await _unitOfWork.SaveChangesAsync(cancellationToken);
-        //}
 
         public async Task InitializeGenresAuthorsAndBooksAsync(CancellationToken cancellationToken = default)
         {
@@ -106,7 +73,7 @@ namespace Library.Infrastucture.Data.Initializers
                     description: "\"Не отпускай меня\" – пронзительная книга, которая по праву входит в список 100 лучших английских романов всех времен по версии журнала \"Time\". Ее автор урожденный японец, выпускник литературного семинара Малькольма Брэдбери и лауреат Буксровской премии (за роман \"Остаток дня\").\r\n\r\nТридцатилетняя Кэти вспоминает свое детство в привилегированной школе Хейлшем, полное странных недомолвок, половинчатых откровений и подспудной угрозы.\r\n\r\nЭто роман-притча. Это история любви, дружбы и памяти. Это предельное овеществление метафоры \"служить всей жизнью\".",
                     count: 2,
                     authors: [authorList[0]],
-                    imageURL: "https://lh3.googleusercontent.com/pw/AP1GczOdleUSoYYUAtKaFBcWa1NESdn3cY7PlNPho0zES8vG0DxQM87KyXTx6tJbrPcEV1W1K0rV9nNSSSMttXSmJCgw1lTUWvZeX4Ocfmtr7u6XjBtonLJ4WEqZxyXdm1eWdUv-ha7i6QiSyQTx-2fNcsjj=w507-h895-s-no-gm?authuser=0"
+                    imageURL: "uploads/1085776_0.jpg"
                     ),
 
                 new Book(
@@ -124,7 +91,7 @@ namespace Library.Infrastucture.Data.Initializers
                     description: "От урожденного японца, выпускника литературного семинара Малькольма Брэдбери, лауреата Букеровской премии за \"Остаток дня\", – изысканный роман, в котором парадоксально сочетаются традиции \"черного детектива\" 1930-х годов и \"культурологической прозы\" конца XX – начала XXI века.\r\n\r\nИзвестнейший детектив-интеллектуал Кристофер Бэнкс с детства мечтает раскрыть тайну исчезновения своих родителей – и наконец ему представляется возможность сделать это, в очень неспокойное время отправившись по маршруту Лондон – Шанхай. Однако расследование Кристофера и его экзотическое путешествие постепенно превращаются в странствие из Настоящего в Прошлое, из мира иллюзий – в мир жестокой реальности...",
                     count: 3,
                     authors: [authorList[0]],
-                    imageURL: "https://lh3.googleusercontent.com/pw/AP1GczMe4ze3u62wgRyOUN62O3LOxQzC3f8CzvdzJsRxK8--wtXPIv-LLZKBAY6Kpkx8mco7HEGpCcPYG6kejmqZcEbuUxj3v54U0CVHJyCaQNKzi6jdQMTOPWn0QEsqAaEUBNi91AvA3X4q_yVAKkkW-0hZ=w395-h620-s-no-gm?authuser=0"
+                    imageURL: "uploads/10927960_0_Kogda_mi_bili_sirotami_Kadzuo_Isiguro.jpg"
                     ),
 
                 new Book(
@@ -134,7 +101,7 @@ namespace Library.Infrastucture.Data.Initializers
                     description: "\"Погребенный великан\" – непревзойденная история о любви и одиночестве, о войне и мести, о времени и памяти.\r\n\r\nИсигуро переносит нас в средневековую Англию, где люди еще помнят короля Артура, где живы легенды, а зеленые холмы объяты туманом. Немолодая пара, Аксель и Беатрис, исполненные желания отыскать сына, которого не видели уже долгие годы, отправляются в путь, прочь от родной деревни. Дороги опутаны неведомой хмарью, заставляющей забыть только что прожитый час. Время и пространство схлопываются в этом захватывающем путешествии жизни. Куда же оно направит их? С кем неожиданно сведет?",
                     count: 1,
                     authors: [authorList[0]],
-                    imageURL: "https://lh3.googleusercontent.com/pw/AP1GczMVL8XoVG4cPEHz9nsh4G99mMwtcTs5Pegwu5AuAAD35frWMfJUN_2lpq1CAwm09xdmWObFsJYmv17tRmQ84XylUSdY8tjFFmu1_2cgLZa0wfyTeYlgEswp9IVMSV9qL-DriZ7vclULO8XrL85FogTB=w394-h620-s-no-gm?authuser=0"
+                    imageURL: "uploads/101326909_0_Pogrebenniy_velikan_Kadzuo_Isiguro.jpg"
                     ),
 
                 new Book(

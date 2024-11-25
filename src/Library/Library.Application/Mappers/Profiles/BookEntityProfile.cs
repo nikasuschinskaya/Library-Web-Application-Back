@@ -14,7 +14,7 @@ public class BookEntityProfile : Profile
           .ForMember(dest => dest.GenreId, opt => opt.MapFrom(src => src.GenreId))
           .ForMember(dest => dest.Description, opt => opt.MapFrom(src => src.Description))
           .ForMember(dest => dest.Count, opt => opt.MapFrom(src => src.Count))
-          .ForMember(dest => dest.ImageURL, opt => opt.Ignore())
+          .ForMember(dest => dest.ImageURL, opt => opt.MapFrom(src => src.ImageURL))
           .ForMember(dest => dest.UserBooks, opt => opt.Ignore())
           .ForMember(dest => dest.BookStockStatus, opt => opt.Ignore())
           .ForMember(dest => dest.Authors, opt => opt.Ignore())

@@ -29,7 +29,7 @@ public class EntityFrameworkRepository<T> : IRepository<T> where T : class, IEnt
 
     public async Task<T?> GetByIdAsync(Guid id, CancellationToken cancellationToken = default)
     {
-        return await _dbSet.Where(entity => entity.Id == id).AsNoTracking().FirstOrDefaultAsync(cancellationToken);
+        return await _dbSet.Where(entity => entity.Id == id)/*.AsNoTracking()*/.FirstOrDefaultAsync(cancellationToken);
     }
 
     public async Task<T?> GetBySpecAsync(ISpecification<T> spec, CancellationToken cancellationToken = default)

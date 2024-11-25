@@ -38,13 +38,13 @@ public class BookProfile : Profile
            .ForMember(dest => dest.Description, opt => opt.MapFrom(src => src.Description))
            .ForMember(dest => dest.Count, opt => opt.MapFrom(src => src.Count))
            .ForMember(dest => dest.Authors, opt => opt.MapFrom(src => src.Authors))
-           //.ForMember(dest => dest.Authors, opt => opt.Ignore())
            ;
 
         CreateMap<BookAddRequest, Book>()
            .ForMember(dest => dest.Name, opt => opt.MapFrom(src => src.Name))
            .ForMember(dest => dest.ISBN, opt => opt.MapFrom(src => src.ISBN))
            .ForMember(dest => dest.GenreId, opt => opt.MapFrom(src => src.GenreId))
+           .ForMember(dest => dest.ImageURL, opt => opt.MapFrom(src => src.ImageURL))
            .ForMember(dest => dest.Description, opt => opt.MapFrom(src => src.Description))
            .ForMember(dest => dest.Count, opt => opt.MapFrom(src => src.Count))
            .ForMember(dest => dest.Authors, opt => opt.Ignore())
